@@ -11,6 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary:"#04ace6",
+        secondary:"",
+        button:"",
+        buttonText:"",
+
+
       },
     },
   },
