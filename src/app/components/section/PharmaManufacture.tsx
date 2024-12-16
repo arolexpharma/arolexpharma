@@ -1,22 +1,41 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion"; // Import Framer Motion
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion"; 
 import manufacture from "@/app/assets/images/manufacture.jpg";
 
+
 const ResponsiveImageGrid = () => {
-  // Card Component with Animation
+  
   const Card = ({ image, title, subtitle, height, animation }: any) => {
+    const [cardHeight, setCardHeight] = useState(height || "300px");
+
+   
+    useEffect(() => {
+      const updateHeight = () => {
+        if (window.innerWidth <= 768) {
+          setCardHeight(height === "615px" ? "300px" : height);
+        } else {
+          setCardHeight(height);
+        }
+      };
+
+      updateHeight();
+      window.addEventListener("resize", updateHeight);
+
+      return () => window.removeEventListener("resize", updateHeight);
+    }, [height]);
+
     return (
       <motion.div
-        initial={animation.initial} // Initial position (off-screen)
-        whileInView={animation.whileInView} // Final position (onscreen)
-        viewport={{ once: true, amount: 0.2 }} // Trigger only once
-        transition={{ duration: 0.6, ease: "easeOut" }} // Smooth animation
+        initial={animation.initial} 
+        whileInView={animation.whileInView} 
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className={`relative group overflow-hidden rounded-lg`}
         style={{
-          height: height || "300px",
+          height: cardHeight,
         }}
       >
         <Image
@@ -37,9 +56,9 @@ const ResponsiveImageGrid = () => {
 
   return (
     <section
-      className="px-4 py-12 md:px-12 lg:px-24 bg-white relative bg-cover bg-center bg-no-repeat"
+      className=" px-4 py-12 md:px-12 lg:px-24 bg-white relative bg-cover bg-center bg-no-repeat"
     >
-      {/* Background Image */}
+      
       <div className="absolute inset-0 z-0">
         <Image
           src={manufacture}
@@ -50,8 +69,8 @@ const ResponsiveImageGrid = () => {
         />
       </div>
 
-      {/* Feature Heading */}
-      <div className="relative z-10 text-center md:text-left mb-8">
+      
+      <div className="container mx-auto relative z-10 text-center md:text-left mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
           Aerolex <span className="text-blue-600">Pharmaceutical</span> Manufacturing
         </h1>
@@ -62,23 +81,23 @@ const ResponsiveImageGrid = () => {
       </div>
 
       {/* Grid Layout */}
-      <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="container mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Left Side */}
         <div className="grid grid-rows-2 gap-4">
           <Card
-            image="https://img.freepik.com/free-photo/many-kind-medication-prepared-use-operation_1301-7797.jpg"
+            image="https://img.freepik.com/free-photo/portrait-professional-technologist-protective-uniform-looking-aside_342744-1166.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"
             title="Advanced Tablets"
             subtitle="High-Quality Solutions"
             height="300px"
             animation={{
-              initial: { x: -100, opacity: 0 }, // Slide in from left
-              whileInView: { x: 0, opacity: 1 }, // Move to default position
+              initial: { x: -100, opacity: 0 }, 
+              whileInView: { x: 0, opacity: 1 }, 
             }}
           />
 
           <div className="grid grid-cols-2 gap-4">
             <Card
-              image="https://img.freepik.com/free-photo/many-kind-medication-prepared-use-operation_1301-7797.jpg"
+              image="https://img.freepik.com/free-photo/transparent-plastic-bottles-filled-with-yellow-substance_273609-13375.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"
               title="Softgel Capsules"
               subtitle="Precision Manufacturing"
               height="300px"
@@ -93,7 +112,7 @@ const ResponsiveImageGrid = () => {
               subtitle="Meeting Global Standards"
               height="300px"
               animation={{
-                initial: { x: 100, opacity: 0 }, // Slide in from right
+                initial: { x: 100, opacity: 0 }, 
                 whileInView: { x: 0, opacity: 1 },
               }}
             />
@@ -102,12 +121,12 @@ const ResponsiveImageGrid = () => {
 
         {/* Right Side */}
         <Card
-          image="https://img.freepik.com/free-photo/many-kind-medication-prepared-use-operation_1301-7797.jpg"
+          image="https://img.freepik.com/free-photo/man-working-as-pharmacist_23-2151734589.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"
           title="Comprehensive Production"
           subtitle="Diverse Product Segments"
           height="615px"
           animation={{
-            initial: { x: 100, opacity: 0 }, // Slide in from right
+            initial: { x: 100, opacity: 0 }, 
             whileInView: { x: 0, opacity: 1 },
           }}
         />

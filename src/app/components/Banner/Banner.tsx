@@ -74,6 +74,10 @@ export default function Banner() {
       </Swiper>
 
       {/* Left Content */}
+      <div className="container mx-auto ">
+
+
+      
       <div className="absolute top-1/4 left-6 md:left-12 text-white max-w-sm md:max-w-2xl z-50 p-4">
 
         <span className="bg-green-600 text-xs md:text-sm px-2 md:px-3 py-1 rounded-full mb-4 inline-block">
@@ -97,7 +101,7 @@ export default function Banner() {
       
       <motion.div   initial="hidden"
         animate="visible"
-        variants={formVariants} className="absolute top-[700px] md:top-1/4  md:right-12 transform -translate-y-1/2 md:translate-y-0 bg-white shadow-lg rounded-lg p-4 md:p-6 w-full md:w-[400px] z-50">
+        variants={formVariants} className="hidden sm:block absolute top-[700px] md:top-1/4  md:right-12 transform -translate-y-1/2 md:translate-y-0 bg-white shadow-lg rounded-lg p-4 md:p-6 w-full md:w-[400px] z-50">
         <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
           Request an Appointment
         </h3>
@@ -143,6 +147,7 @@ export default function Banner() {
           </button>
         </form>
       </motion.div>
+    </div>
     </div>
   );
 }

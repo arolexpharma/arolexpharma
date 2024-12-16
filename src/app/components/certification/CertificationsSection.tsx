@@ -3,7 +3,7 @@ import iso from '@/app/assets/images/iso.png'
 import Image from 'next/image';
 const CertificationsSection: React.FC = () => {
   return (
-    <section className="bg-white py-12 px-6 mt-96 sm:mt-0">
+    <section className="bg-white py-12 px-6">
       <div className="container mx-auto">
         {/* Top Section: Certifications */}
         <div className="flex flex-col md:flex-row items-center justify-between mb-12">

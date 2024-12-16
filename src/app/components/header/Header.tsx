@@ -128,7 +128,7 @@ const Navbar = () => {
   const [active, setActive] = useState<any>();
 
   return (
-    <nav className="navbar-menu">
+    <nav className="navbar-menu ">
       <ul className="navbar-menu-items">
         <li className="navbar-menu-item">
           <Link href={"/"} className="nav-item ">
