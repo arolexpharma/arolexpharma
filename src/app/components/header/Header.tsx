@@ -2,7 +2,7 @@
 import { ImagePath } from "@/app/utils/images.path";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Logo from "@/app/assets/images/logo.png";
+import Logo from "@/app/assets/images/Logo.png";
 import "./header.css";
 import { Button } from "@/app/components/buttons/Button";
 import Divider from "@mui/material/Divider";
