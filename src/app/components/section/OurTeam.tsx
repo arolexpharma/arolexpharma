@@ -26,7 +26,7 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="bg-blue-600 py-16 px-0 sm:px-20">
+    <div className="bg-primary py-20 px-0 sm:px-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

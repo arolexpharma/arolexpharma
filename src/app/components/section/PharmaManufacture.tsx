@@ -46,7 +46,7 @@ const ResponsiveImageGrid = () => {
           quality={100}
           className={`transition-transform duration-300 group-hover:scale-105`}
         />
-        <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4">
+        <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 overflow-hidden">
           <h3 className="text-white text-lg font-semibold">{title}</h3>
           <p className="text-gray-300 text-sm">{subtitle}</p>
         </div>
@@ -56,7 +56,7 @@ const ResponsiveImageGrid = () => {
 
   return (
     <section
-      className=" px-4 py-12 md:px-12 lg:px-24 bg-white relative bg-cover bg-center bg-no-repeat"
+      className=" px-4 py-20 md:px-12 lg:px-24 bg-white relative bg-cover bg-center bg-no-repeat overflow-hidden"
     >
       
       <div className="absolute inset-0 z-0">

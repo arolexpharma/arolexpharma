@@ -9,14 +9,18 @@ import FAQSection from "../components/section/FAQSection";
 import ContactSection from "../components/section/ContactSection ";
 
 export default function page() {
-  return <div>
-    <Banner/>
-    <CertificationsSection/>
-    <ProductSection/>
-    <PharmaManufacture/>
-    <OurTeam/>
-    <WorkSection/>
-    <FAQSection/>
-    <ContactSection/>
-  </div>;
+  return (
+    <div>
+      <Banner />
+
+      <CertificationsSection />
+
+      <ProductSection />
+      <PharmaManufacture />
+      <OurTeam />
+      <WorkSection />
+      <FAQSection />
+      <ContactSection />
+    </div>
+  );
 }

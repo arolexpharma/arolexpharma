@@ -56,7 +56,7 @@ const ProductRangeSlider: React.FC = () => {
   const navigationNextRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="bg-blue-50 py-12 px-6">
+    <section className="bg-blue-50 py-20 px-6">
       <div className="container mx-auto relative">
         {/* Section Header */}
         <div className="text-center mb-10">

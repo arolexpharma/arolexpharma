@@ -3,7 +3,7 @@ import WorkSkills from "../workSkills/WorkSkills";
 
 export default function WorkSection() {
   return (
-    <div className=" py-16 px-0 sm:px-20">
+    <div className=" py-20 px-0 sm:px-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
