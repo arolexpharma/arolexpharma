@@ -113,7 +113,7 @@ const ProductRangeSlider: React.FC = () => {
                     {product.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{product.description}</p>
-                  <button className="w-full bg-lime-500 text-white py-2 rounded-full hover:bg-lime-600">
+                  <button className="w-full bg-gradient-to-r from-lime-500 to-lime-600 text-white  text-white py-2 rounded-full hover:bg-lime-600">
                     Read More
                   </button>
                 </div>

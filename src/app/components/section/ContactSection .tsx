@@ -22,7 +22,7 @@ const ContactSection = () => {
             services. Our team is here to help you with any questions you may
             have.
           </p>
-          <button className="px-6 py-3 bg-green-500 text-white font-semibold rounded-full hover:bg-green-400 transition duration-300">
+          <button className="bg-gradient-to-r from-lime-500 to-lime-600 text-white px-6 py-3 bg-green-500 text-white font-semibold rounded-full hover:bg-green-400 transition duration-300">
             View Contact Details
           </button>
         </div>

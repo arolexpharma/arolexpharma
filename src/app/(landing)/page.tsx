@@ -7,6 +7,7 @@ import OurTeam from "../components/section/OurTeam";
 import WorkSection from "../components/section/WorkSection";
 import FAQSection from "../components/section/FAQSection";
 import ContactSection from "../components/section/ContactSection ";
+import OurClientSection from "../components/section/OurClientSection";
 
 export default function page() {
   return (
@@ -20,6 +21,7 @@ export default function page() {
       <OurTeam />
       <WorkSection />
       <FAQSection />
+      <OurClientSection/>
       <ContactSection />
     </div>
   );
