@@ -8,7 +8,7 @@ export default function WorkSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <p className="text-white text-sm bg-blue-400 rounded-full inline-block px-3 py-1 mb-3">
-            Our Team
+            Our Work
           </p>
           <h2 className="text-4xl text-black font-bold mb-4">
             Our Orthopedic Specialists

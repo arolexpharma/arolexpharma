@@ -1,7 +1,14 @@
 import Breadscrumb from "@/app/components/common/breadscrumb/Breadscrumb";
 import React from "react";
 import { Steps } from "antd";
-import { FaSearch, FaCalendarAlt, FaPaintBrush, FaLaptopCode, FaFlask, FaRocket } from "react-icons/fa";
+import {
+  FaSearch,
+  FaCalendarAlt,
+  FaPaintBrush,
+  FaLaptopCode,
+  FaFlask,
+  FaRocket,
+} from "react-icons/fa";
 import OurTeam from "@/app/components/section/OurTeam";
 import FAQSection from "@/app/components/section/FAQSection";
 
@@ -39,10 +46,10 @@ export default function AboutUs() {
             </p>
             <p className="text-gray-600 mb-6">
               Our state-of-the-art facilities and stringent quality control
-              processes ensure the production of safe, effective, and
-              affordable medicines. With decades of experience in the
-              pharmaceutical industry, we are trusted partners to healthcare
-              providers worldwide.
+              processes ensure the production of safe, effective, and affordable
+              medicines. With decades of experience in the pharmaceutical
+              industry, we are trusted partners to healthcare providers
+              worldwide.
             </p>
             <p className="text-gray-600 mb-8">
               Our mission is to enhance lives by delivering innovative medical
@@ -62,47 +69,50 @@ export default function AboutUs() {
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
             Our Process
           </h2>
-          <Steps direction="vertical" size="default" current={-1} className="mx-auto max-w-3xl">
-            <Step
-              title={<span className="font-bold">Discovery</span>}
-              description="During the discovery phase, we understand your requirements, market needs, and target goals to create a tailored approach."
-              icon={<FaSearch className="text-blue-500" />}
-            />
-            <Step
-              title={<span className="font-bold">Planning</span>}
-
-        
-              description="We create a detailed plan covering timelines, deliverables, and milestones to streamline the project effectively."
-              icon={<FaCalendarAlt className="text-blue-500" />}
-            />
-            <Step
-              title={<span className="font-bold">Design</span>}
-
-             
-              description="Our expert team designs solutions that are practical, user-friendly, and align with your vision and industry standards."
-              icon={<FaPaintBrush className="text-blue-500" />}
-            />
-            <Step
-              title={<span className="font-bold">Development</span>}
-
-              description="We utilize advanced technologies to develop top-notch pharmaceutical solutions, ensuring safety and compliance."
-              icon={<FaLaptopCode className="text-blue-500" />}
-            />
-            <Step
-              title={<span className="font-bold">Testing</span>}
-
-            
-              description="We conduct thorough testing to ensure that our processes and products meet the highest quality standards."
-              icon={<FaFlask className="text-blue-500" />}
-            />
-            <Step
-              title={<span className="font-bold">Launch</span>}
-
-              
-              description="After final approval, our products are launched, helping healthcare providers and patients improve lives globally."
-              icon={<FaRocket className="text-blue-500" />}
-            />
-          </Steps>
+          <Steps
+            direction="vertical"
+            size="default"
+            current={-1}
+            className="mx-auto max-w-3xl"
+            items={[
+              {
+                title: <span className="font-bold">Discovery</span>,
+                description:
+                  "During the discovery phase, we understand your requirements, market needs, and target goals to create a tailored approach.",
+                icon: <FaSearch className="text-blue-500" />,
+              },
+              {
+                title: <span className="font-bold">Planning</span>,
+                description:
+                  "We create a detailed plan covering timelines, deliverables, and milestones to streamline the project effectively.",
+                icon: <FaCalendarAlt className="text-blue-500" />,
+              },
+              {
+                title: <span className="font-bold">Design</span>,
+                description:
+                  "Our expert team designs solutions that are practical, user-friendly, and align with your vision and industry standards.",
+                icon: <FaPaintBrush className="text-blue-500" />,
+              },
+              {
+                title: <span className="font-bold">Development</span>,
+                description:
+                  "We utilize advanced technologies to develop top-notch pharmaceutical solutions, ensuring safety and compliance.",
+                icon: <FaLaptopCode className="text-blue-500" />,
+              },
+              {
+                title: <span className="font-bold">Testing</span>,
+                description:
+                  "We conduct thorough testing to ensure that our processes and products meet the highest quality standards.",
+                icon: <FaFlask className="text-blue-500" />,
+              },
+              {
+                title: <span className="font-bold">Launch</span>,
+                description:
+                  "After final approval, our products are launched, helping healthcare providers and patients improve lives globally.",
+                icon: <FaRocket className="text-blue-500" />,
+              },
+            ]}
+          />
         </div>
       </section>
 
@@ -163,8 +173,8 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-      <OurTeam/>
-      <FAQSection/>
+      <OurTeam />
+      <FAQSection />
     </div>
   );
 }

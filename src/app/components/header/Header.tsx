@@ -92,7 +92,7 @@ const dropDownListBoxes = [
 let MENU = [
   {
     title: "Products",
-    link: "#",
+    link: "/products",
     icon: "fa-solid fa-caret-down",
     subMenu: [
       { title: "Office Space", link: "/" },
@@ -124,14 +124,14 @@ let MENU = [
   // },
 ];
 
-const Navbar = () => {
+const Navbar = (handleClickMenuOpen:any) => {
   const [active, setActive] = useState<any>();
 
   return (
     <nav className="navbar-menu ">
       <ul className="navbar-menu-items">
-        <li className="navbar-menu-item">
-          <Link href={"/"} className="nav-item ">
+        <li className="navbar-menu-item" onClick={handleClickMenuOpen}>
+          <Link href={"/"} className="nav-item " >
             Home
           </Link>
         </li>
@@ -143,7 +143,7 @@ const Navbar = () => {
               onMouseOver={() => setActive(index)}
               onClick={() => setActive(active === index ? 999 : index)}
             >
-              <Link href={item.link} className="menu-item ">
+              <Link href={item.link} className="menu-item " >
                 <span>{item.title}</span> <LuChevronDown size={18} />
               </Link>
               {active === index && item?.subMenu?.length && (
@@ -161,9 +161,10 @@ const Navbar = () => {
                                 return (
                                   <li
                                     className="navbar-submenu-dropdown-mega-li"
-                                    key={subb.title}
+                                    key={subb.title} 
+                                    onClick={handleClickMenuOpen}
                                   >
-                                    <Link href="/">{subb.title}</Link>
+                                    <Link href="/" >{subb.title}</Link>
                                   </li>
                                 );
                               })}
@@ -178,11 +179,11 @@ const Navbar = () => {
             </li>
           );
         })}
-        <li className="navbar-menu-item">
-          <Link href={"/aboutus"} className="nav-item">
+        <li className="navbar-menu-item" onClick={handleClickMenuOpen}>
+          <Link href={"/aboutus"} className="nav-item" >
             About Us
           </Link>
-          <Link href={"/contactus"} className="nav-item">
+          <Link href={"/contactus"} className="nav-item" >
             Contact Us
           </Link>
         </li>
@@ -222,7 +223,7 @@ function Header() {
           </button>
           <div className="navigation-menu">
 
-            <Navbar />
+            <Navbar handleClickMenuOpen={handleClickMenuOpen}/>
           </div>
           <div className="navigation-menu">
             <div className="navigation-buttons mr-3">

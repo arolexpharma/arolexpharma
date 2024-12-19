@@ -16,11 +16,11 @@ export default function Page() {
 
       {/* Main Contact Us Section */}
       <div className="px-6 py-12 md:py-20 bg-blue-50">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-[70%_30%] gap-8">
+        <div className="container mx-auto grid grid-cols-1 md:grid-cols-[70%_25%] gap-8">
           {/* Left Content */}
           <div className="space-y-4 ">
             <h2 className="text-4xl font-bold text-gray-900">Contact Us</h2>
-            <p className="text-gray-600 w-96">
+            <p className="text-gray-600 max-w-96 text-wrap">
               Email, call, or complete the form to learn how Snappy can solve
               your messaging problem.
             </p>
@@ -30,7 +30,7 @@ export default function Page() {
             <p className="text-gray-800 font-medium">321-221-231</p>
             <a
               href="#"
-              className="text-blue-600 underline hover:text-blue-800 font-medium"
+              className="text-primary underline hover:text-sky-600 font-medium"
               >
               Customer Support
             </a>
@@ -106,7 +106,7 @@ export default function Page() {
               ></textarea>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 transition"
+                className="w-full bg-primary text-white py-2 rounded-md hover:bg-sky-600 transition"
               >
                 Submit
               </button>

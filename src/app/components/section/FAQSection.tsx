@@ -55,7 +55,7 @@ const FAQSection = () => {
             className="bg-gray-100"
             //@ts-ignore
             expandIcon={customExpandIcon}
-            expandIconPosition="right"
+            expandIconPosition="end"
           >
             {faqData.map((faq) => (
               <Panel

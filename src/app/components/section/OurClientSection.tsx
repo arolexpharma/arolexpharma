@@ -26,6 +26,9 @@ export default function OurClientSection() {
     <section className="p-6 py-28 bg-primary">
       {/* Title */}
       <div className="text-center mb-6">
+      <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-3">
+            Our Clients
+          </p>
         <h2 className="text-4xl font-bold text-white">Take a look at our clients</h2>
         <p className="text-white">
           We did a great job with these companies. You can be next to work with!
@@ -37,12 +40,12 @@ export default function OurClientSection() {
         {clients.map((client) => (
           <div
             key={client.id}
-            className="flex justify-center items-center  rounded-lg shadow hover:shadow-lg"
+            className="flex justify-center items-center  rounded-lg  hover:shadow-lg"
           >
             <Image
               src={client.logo}
               alt={client.name}
-              className="object-cover"
+              className="object-cover rounded-xl"
               height={200}
               width={200}
             />

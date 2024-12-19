@@ -30,7 +30,7 @@ const OurTeam = () => {
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-white text-sm bg-white/10 rounded-full inline-block px-3 py-1 mb-3">
+          <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-3">
             Our Team
           </p>
           <h2 className="text-4xl text-white font-bold mb-4">
