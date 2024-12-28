@@ -49,21 +49,22 @@ export default function Banner() {
         <div className="container mx-auto text-white px-6 md:px-5">
           <div className="max-w-sm md:max-w-2xl ">
             <span className="bg-green-600 text-xs md:text-sm px-2 md:px-3 py-1 rounded-full mb-4 inline-block">
-              Get The Best Doctor
+              Leading Pharmaceutical Solutions
             </span>
             <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-2">
-              Orthopedic care done right.{" "}
-              <span className="text-green-500">Here.</span>
+              Manufacturing & Packaging{" "}
+              <span className="text-green-500">Done Right.</span>
             </h1>
-            <p className="mt-4 text-sm md:text-lg leading-relaxed ">
-              Backed by leading-edge technology and continual improvement of
-              surgical techniques, our highly-skilled team offers early
-              diagnosis and sophisticated treatment options.
+            <p className="mt-4 text-sm md:text-lg leading-relaxed">
+              Aerolex Pharmaceuticals delivers high-quality manufacturing and
+              packaging services for a wide range of pharmaceutical products,
+              ensuring compliance with global standards and industry-leading
+              practices.
             </p>
-            <Link href={'/contactus'}>
-            <button className="mt-4 md:mt-6 bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg transition">
-              Get Started
-            </button>
+            <Link href={"/contactus"}>
+              <button className="mt-4 md:mt-6 bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg transition">
+                Get Started
+              </button>
             </Link>
           </div>
         </div>
