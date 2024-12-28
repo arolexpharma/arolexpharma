@@ -1,5 +1,7 @@
 import React from 'react';
 import iso from '@/app/assets/images/iso.png'
+import gmp from '@/app/assets/images/gmp.png'
+import fda from '@/app/assets/images/fda.png'
 import Image from 'next/image';
 const CertificationsSection: React.FC = () => {
   return (
@@ -12,11 +14,11 @@ const CertificationsSection: React.FC = () => {
             <div className="w-16 h-16  rounded-full flex items-center justify-center">
               <Image src={iso} alt="ISO Certified" className="w-16" />
             </div>
-            <div className="w-16 h-16  rounded-full flex items-center justify-center">
-              <Image src={iso} alt="GMP Certified" className="w-16" />
+            <div className="w-20 h-16  rounded-full flex items-center justify-center">
+              <Image src={fda} alt="FDA Approved" className="w-20" />
             </div>
-            <div className="w-16 h-16  rounded-full flex items-center justify-center">
-              <Image src={iso} alt="FDA Approved" className="w-16" />
+            <div className="w-24 h-24  rounded-full flex items-center justify-center">
+              <Image src={gmp} alt="GMP Certified" className="w-24" />
             </div>
           </div>
           <p className="text-gray-600 text-lg mt-4 md:mt-0">
