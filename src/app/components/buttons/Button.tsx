@@ -60,7 +60,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     ) => {
         const router = useRouter();
 
-        // Mapping custom variants and sizes to Material UI equivalents
+        
         const muiVariant = variant === "default" ? "contained" : variant;
         const muiSize = size === "default" ? "medium" : size === "lg" ? "large" : size === "sm" ? "small" : "medium"; // Handle default case for unrecognized sizes
 

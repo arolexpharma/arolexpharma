@@ -11,6 +11,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -28,45 +29,87 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Company Links */}
-        <div>
-          <h4 className="font-semibold text-white mb-3">Company</h4>
-          <ul className="space-y-2 text-sm text-gray-300 leading-8">
-            <li>About us</li>
-            <li>Careers</li>
-            <li>Press</li>
-            <li>News</li>
-            <li>Media kit</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-
-        {/* Social Links */}
-        <div>
-          <h4 className="font-semibold text-white mb-3">Social</h4>
-          <ul className="space-y-2 text-sm text-gray-300 leading-8">
-            <li>Twitter</li>
-            <li>LinkedIn</li>
-            <li>Facebook</li>
-            <li>GitHub</li>
-            <li>AngelList</li>
-            <li>Dribbble</li>
-          </ul>
-        </div>
-
-        {/* Legal Links */}
-        <div>
-          <h4 className="font-semibold text-white mb-3">Legal</h4>
-          <ul className="space-y-2 text-sm text-gray-300 leading-8">
-            <li>Terms</li>
-            <li>Privacy</li>
-            <li>Cookies</li>
-            <li>Licenses</li>
-            <li>Settings</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+         {/* Company Links */}
+      <div>
+        <h4 className="font-semibold text-white mb-3">Company</h4>
+        <ul className="space-y-2 text-sm text-gray-300 leading-8">
+          <li>
+            <Link href="/aboutus" className="hover:underline">
+              About us
+            </Link>
+          </li>
+          <li>
+            <Link href="/news" className="hover:underline">
+              News
+            </Link>
+          </li>
+          <li>
+            <Link href="/media-kit" className="hover:underline">
+              Media kit
+            </Link>
+          </li>
+          <li>
+            <Link href="/contactus" className="hover:underline">
+              Contact
+            </Link>
+          </li>
+        </ul>
       </div>
+
+      {/* Social Links */}
+      <div>
+        <h4 className="font-semibold text-white mb-3">Social</h4>
+        <ul className="space-y-2 text-sm text-gray-300 leading-8">
+          <li>
+            <Link href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              Twitter
+            </Link>
+          </li>
+          <li>
+            <Link href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              LinkedIn
+            </Link>
+          </li>
+          <li>
+            <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              Facebook
+            </Link>
+          </li>
+          <li>
+            <Link href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:underline">
+              Instagram
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+      {/* Legal Links */}
+      <div>
+        <h4 className="font-semibold text-white mb-3">Legal</h4>
+        <ul className="space-y-2 text-sm text-gray-300 leading-8">
+          <li>
+            <Link href="/terms" className="hover:underline">
+              Terms
+            </Link>
+          </li>
+          <li>
+            <Link href="/privacy" className="hover:underline">
+              Privacy
+            </Link>
+          </li>
+          <li>
+            <Link href="/licenses" className="hover:underline">
+              Licenses
+            </Link>
+          </li>
+          <li>
+            <Link href="/contactus" className="hover:underline">
+              Contact Us
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
 
       {/* Footer Bottom */}
       <div className="container mx-auto mt-10 border-t border-gray-500 pt-6 flex flex-col md:flex-row items-center justify-between text-center text-sm text-gray-500">
@@ -79,8 +122,8 @@ export default function Footer() {
           <FaLinkedin className="hover:text-primary cursor-pointer transition-all" size={18} />
           <FaFacebookF className="hover:text-primary cursor-pointer transition-all" size={18} />
           <FaInstagram className="hover:text-primary cursor-pointer transition-all" size={18} />
-          <FaGithub className="hover:text-primary cursor-pointer transition-all" size={18} />
-          <FaDribbble className="hover:text-primary cursor-pointer transition-all" size={18} />
+          {/* <FaGithub className="hover:text-primary cursor-pointer transition-all" size={18} /> */}
+          {/* <FaDribbble className="hover:text-primary cursor-pointer transition-all" size={18} /> */}
         </div>
       </div>
     </footer>

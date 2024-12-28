@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 
 const ContactSection = () => {
@@ -22,9 +23,9 @@ const ContactSection = () => {
             services. Our team is here to help you with any questions you may
             have.
           </p>
-          <button className="bg-gradient-to-r from-lime-500 to-lime-600 text-white px-6 py-3 bg-green-500 text-white font-semibold rounded-full hover:bg-green-400 transition duration-300">
+          <Link href={'/contactus'} className="bg-gradient-to-r from-lime-500 to-lime-600 text-white text-center px-6 py-3 bg-green-500 text-white font-semibold rounded-full hover:bg-green-400 transition duration-300">
             View Contact Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>

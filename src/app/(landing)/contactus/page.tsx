@@ -25,16 +25,15 @@ export default function Page() {
               your messaging problem.
             </p>
             <div className="flex flex-col gap-6">
-
-            <p className="text-gray-800 font-medium">info@snappy.io</p>
-            <p className="text-gray-800 font-medium">321-221-231</p>
-            <a
-              href="#"
-              className="text-primary underline hover:text-sky-600 font-medium"
+              <p className="text-gray-800 font-medium">arolexpharmaceuticals@gmail.com</p>
+              <p className="text-gray-800 font-medium">790-652-7876</p>
+              <a
+                href="#"
+                className="text-primary underline hover:text-sky-600 font-medium"
               >
-              Customer Support
-            </a>
-              </div>
+                Customer Support
+              </a>
+            </div>
 
             {/* Support Categories */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6">
@@ -54,18 +53,6 @@ export default function Page() {
                 <p className="text-gray-600 text-sm">
                   We value your feedback and are continuously working to improve
                   Snappy.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-800">Media Inquiries</h3>
-                <p className="text-gray-600 text-sm">
-                  For media-related questions, contact us at{" "}
-                  <a
-                    href="mailto:media@snappyapp.com"
-                    className="text-blue-600 hover:text-blue-800"
-                  >
-                    media@snappyapp.com
-                  </a>
                 </p>
               </div>
             </div>
@@ -96,7 +83,7 @@ export default function Page() {
               />
               <input
                 type="tel"
-                placeholder="+62 Phone number"
+                placeholder="+91 Phone number"
                 className="border rounded-md px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-400"
               />
               <textarea
@@ -132,15 +119,17 @@ export default function Page() {
           <div className="relative">
             <div className="w-full h-74 md:h-80 bg-gray-200 rounded-xl">
               {/* Embed Google Maps Placeholder */}
+
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094013!2d144.95373531531654!3d-37.81627917975181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5777e35c75d6b4e!2sSnappy%20Inc.!5e0!3m2!1sen!2sus!4v1599536750345!5m2!1sen!2sus"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3480.278283875691!2d77.72672157464677!3d29.27415727532048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c13d573e53c67%3A0xf170c4cc81423bbf!2sArolex%20Pharmaceuticals%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1735378583412!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 allowFullScreen
                 loading="lazy"
-                title="Snappy Location"
+                title="Aerolex Pharmaceuticals Location"
                 className="rounded-xl"
               ></iframe>
+           
             </div>
           </div>
 
@@ -152,16 +141,16 @@ export default function Page() {
               Connecting Near and Far
             </h3>
             <p className="text-gray-600 leading-8">
-              Snappy Inc. <br />
-              123 Tech Boulevard, Suite 456 <br />
-              San Francisco, CA 12345 <br />
-              United States
+              Aerolex Pharmaceuticals Pvt Ltd <br />
+              Arolex Pharmaceuticals, Budhana-Khatauli Rd, Islam Nagar <br />
+              Khatauli Rural, Uttar Pradesh 251201 <br />
+              India
             </p>
           </div>
         </div>
       </div>
       <OurTeam />
-      <FAQSection/>
+      <FAQSection />
     </div>
   );
 }

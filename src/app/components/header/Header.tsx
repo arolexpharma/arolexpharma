@@ -227,10 +227,10 @@ function Header() {
           </div>
           <div className="navigation-menu">
             <div className="navigation-buttons mr-3">
-              <div className="flex items-center gap-2 bg-primary text-white py-2 rounded-full px-5 ">
+              <Link href={'tel:7906527876'} className="flex items-center gap-2 bg-primary text-white py-2 rounded-full px-5 ">
                 <BsFillTelephoneFill size={16} color="white" />
-                <p className="text-sm">720&nbsp;320&nbsp;9150</p>
-              </div>
+                <p className="text-sm">790&nbsp;652&nbsp;7876</p>
+              </Link>
             </div>
           </div>
         </div>
