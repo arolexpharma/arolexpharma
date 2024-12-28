@@ -71,9 +71,9 @@ const ResponsiveImageGrid = () => {
 
       
       <div className="container mx-auto relative z-10 text-center md:text-left mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           Aerolex <span className="text-blue-600">Pharmaceutical</span> Manufacturing
-        </h1>
+        </h2>
         <p className="text-gray-600 mt-3 max-w-lg">
           At Aerolex Pharmaceutical, we specialize in producing high-quality medications across diverse market segments, including tablets, capsules, softgels, and more. 
           Our commitment to innovation and precision ensures that every product supports better health and improved quality of life.
