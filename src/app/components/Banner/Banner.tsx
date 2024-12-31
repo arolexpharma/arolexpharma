@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Autoplay } from "swiper/modules";
 import MedecinesManufactured from "@/app/assets/images/banner/medecinesManufactured.jpg";
-import aerolex from "@/app/assets/images/banner/aerolex.jpg";
+import arolex from "@/app/assets/images/banner/aerolex.jpg";
 import med from "@/app/assets/images/banner/med.jpg";
 import medcines from "@/app/assets/images/banner/medcines.jpg";
 import medecines from "@/app/assets/images/banner/medecines.jpg";
@@ -30,7 +30,7 @@ export default function Banner() {
         className="w-full h-[500px] md:h-[600px] lg:h-[700px]"
         navigation={{ nextEl: null, prevEl: null }}
       >
-        {[MedecinesManufactured, aerolex, med, medcines, medecines].map(
+        {[MedecinesManufactured, arolex, med, medcines, medecines].map(
           (image, index) => (
             <SwiperSlide key={index} className="relative">
               <Image
@@ -51,16 +51,20 @@ export default function Banner() {
             <span className="bg-green-600 text-xs md:text-sm px-2 md:px-3 py-1 rounded-full mb-4 inline-block">
               Leading Pharmaceutical Solutions
             </span>
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold leading-2">
-              Manufacturing & Packaging{" "}
-              <span className="text-green-500">Done Right.</span>
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-2">
+              Care Through Innovation{" "}
+              <span className="text-green-500">
+                in Pharmaceutical Manufacturing.
+              </span>
             </h1>
             <p className="mt-4 text-sm md:text-lg leading-relaxed">
-              Aerolex Pharmaceuticals delivers high-quality manufacturing and
-              packaging services for a wide range of pharmaceutical products,
-              ensuring compliance with global standards and industry-leading
-              practices.
+              Arolex Pharmaceuticals specializes in contract-based
+              manufacturing, marketing, and supplying high-quality
+              pharmaceutical products. Our commitment to innovation ensures that
+              we meet global standards while providing tailored solutions to our
+              clients.
             </p>
+
             <Link href={"/contactus"}>
               <button className="mt-4 md:mt-6 bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg transition">
                 Get Started

@@ -9,24 +9,24 @@ const FAQSection = () => {
   const faqData = [
     {
       key: "1",
-      title: "What products does Aerolex Pharmaceutical Manufacturing produce?",
+      title: "What products does Arolex Pharmaceutical Manufacturing produce?",
       content: "We produce tablets, capsules, syrups, and injectable medicines.",
     },
     {
       key: "2",
-      title: "Where are Aerolex Pharmaceutical's manufacturing facilities located?",
+      title: "Where are Arolex Pharmaceutical's manufacturing facilities located?",
       content:
         "Our FDA-approved facilities meet international standards and GMP compliance.",
     },
     {
       key: "3",
-      title: "Does Aerolex Pharmaceutical offer contract manufacturing?",
+      title: "Does Arolex Pharmaceutical offer contract manufacturing?",
       content:
         "Yes, we provide contract manufacturing services for a wide range of products.",
     },
     {
       key: "4",
-      title: "What certifications does Aerolex Pharmaceutical hold?",
+      title: "What certifications does Arolex Pharmaceutical hold?",
       content:
         "We hold WHO-GMP, ISO 9001:2015, and FDA certifications ensuring quality standards.",
     },

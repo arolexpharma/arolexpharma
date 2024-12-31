@@ -181,6 +181,12 @@ const Navbar = (handleClickMenuOpen:any) => {
         })}
         <li className="navbar-menu-item" onClick={handleClickMenuOpen}>
           <Link href={"/aboutus"} className="nav-item" >
+          Careers
+          </Link>
+          <Link href={"/aboutus"} className="nav-item" >
+          Business Opportunity
+          </Link>
+          <Link href={"/aboutus"} className="nav-item" >
             About Us
           </Link>
           <Link href={"/contactus"} className="nav-item" >

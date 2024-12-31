@@ -126,7 +126,7 @@ export default function Page() {
                 height="100%"
                 allowFullScreen
                 loading="lazy"
-                title="Aerolex Pharmaceuticals Location"
+                title="Arolex Pharmaceuticals Location"
                 className="rounded-xl"
               ></iframe>
            
@@ -141,7 +141,7 @@ export default function Page() {
               Connecting Near and Far
             </h3>
             <p className="text-gray-600 leading-8">
-              Aerolex Pharmaceuticals Pvt Ltd <br />
+              Arolex Pharmaceuticals Pvt Ltd <br />
               Arolex Pharmaceuticals, Budhana-Khatauli Rd, Islam Nagar <br />
               Khatauli Rural, Uttar Pradesh 251201 <br />
               India

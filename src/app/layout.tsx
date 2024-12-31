@@ -15,11 +15,11 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Aerolex Pharmaceuticals - Medicine Packaging and Manufacturing",
+  title: "Arolex Pharmaceuticals - Medicine Packaging and Manufacturing",
   description:
-    "Aerolex Pharmaceuticals specializes in innovative medicine packaging and manufacturing solutions. We serve both B2B and B2C clients with high-quality pharmaceutical products.",
+    "Arolex Pharmaceuticals specializes in innovative medicine packaging and manufacturing solutions. We serve both B2B and B2C clients with high-quality pharmaceutical products.",
   keywords:
-    "Aerolex Pharmaceuticals, medicine packaging, medicine manufacturing, B2B pharmaceuticals, B2C pharmaceuticals, pharmaceutical solutions, drug packaging, pharmaceutical manufacturing",
+    "Arolex Pharmaceuticals, medicine packaging, medicine manufacturing, B2B pharmaceuticals, B2C pharmaceuticals, pharmaceutical solutions, drug packaging, pharmaceutical manufacturing",
 };
 
 export default function RootLayout({

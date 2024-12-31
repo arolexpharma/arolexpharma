@@ -23,7 +23,7 @@ export default function Footer() {
           <Image src={Logo} height={200} width={200} alt='images' className="mb-5 "/>
 
           <p className="text-sm text-gray-300 mb-4 md:pr-20 lg:pr-60 leading-6">
-          Aerolex Pharmaceuticals is a leading manufacturer of high-quality
+          Arolex Pharmaceuticals is a leading manufacturer of high-quality
             pharmaceutical products, committed to delivering innovative and
             reliable healthcare solutions worldwide.
           </p>
