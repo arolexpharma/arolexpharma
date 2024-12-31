@@ -1,7 +1,7 @@
 import React from 'react';
 import iso from '@/app/assets/images/iso.png'
 import gmp from '@/app/assets/images/gmp.png'
-import fda from '@/app/assets/images/fda.png'
+import fassai from '@/app/assets/images/fassai.png'
 import Image from 'next/image';
 const CertificationsSection: React.FC = () => {
   return (
@@ -15,7 +15,7 @@ const CertificationsSection: React.FC = () => {
               <Image src={iso} alt="ISO Certified" className="w-16" />
             </div>
             <div className="w-20 h-16  rounded-full flex items-center justify-center">
-              <Image src={fda} alt="FDA Approved" className="w-20" />
+              <Image src={fassai} alt="FDA Approved" className="w-20" />
             </div>
             <div className="w-24 h-24  rounded-full flex items-center justify-center">
               <Image src={gmp} alt="GMP Certified" className="w-24" />
@@ -33,7 +33,7 @@ const CertificationsSection: React.FC = () => {
               Certifications & Trusted Standards
             </h2>
             <p className="text-gray-600 max-w-xl">
-              Our manufacturing facilities follow ISO, GMP, and FDA-approved processes to ensure the highest quality pharmaceutical products.
+              Our manufacturing facilities follow ISO, GMP, and Fssai-approved processes to ensure the highest quality pharmaceutical products.
             </p>
           </div>
           {/* Testimonial */}
@@ -47,7 +47,7 @@ const CertificationsSection: React.FC = () => {
             <p className="text-gray-700 italic max-w-sm">
               "We ensure our pharmaceutical processes meet international standards, providing peace of mind for our patients and healthcare providers."
             </p>
-            <p className="mt-2 text-gray-800 font-semibold">- Michael R. Duch, MD</p>
+            <p className="mt-2 text-gray-800 font-semibold">- Rakesh Kumar, MD</p>
           </div>
         </div>
       </div>
