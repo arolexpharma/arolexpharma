@@ -8,14 +8,16 @@ import WorkSection from "../components/section/WorkSection";
 import FAQSection from "../components/section/FAQSection";
 import ContactSection from "../components/section/ContactSection ";
 import OurClientSection from "../components/section/OurClientSection";
+import CoverFlowProducts from "../components/products/CoverFlowProducts";
+import AboutUsSection from "../components/section/AboutUsSection";
 
 export default function page() {
   return (
     <div>
       <Banner />
-
+      <CoverFlowProducts/>
       <CertificationsSection />
-
+      <AboutUsSection/>
       <ProductSection />
       <PharmaManufacture />
       <OurTeam />
