@@ -86,7 +86,7 @@ export default function ProductSlider() {
         {products.map((product) => (
           <SwiperSlide key={product.id} className="swiper-slide-cover">
             <div
-              className="relative w-full h-[500px] bg-cover bg-center flex items-center"
+              className="relative w-full  h-[320px] sm:h-[500px] bg-cover bg-center flex items-center"
               style={{ backgroundImage: `url(${product.image})` }}
             >
               <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -97,10 +97,10 @@ export default function ProductSlider() {
                 <h2 className="text-3xl font-bold mb-2">{product.name}</h2>
                 <p className="text-sm max-w-xl mb-4">{product.description}</p>
                 <button
-                  className="px-6 py-2 bg-green-500 text-white rounded hover:bg-green-600"
+                  className="px-4 py-1 sm:px-6 sm:py-2 text-sm sm:text-md bg-green-500 text-white rounded hover:bg-green-600"
                   onClick={() => console.log(`${product.name} clicked`)}
                 >
-                  Enquiry Now
+                  Know More
                 </button>
               </div>
             </div>

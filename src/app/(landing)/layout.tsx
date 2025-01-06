@@ -4,7 +4,6 @@ import Header from "../components/header/Header";
 import FloatingSocialButton from "../components/common/FloatingSocialButton";
 import EnquiryFormModal from "../components/modal/EnquiryFormModal";
 
-
 export default function LandingLayout({
   children,
 }: Readonly<{
@@ -17,7 +16,6 @@ export default function LandingLayout({
       <Footer />
       <FloatingSocialButton />
 
-      {/* Enquiry Form Modal */}
       <EnquiryFormModal />
     </div>
   );
