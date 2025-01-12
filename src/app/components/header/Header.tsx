@@ -161,6 +161,13 @@ const Navbar = (handleClickMenuOpen: any) => {
           >
             Careers
           </Link>
+          <Link
+            href={"/blogs"}
+            className={`nav-item ${active === "/blogs" ? "active-link" : ""}`}
+            onClick={()=>handleLinkClick('/blogs')}
+          >
+            Blogs
+          </Link>
           {/* <Link href={"/business-opportunity"} className="nav-item" >
           Business Opportunity
           </Link> */}

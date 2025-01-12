@@ -175,11 +175,8 @@ const products = [
     ],
   },
 ];
-const ProductDetails = async ({ params }: { params: { id: string } }) => {
-  const breadcrumbItems: any = [
-    { label: "Home", href: "/" },
-    { label: "Contact Us", href: "/contactus" },
-  ];
+const ProductDetails = async ({ params }: any) => {
+
 
   const productDetails = products.find((item) => item.id === Number(params.id));
 
