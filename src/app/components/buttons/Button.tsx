@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { CgSpinner } from "react-icons/cg";
 import styles from "./button.module.css";
 
-// Define custom button variants with class-variance-authority
+
 const buttonVariants = cva(styles.base, {
     variants: {
         variant: {
@@ -31,7 +31,7 @@ const buttonVariants = cva(styles.base, {
     },
 });
 
-// Define ButtonProps with a mapping for MUI's built-in props
+
 export interface ButtonProps
     extends Omit<React.ButtonHTMLAttributes<HTMLButtonElement>, "size">,
     VariantProps<typeof buttonVariants> {

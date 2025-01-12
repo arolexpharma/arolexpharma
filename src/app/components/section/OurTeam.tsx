@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -9,28 +9,30 @@ const OurTeam = () => {
       id: 1,
       name: "Dr. Elina Wellies",
       title: "Senior Orthopedic Specialists",
-      image: "https://img.freepik.com/free-photo/young-entrepreneur_1098-18139.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted", // Replace with actual image URL
+      image:
+        "https://img.freepik.com/free-photo/young-entrepreneur_1098-18139.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted", // Replace with actual image URL
     },
     {
       id: 2,
       name: "Dr. Megan Wilson",
       title: "Senior Orthopedic Specialists",
-      image: "https://img.freepik.com/free-photo/man-work_144627-24872.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted", // Replace with actual image URL
+      image:
+        "https://img.freepik.com/free-photo/man-work_144627-24872.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted", // Replace with actual image URL
     },
     {
       id: 3,
       name: "Dr. Marvin McKinney",
       title: "Senior Orthopedic Specialists",
-      image: "https://img.freepik.com/free-photo/designer-working-3d-model_23-2149371898.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted", // Replace with actual image URL
-    }
+      image:
+        "https://img.freepik.com/free-photo/designer-working-3d-model_23-2149371898.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted", // Replace with actual image URL
+    },
   ];
 
   return (
-    <div className="bg-primary py-20 px-0 sm:px-20">
+    <div className="bg-primary py-16 sm:py-20 px-0 sm:px-20">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-3">
+          <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-6">
             Our Team
           </p>
           <h2 className="text-4xl text-white font-bold mb-4">
@@ -43,7 +45,6 @@ const OurTeam = () => {
           </p>
         </div>
 
-        {/* Team Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {teamMembers.map((member, index) => (
             <motion.div
@@ -54,7 +55,6 @@ const OurTeam = () => {
               viewport={{ once: true }}
               className="relative group rounded-lg overflow-hidden shadow-lg"
             >
-              {/* Image */}
               <div className="h-[400px] relative">
                 <Image
                   src={member.image}
@@ -65,9 +65,10 @@ const OurTeam = () => {
                 />
               </div>
 
-              {/* Overlay Content */}
               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent p-4">
-                <h3 className="text-white text-lg font-semibold">{member.name}</h3>
+                <h3 className="text-white text-lg font-semibold">
+                  {member.name}
+                </h3>
                 <p className="text-gray-300 text-sm">{member.title}</p>
               </div>
             </motion.div>

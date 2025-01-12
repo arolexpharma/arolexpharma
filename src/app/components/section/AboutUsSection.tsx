@@ -1,21 +1,19 @@
 import React from "react";
 import Button from "../button/Button";
 
-
 export default function AboutUsSection() {
   return (
-    <section className="py-12 bg-primary">
-      {/* Heading Section */}
+    <section className="py-16 sm:py-20 bg-primary">
       <div className="text-center mb-12">
-        <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-3">
-        Who We Are
+        <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-6">
+          Who We Are
         </p>
-        
+        <h2 className="text-4xl text-white font-bold mb-4">
+          Our Orthopedic Specialists
+        </h2>
       </div>
 
-      {/* Main Content Section */}
       <div className="container mx-auto px-6 grid gap-8 md:grid-cols-2 items-center">
-        {/* Image Section */}
         <div className="flex justify-center">
           <img
             src="https://img.freepik.com/free-photo/nurse-doctor-team-ready-work-day_23-2149309942.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"
@@ -24,7 +22,6 @@ export default function AboutUsSection() {
           />
         </div>
 
-        {/* Text Section */}
         <div>
           <p className="text-white mb-6 text-lg leading-relaxed">
             As leading pharmaceutical manufacturers, we are dedicated to
@@ -41,8 +38,7 @@ export default function AboutUsSection() {
             solutions that address the evolving healthcare needs of our clients
             and communities.
           </p>
-          <Button href="/contactus" text="Know More" className='bg-lime-500'/>
-        
+          <Button href="/aboutus" text="Know More" className="bg-lime-500" />
         </div>
       </div>
     </section>

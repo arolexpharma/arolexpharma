@@ -16,7 +16,7 @@ export default function FloatingSocialButton() {
   },[])
   return (
     <>
-      {/* Floating Button */}
+  
       <button
         onClick={toggleMenu}
         className={`bg-green-500 border-sky-400 z-50 fixed bottom-4 right-4 rounded-full shadow-xl p-3 flex items-center justify-center transition-transform duration-300 ${
@@ -26,7 +26,7 @@ export default function FloatingSocialButton() {
         <TbSocial className="text-white" size={24} />
       </button>
 
-      {/* Social Media Icons */}
+    
       <div
         className={`fixed bottom-20 right-4 flex flex-col items-center space-y-4 z-50 transition-all duration-500 ${
           isMenuOpen ? "translate-y-0 opacity-100 pointer-events-auto" : "translate-y-10 opacity-0 pointer-events-none"

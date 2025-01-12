@@ -5,7 +5,7 @@ import BreadscrumbImg from '@/app/assets/images/breadscrumb/breadscrumb.jpg';
 export default function Breadscrumb({ items = [] }) {
   return (
     <div className="relative h-72 flex justify-center items-center shadow-md">
-      {/* Background Image */}
+    
       <Image
         src={BreadscrumbImg}
         alt="Breadcrumb Background"

@@ -24,67 +24,27 @@ import { Span } from "next/dist/trace";
 
 const dropDownListBoxes = [
   {
-    title: "By Dosage Form",
+    title: "By Deseas",
     links: [
-      { title: "Respules", href: "/respules" },
-      { title: "Soaps", href: "/soaps" },
-      { title: "Dusting Powder", href: "/dusting-powder" },
-      { title: "Sprays Ointments", href: "/sprays-ointments" },
-      { title: "Lotions", href: "/lotions" },
-      { title: "Creams", href: "/creams" },
-      { title: "Ointments", href: "/ointments" },
-      { title: "Nasal Sprays & Drops", href: "/nasal-sprays-drops" },
-      { title: "Dry Syrup", href: "/dry-syrup" },
-      { title: "Eye Ear Drops", href: "/eye-ear-drops" },
-      { title: "Injectables", href: "/injectables" },
-      { title: "Pediatric Drops", href: "/pediatric-drops" },
-      { title: "Suspension", href: "/suspension" },
-      { title: "Capsule", href: "/capsule" },
-      { title: "Syrups", href: "/syrups" },
-      { title: "Cardiac Diabetic", href: "/cardiac-diabetic" },
-      { title: "Tablets", href: "/tablets" },
-      { title: "Sachets", href: "/sachets" },
-      { title: "Misc. Products", href: "/misc-products" },
-      { title: "Ayurvedic Products", href: "/ayurvedic-products" },
-      { title: "Antihistamines Range", href: "/antihistamines-range" },
-      { title: "Skin Care Range", href: "/skin-care-range" },
-      { title: "Infusions", href: "/infusions" },
+      { title: "Rabipose-DSR3T", href: "/ProductDetails/1" },
+      { title: "Arocef - 200", href: "/ProductDetails/2" },
+      { title: "Budalecs", href: "/ProductDetails/3" },
     ],
   },
   {
-    title: "By Therapy wise",
+    title: "By Uses",
     links: [
-      { title: "Critical Care Range", href: "/critical-care-range" },
-      { title: "Derma Products Range", href: "/derma-products-range" },
-      { title: "Ayurvedic Products Range", href: "/ayurvedic-products-range" },
-      { title: "Anti Inflammatory Range", href: "/anti-inflammatory-range" },
-      { title: "Analgesic Range", href: "/analgesic-range" },
-      { title: "Antibiotics Range", href: "/antibiotics-range" },
-      { title: "Anticold Range", href: "/anticold-range" },
-      { title: "Anti Ulcer Range", href: "/anti-ulcer-range" },
-      { title: "Anti Allergics Range", href: "/anti-allergics-range" },
-      { title: "Anti Flatulent Range", href: "/anti-flatulent-range" },
-      { title: "Antifungal Range", href: "/antifungal-range" },
-      { title: "Anti Cough Range", href: "/anti-cough-range" },
-      { title: "Anti Spasmodic Range", href: "/anti-spasmodic-range" },
-      { title: "Antispasmodic Range", href: "/antispasmodic-range" },
-      { title: "Orthopedic Range", href: "/orthopedic-range" },
-      { title: "Dental Range", href: "/dental-range" },
-      { title: "Gynaecological Range", href: "/gynaecological-range" },
-      { title: "Neurology Range", href: "/neurology-range" },
-      { title: "Gastro Range", href: "/gastro-range" },
-      { title: "Liver Care Range", href: "/liver-care-range" },
-      { title: "ENT Range", href: "/ent-range" },
-      { title: "Hepato Range", href: "/hepato-range" },
-      { title: "Paediatric Range", href: "/paediatric-range" },
-      { title: "Derma Range", href: "/derma-range" },
-      {
-        title: "Nutritional Supplements Range",
-        href: "/nutritional-supplements-range",
-      },
-      { title: "Cardiac BP Range", href: "/cardiac-bp-range" },
-      { title: "Psychiatric Range", href: "/psychiatric-range" },
-      { title: "Diabetic Range", href: "/diabetic-range" },
+      { title: "Rabipose-DSR3T", href: "/ProductDetails/1" },
+      { title: "Arocef - 200", href: "/ProductDetails/2" },
+      { title: "Budalecs", href: "/ProductDetails/3" },
+    ],
+  },
+  {
+    title: "By Composition",
+    links: [
+      { title: "Rabipose-DSR3T", href: "/ProductDetails/1" },
+      { title: "Arocef - 200", href: "/ProductDetails/2" },
+      { title: "Budalecs", href: "/ProductDetails/3" },
     ],
   },
 ];
@@ -124,14 +84,23 @@ let MENU = [
   // },
 ];
 
-const Navbar = (handleClickMenuOpen:any) => {
-  const [active, setActive] = useState<any>();
-
+const Navbar = (handleClickMenuOpen: any) => {
+  const [active, setActive] = useState<any>('/');
+  const handleLinkClick = (link: string) => {
+    setActive(link);
+    document
+      .querySelector(".navigation-menu")!
+      .classList.toggle("navbar-menu-open");
+    document.body.classList.toggle("overflow-y-hidden-fixed");
+  };
   return (
     <nav className="navbar-menu ">
       <ul className="navbar-menu-items">
-        <li className="navbar-menu-item" onClick={handleClickMenuOpen}>
-          <Link href={"/"} className="nav-item " >
+        <li className="navbar-menu-item" onClick={()=>handleLinkClick('/')}>
+          <Link
+            href={"/"}
+            className={`nav-item ${active === "/" ? "active-link" : ""}`}
+          >
             Home
           </Link>
         </li>
@@ -143,7 +112,12 @@ const Navbar = (handleClickMenuOpen:any) => {
               onMouseOver={() => setActive(index)}
               onClick={() => setActive(active === index ? 999 : index)}
             >
-              <Link href={item.link} className="menu-item " >
+              <Link
+                href={item.link}
+                className={`menu-item ${
+                  active === item.link ? "active-link" : ""
+                }`}
+              >
                 <span>{item.title}</span> <LuChevronDown size={18} />
               </Link>
               {active === index && item?.subMenu?.length && (
@@ -161,10 +135,10 @@ const Navbar = (handleClickMenuOpen:any) => {
                                 return (
                                   <li
                                     className="navbar-submenu-dropdown-mega-li"
-                                    key={subb.title} 
-                                    onClick={handleClickMenuOpen}
+                                    key={subb.title}
+                                    onClick={()=>handleLinkClick(subb?.href)}
                                   >
-                                    <Link href="/" >{subb.title}</Link>
+                                    <Link href={subb.href}>{subb.title}</Link>
                                   </li>
                                 );
                               })}
@@ -179,17 +153,31 @@ const Navbar = (handleClickMenuOpen:any) => {
             </li>
           );
         })}
-        <li className="navbar-menu-item" onClick={handleClickMenuOpen}>
-          <Link href={"/aboutus"} className="nav-item" >
-          Careers
+        <li className="navbar-menu-item" >
+          <Link
+            href={"/career"}
+            className={`nav-item ${active === "/career" ? "active-link" : ""}`}
+            onClick={()=>handleLinkClick('/career')}
+          >
+            Careers
           </Link>
-          <Link href={"/aboutus"} className="nav-item" >
+          {/* <Link href={"/business-opportunity"} className="nav-item" >
           Business Opportunity
-          </Link>
-          <Link href={"/aboutus"} className="nav-item" >
+          </Link> */}
+          <Link
+            href={"/aboutus"}
+            className={`nav-item ${active === "/aboutus" ? "active-link" : ""}`}
+            onClick={()=>handleLinkClick('/aboutus')}
+          >
             About Us
           </Link>
-          <Link href={"/contactus"} className="nav-item" >
+          <Link
+            href={"/contactus"}
+            className={`nav-item ${
+              active === "/contactus" ? "active-link" : ""
+            }`}
+            onClick={()=>handleLinkClick('/contactus')}
+          >
             Contact Us
           </Link>
         </li>
@@ -217,7 +205,13 @@ function Header() {
                   AEROLEX&nbsp;
                   <span className="text-primary">PHARMACEUTICALS</span>
                 </h2> */}
-                <Image src={Logo} height={200} width={200} alt='images' className="py-2"/>
+                <Image
+                  src={Logo}
+                  height={200}
+                  width={200}
+                  alt="images"
+                  className="py-2"
+                />
               </a>
             </div>
           </div>
@@ -228,12 +222,14 @@ function Header() {
             <HiOutlineBars3CenterLeft size={24} />
           </button>
           <div className="navigation-menu">
-
-            <Navbar handleClickMenuOpen={handleClickMenuOpen}/>
+            <Navbar handleClickMenuOpen={handleClickMenuOpen} />
           </div>
           <div className="navigation-menu">
             <div className="navigation-buttons mr-3">
-              <Link href={'tel:7906527876'} className="flex items-center gap-2 bg-primary text-white py-2 rounded-full px-5 ">
+              <Link
+                href={"tel:7906527876"}
+                className="flex items-center gap-2 bg-primary text-white py-2 rounded-full px-5 "
+              >
                 <BsFillTelephoneFill size={16} color="white" />
                 <p className="text-sm">790&nbsp;652&nbsp;7876</p>
               </Link>

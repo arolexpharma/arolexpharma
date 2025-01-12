@@ -11,13 +11,9 @@ export default function Page() {
 
   return (
     <div>
-      {/* Breadcrumb Section */}
       <Breadscrumb items={breadcrumbItems} />
-
-      {/* Main Contact Us Section */}
       <div className="px-6 py-12 md:py-20 bg-blue-50">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-[70%_25%] gap-8">
-          {/* Left Content */}
           <div className="space-y-4 ">
             <h2 className="text-4xl font-bold text-gray-900">Contact Us</h2>
             <p className="text-gray-600 max-w-96 text-wrap">
@@ -25,7 +21,9 @@ export default function Page() {
               your messaging problem.
             </p>
             <div className="flex flex-col gap-6">
-              <p className="text-gray-800 font-medium">arolexpharmaceuticals@gmail.com</p>
+              <p className="text-gray-800 font-medium">
+                arolexpharmaceuticals@gmail.com
+              </p>
               <p className="text-gray-800 font-medium">790-652-7876</p>
               <a
                 href="#"
@@ -34,8 +32,6 @@ export default function Page() {
                 Customer Support
               </a>
             </div>
-
-            {/* Support Categories */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-6">
               <div>
                 <h3 className="font-semibold text-gray-800">
@@ -57,8 +53,6 @@ export default function Page() {
               </div>
             </div>
           </div>
-
-          {/* Right Contact Form */}
           <div className="bg-white p-6 shadow-lg rounded-2xl">
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
               Get in Touch
@@ -112,14 +106,10 @@ export default function Page() {
         </div>
       </div>
 
-      {/* Location Section */}
       <div className="bg-gray-50 py-12 px-6">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* Map Section */}
           <div className="relative">
             <div className="w-full h-74 md:h-80 bg-gray-200 rounded-xl">
-              {/* Embed Google Maps Placeholder */}
-
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3480.278283875691!2d77.72672157464677!3d29.27415727532048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c13d573e53c67%3A0xf170c4cc81423bbf!2sArolex%20Pharmaceuticals%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1735378583412!5m2!1sen!2sin"
                 width="100%"
@@ -129,14 +119,10 @@ export default function Page() {
                 title="Arolex Pharmaceuticals Location"
                 className="rounded-xl"
               ></iframe>
-           
             </div>
           </div>
-
-          {/* Location Content */}
           <div className="space-y-4">
             <p className="text-gray-800 font-medium">Our Location</p>
-
             <h3 className="text-3xl font-bold text-gray-900">
               Connecting Near and Far
             </h3>

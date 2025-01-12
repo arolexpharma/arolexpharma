@@ -16,7 +16,7 @@ const EnquiryFormModal = () => {
 
   return (
     <div>
-      {/* Enquiry Button (Floating) */}
+  
       <button
         onClick={toggleForm}
         className="fixed md:hidden  top-24 -right-5 bg-green-600 text-white p-2 text-sm rounded-lg shadow-lg hover:bg-green-700 transition duration-300 z-50 transform -rotate-90"
@@ -24,7 +24,7 @@ const EnquiryFormModal = () => {
         Enquiry
       </button>
 
-      {/* Appointment Form Modal */}
+    
       {isFormOpen && (
         <motion.div
           initial="hidden"
@@ -36,7 +36,7 @@ const EnquiryFormModal = () => {
             onClick={toggleForm}
             className="absolute top-2 right-2 text-gray-700 text-2xl"
           >
-            &times; {/* Close button */}
+            &times; 
           </button>
           <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
             Request an Appointment

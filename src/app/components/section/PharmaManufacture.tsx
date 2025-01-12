@@ -33,7 +33,7 @@ const ResponsiveImageGrid = () => {
         whileInView={animation.whileInView} 
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`relative group overflow-hidden rounded-lg`}
+        className={`relative group overflow-hidden rounded-lg `}
         style={{
           height: cardHeight,
         }}
@@ -46,7 +46,7 @@ const ResponsiveImageGrid = () => {
           quality={100}
           className={`transition-transform duration-300 group-hover:scale-105`}
         />
-        <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-4 overflow-hidden">
+        <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4 overflow-hidden">
           <h3 className="text-white text-lg font-semibold">{title}</h3>
           <p className="text-gray-300 text-sm">{subtitle}</p>
         </div>
@@ -56,7 +56,7 @@ const ResponsiveImageGrid = () => {
 
   return (
     <section
-      className=" px-4 py-20 md:px-12 lg:px-24 bg-white relative bg-cover bg-center bg-no-repeat overflow-hidden"
+      className=" px-4 py-16 sm:py-20 md:px-12 lg:px-24 bg-white relative bg-cover bg-center bg-no-repeat overflow-hidden"
     >
       
       <div className="absolute inset-0 z-0">
@@ -80,9 +80,9 @@ const ResponsiveImageGrid = () => {
         </p>
       </div>
 
-      {/* Grid Layout */}
+  
       <div className="container mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-4">
-        {/* Left Side */}
+     
         <div className="grid grid-rows-2 gap-4">
           <Card
             image="https://img.freepik.com/free-photo/portrait-professional-technologist-protective-uniform-looking-aside_342744-1166.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"
@@ -119,7 +119,7 @@ const ResponsiveImageGrid = () => {
           </div>
         </div>
 
-        {/* Right Side */}
+     
         <Card
           image="https://img.freepik.com/free-photo/man-working-as-pharmacist_23-2151734589.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"
           title="Comprehensive Production"

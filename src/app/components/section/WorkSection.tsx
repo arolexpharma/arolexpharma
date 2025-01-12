@@ -3,12 +3,12 @@ import WorkSkills from "../workSkills/WorkSkills";
 
 export default function WorkSection() {
   return (
-    <div className=" py-20 px-0 sm:px-20">
+    <div className=" py-16 sm:py-20 px-0 sm:px-20 bg-white">
       <div className="container mx-auto px-4">
-        {/* Header */}
+  
         <div className="text-center mb-12">
-          <p className="text-white text-sm bg-blue-400 rounded-full inline-block px-3 py-1 mb-3">
-            Our Work
+          <p className="text-white text-sm bg-primary rounded-full inline-block px-3 py-1 mb-6">
+            Why Choose Us
           </p>
           <h2 className="text-4xl text-black font-bold mb-4">
             Our Orthopedic Specialists

@@ -1,5 +1,5 @@
+"use client";
 import React from "react";
-
 const ScrollingStrip = () => {
   const medicines = [
     "Paracetamol",
@@ -14,7 +14,7 @@ const ScrollingStrip = () => {
     "Cetirizine",
   ];
 
-  // Duplicate medicines for smooth looping
+ 
   const repeatedMedicines = [...medicines, ...medicines];
 
   return (
@@ -25,7 +25,7 @@ const ScrollingStrip = () => {
             key={index}
             className="flex items-center text-sm font-semibold text-white"
           >
-            {/* Bullet point using Tailwind's "before" */}
+           
             <span className="mr-2 inline-block w-2 h-2 bg-white rounded-full"></span>
             {medicine}
           </span>

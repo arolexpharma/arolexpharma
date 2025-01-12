@@ -21,12 +21,12 @@ export default function page() {
       <CoverFlowProducts />
       <CertificationsSection />
       <AboutUsSection />
-      <ProductSection />
-      <PharmaManufacture />
-      <OurTeam />
       <WorkSection />
-      <FAQSection />
+      <OurTeam />
+      {/* <ProductSection /> */}
+      <PharmaManufacture />
       <OurClientSection />
+      <FAQSection />
       <ContactSection />
     </div>
   );

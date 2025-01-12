@@ -17,7 +17,7 @@ export default function WorkSkills({ percentage, label, color }) {
           setIsInView(true);
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the component is visible
+      { threshold: 0.5 } 
     );
 
     if (circleRef.current) {
@@ -39,9 +39,9 @@ export default function WorkSkills({ percentage, label, color }) {
             clearInterval(interval);
             return percentage;
           }
-          return prev + 1; // Adjust the increment speed as necessary
+          return prev + 1; 
         });
-      }, 30); // Adjust the speed of the animation
+      }, 30); 
     }
   }, [isInView, percentage]);
 

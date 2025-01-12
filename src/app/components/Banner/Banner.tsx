@@ -22,7 +22,7 @@ export default function Banner() {
 
   return (
     <div className="relative w-full">
-      {/* Swiper Section */}
+ 
       <Swiper
         modules={[Navigation, Autoplay]}
         autoplay={{ delay: 5000 }}
@@ -44,7 +44,7 @@ export default function Banner() {
         )}
       </Swiper>
 
-      {/* Hero Content Section */}
+  
       <div className="absolute top-0 left-0 w-full h-full z-20 flex items-center">
         <div className="container mx-auto text-white px-6 md:px-5">
           <div className="max-w-sm md:max-w-2xl ">
@@ -74,7 +74,7 @@ export default function Banner() {
         </div>
       </div>
 
-      {/* Appointment Form */}
+
       <motion.div
         initial="hidden"
         animate="visible"

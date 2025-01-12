@@ -553,3 +553,7 @@ ul{
         max-height: 100%;
     }
 }
+
+.active-link {
+    border-bottom: 2px solid #04ace6 !important;
+  }

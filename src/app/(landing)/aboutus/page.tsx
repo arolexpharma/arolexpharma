@@ -22,13 +22,10 @@ export default function AboutUs() {
 
   return (
     <div>
-      {/* Breadcrumb */}
       <Breadscrumb items={breadcrumbItems} />
 
-      {/* About Us Section */}
       <section className="py-12 bg-blue-50">
         <div className="container mx-auto px-6 md:grid md:grid-cols-[50%_50%] items-center gap-8">
-          {/* Image Section */}
           <div>
             <img
               src="https://img.freepik.com/free-photo/nurse-doctor-team-ready-work-day_23-2149309942.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"
@@ -37,7 +34,6 @@ export default function AboutUs() {
             />
           </div>
 
-          {/* Text Section */}
           <div>
             <h1 className="text-4xl font-bold text-gray-800 mb-4">About us</h1>
             <p className="text-gray-600 mb-6">
@@ -63,7 +59,6 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Process Section */}
       <section className="py-12 bg-white">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
@@ -116,7 +111,6 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Why Choose Us Section */}
       <section className="py-12 bg-blue-50">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -127,9 +121,7 @@ export default function AboutUs() {
             quality, and reliability.
           </p>
 
-          {/* Features Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Feature 1 */}
             <div className="p-6 bg-gray-100 rounded-lg shadow">
               <span className="inline-block p-4 bg-blue-100 rounded-full mb-4">
                 🏆
@@ -143,7 +135,6 @@ export default function AboutUs() {
               </p>
             </div>
 
-            {/* Feature 2 */}
             <div className="p-6 bg-gray-100 rounded-lg shadow">
               <span className="inline-block p-4 bg-blue-100 rounded-full mb-4">
                 🔬
@@ -157,7 +148,6 @@ export default function AboutUs() {
               </p>
             </div>
 
-            {/* Feature 3 */}
             <div className="p-6 bg-gray-100 rounded-lg shadow">
               <span className="inline-block p-4 bg-blue-100 rounded-full mb-4">
                 🌍

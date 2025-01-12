@@ -162,18 +162,18 @@ export default function ProductSlider() {
     <div className="w-full bg-gray-100 flex justify-center items-center">
       <Swiper
         modules={[Navigation, Pagination, EffectCoverflow, Autoplay]}
-        effect="coverflow" // Apply the coverflow effect
-        slidesPerView="auto" // Enable responsive auto width for the slides
-        centeredSlides={true} // Center the active slide
-        loop={true} // Enable infinite looping
+        effect="coverflow" 
+        slidesPerView="auto" 
+        centeredSlides={true} 
+        loop={true} 
         autoplay={{
-          delay: 3000, // Slide changes every 3 seconds
-          disableOnInteraction: false, // Keeps autoplay after interaction
+          delay: 3000, 
+          disableOnInteraction: false,
         }}
         coverflowEffect={{
-          rotate: 0, // Rotation angle for the coverflow effect
-          stretch: 0, // No stretching of slides
-          depth: 0, // Depth of slides in 3D space
+          rotate: 0, 
+          stretch: 0, 
+          depth: 0, 
           modifier: 0,
           slideShadows: true,
         }}
@@ -181,27 +181,32 @@ export default function ProductSlider() {
         className="w-full"
       >
         {products.map((product) => (
-          <SwiperSlide key={product.id} className="swiper-slide-cover">
-            <div
-              className="relative w-full  h-[320px] sm:h-[500px] bg-cover bg-center flex items-center"
-              style={{ backgroundImage: `url(${product.image})` }}
-            >
-              <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-              <div className="relative text-white p-8">
-                <p className="text-green-400 font-semibold mb-2">
-                  From {product.price}
-                </p>
-                <h2 className="text-3xl font-bold mb-2">{product.name}</h2>
-                <p className="text-sm max-w-xl mb-4">{product.description}</p>
-                <button
-                  className="px-4 py-1 sm:px-6 sm:py-2 text-sm sm:text-md bg-green-500 text-white rounded hover:bg-green-600"
-                  onClick={() => router.push(`/ProductDetails/${product.id}`)}
-                >
-                  Know More
-                </button>
-              </div>
-            </div>
-          </SwiperSlide>
+      <SwiperSlide key={product.id} className="swiper-slide-cover">
+      <div
+        className="relative w-full h-[320px] sm:h-[500px] bg-cover bg-center flex items-center"
+        style={{ backgroundImage: `url(${product.image})` }}
+      >
+        {/* Content container */}
+        <div className="absolute bottom-0 z-10 p-2 sm:p-6 text-white">
+          {/* Overlay for text only */}
+          <div className="absolute inset-0 bg-black bg-opacity-50 -z-10 backdrop-blur-md"></div>
+          
+          <p className="text-green-400 font-semibold mb-2">
+            From MRP: {product.price}
+          </p>
+          <h2 className="text-xl sm:text-3xl font-bold mb-2">{product.name}</h2>
+          <p className="text-[12px] sm:text-sm max-w-xl mb-4">{product.description}</p>
+          <button
+            className="px-2 py-1 sm:px-6 sm:py-3 text-[12px] sm:text-md bg-green-500 text-white rounded shadow-lg hover:bg-green-600 transition-all duration-200"
+            onClick={() => router.push(`/ProductDetails/${product.id}`)}
+          >
+            Know More
+          </button>
+        </div>
+      </div>
+    </SwiperSlide>
+    
+      
         ))}
       </Swiper>
     </div>
