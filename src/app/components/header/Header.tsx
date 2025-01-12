@@ -4,23 +4,13 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import Logo from "@/app/assets/images/Logo.png";
 import "./header.css";
-import { Button } from "@/app/components/buttons/Button";
-import Divider from "@mui/material/Divider";
-import { BiChevronDown, BiChevronRight, BiSearchAlt2 } from "react-icons/bi";
-import { LuChevronUp, LuSearch } from "react-icons/lu";
+
 import { LuChevronDown } from "react-icons/lu";
 
-import { VscTools } from "react-icons/vsc";
-import { MdViewInAr } from "react-icons/md";
-import { TbBrandBlogger } from "react-icons/tb";
-import { FaWpforms } from "react-icons/fa6";
-import { RiHomeHeartLine } from "react-icons/ri";
-import { TbCreditCardPay } from "react-icons/tb";
-import { VscArrowSwap } from "react-icons/vsc";
 import { BsFillTelephoneFill, BsTicketPerforated } from "react-icons/bs";
 import Image from "next/image";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
-import { Span } from "next/dist/trace";
+
 
 const dropDownListBoxes = [
   {
@@ -168,9 +158,7 @@ const Navbar = (handleClickMenuOpen: any) => {
           >
             Blogs
           </Link>
-          {/* <Link href={"/business-opportunity"} className="nav-item" >
-          Business Opportunity
-          </Link> */}
+        
           <Link
             href={"/aboutus"}
             className={`nav-item ${active === "/aboutus" ? "active-link" : ""}`}
