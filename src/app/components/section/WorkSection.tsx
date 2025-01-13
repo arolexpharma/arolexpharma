@@ -10,14 +10,14 @@ export default function WorkSection() {
           <p className="text-white text-sm bg-primary rounded-full inline-block px-3 py-1 mb-6">
             Why Choose Us
           </p>
-          <h2 className="text-4xl text-black font-bold mb-4">
+          <h2 className="text-3xl text-black font-bold mb-4">
           Excellence in Expertise and Results
           </h2>
         
         </div>
         <div className="flex flex-col" style={{ flexWrap: "wrap" }}>
           <div className="container mx-auto text-center flex items-center justify-center">
-            <p className="text-black px-5 md:40 lg:px-80 ">
+            <p className="text-black px-5 md:40 lg:px-80 text-sm sm:text-lg">
               Our team of experts has years of experience in SEO, website
               design, and digital marketing. We are pass-ionate about helping
               our clients succeed and we take pride in delivering high-quality

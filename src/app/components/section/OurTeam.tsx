@@ -35,11 +35,11 @@ const OurTeam = () => {
           <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-6">
             Our Team
           </p>
-          <h2 className="text-4xl text-white font-bold mb-4">
+          <h2 className="text-3xl text-white font-bold mb-4">
           Trusted Contract-Based Manufacturing
           </h2>
          
-          <p className="text-white text-lg mt-4">
+          <p className="text-white text-sm sm:text-lg mt-4">
             We also specialize in contract-based manufacturing and supply of
             high-quality pharmaceutical products. Our state-of-the-art
             facilities ensure consistent quality and precision in every product

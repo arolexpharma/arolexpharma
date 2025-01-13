@@ -12,7 +12,7 @@ export default function FloatingSocialButton() {
     setIsMenuOpen(true);
     setTimeout(() => {
       setIsMenuOpen(false); 
-    }, 1000);
+    }, 2000);
   },[])
   return (
     <>

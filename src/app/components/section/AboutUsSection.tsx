@@ -8,7 +8,7 @@ export default function AboutUsSection() {
         <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-6">
           Who We Are
         </p>
-        <h2 className="text-3xl sm:text-4xl text-white font-bold mb-4">
+        <h2 className="text-2xl sm:text-4xl text-white font-bold mb-4">
           Innovating Healthcare
         </h2>
       </div>
