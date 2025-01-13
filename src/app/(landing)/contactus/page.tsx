@@ -54,7 +54,7 @@ export default function Page() {
           </p>
         </div>
       </div>
-      <div className="flex  gap-20 pt-6">
+      <div className="flex  gap-16 sm:gap-20 pt-6">
         <a href="#" className="text-gray-800 hover:text-blue-500">
           <FaFacebookF size={24} />
         </a>
