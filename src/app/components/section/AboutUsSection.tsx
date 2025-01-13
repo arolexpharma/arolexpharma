@@ -38,7 +38,7 @@ export default function AboutUsSection() {
             solutions that address the evolving healthcare needs of our clients
             and communities.
           </p>
-          <Button href="/aboutus" text="Know More" className="bg-lime-500" />
+          <Button href="/aboutus" text="Know More" className="bg-lime-500 p-3 text-sm" />
         </div>
       </div>
     </section>

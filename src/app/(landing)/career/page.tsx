@@ -113,47 +113,47 @@ export default function Page() {
             <div className="divide-y divide-gray-300">
               <div className="py-4 flex justify-between">
                 <div>
-                  <h3 className="text-sm sm:text-lg font-semibold text-gray-800">
+                  <h3 className="text-[12px] sm:text-lg font-semibold text-gray-800">
                     Clinical Pharmacist
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600">
+                  <p className="text-[12px] sm:text-base text-gray-600">
                     Khatauli, India
                   </p>
                 </div>
                 <Button
                   href="/"
                   text="Call Now"
-                  className="text-blue-600 font-semibold "
+                  className="text-blue-600 font-semibold p-2 text-sm"
                 />
               </div>
               <div className="py-4 flex justify-between">
                 <div>
-                  <h3 className="text-sm sm:text-lg font-semibold text-gray-800">
+                  <h3 className="text-[12px] sm:text-lg font-semibold text-gray-800">
                     Pharmaceutical Sales Representative
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600">
+                  <p className="text-[12px] sm:text-base text-gray-600">
                     Khatauli, India
                   </p>
                 </div>
                 <Button
                   href="/"
                   text="Call Now"
-                  className="text-blue-600 font-semibold "
+                  className="text-blue-600 font-semibold p-2 text-sm"
                 />
               </div>
               <div className="py-4 flex justify-between">
                 <div>
-                  <h3 className="text-sm sm:text-lg font-semibold text-gray-800">
+                  <h3 className="text-[12px] sm:text-lg font-semibold text-gray-800">
                     Quality Assurance Specialist
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600">
+                  <p className="text-[12px] sm:text-base text-gray-600">
                     Khatauli, India
                   </p>
                 </div>
                 <Button
                   href="/"
                   text="Call Now"
-                  className="text-blue-600 font-semibold "
+                  className="text-blue-600 font-semibold p-2 text-sm"
                 />
               </div>
             </div>

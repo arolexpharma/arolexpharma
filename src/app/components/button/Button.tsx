@@ -6,7 +6,7 @@ const Button = ({ href, text, className }:any) => {
   return (
     <Link href={href}>
       <button
-        className={`bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg transition ${className}`}
+        className={`bg-green-600 hover:bg-green-700 text-white  rounded-md transition ${className}`}
       >
         {text}
       </button>
