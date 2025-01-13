@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import React, { useState, useRef, useEffect } from "react";
 import { Collapse } from "antd";
 import { BiMinus, BiPlus } from "react-icons/bi";
@@ -9,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation } from "swiper/modules";
 import Breadscrumb from "@/app/components/common/breadscrumb/Breadscrumb";
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const { Panel } = Collapse;
 
@@ -44,6 +44,7 @@ const ProductItem = ({ productDetails }: any) => {
       setCurrentImage(activeIndex);
     }
   }, [currentImage]);
+
   const breadcrumbItems: any = [
     { label: "Home", href: "/" },
     {
@@ -58,18 +59,9 @@ const ProductItem = ({ productDetails }: any) => {
 
       <div className="bg-gray-50 min-h-screen py-10 px-3">
         <div className="container mx-auto">
-          <nav className="text-sm text-gray-600 mb-6">
-            <span className="hover:underline cursor-pointer">Home</span> &gt;{" "}
-            <span className="hover:underline cursor-pointer">
-              Medical Products
-            </span>{" "}
-            &gt;{" "}
-            <span className="text-gray-900 font-semibold">
-              {productDetails?.name}
-            </span>
-          </nav>
-
+          {/* Product Details Section */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Product Images */}
             <div>
               <Swiper
                 ref={swiperRef}
@@ -114,6 +106,7 @@ const ProductItem = ({ productDetails }: any) => {
               </div>
             </div>
 
+            {/* Product Details */}
             <div>
               <h1 className="text-3xl font-bold text-gray-900 mb-4">
                 {productDetails.name}
@@ -163,6 +156,7 @@ const ProductItem = ({ productDetails }: any) => {
                 </button>
               </div>
 
+              {/* Customer Support and Social Media Icons */}
               <div className="text-sm text-gray-600 leading-relaxed">
                 <div className="mb-3">
                   <span className="font-medium">Returns:</span> You can return
@@ -173,9 +167,44 @@ const ProductItem = ({ productDetails }: any) => {
                   Available 24/7 for any product-related queries.
                 </div>
               </div>
+              <div className="mt-6 flex gap-20 text-xl text-gray-600">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-600"
+                >
+                  <FaFacebookF />
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400"
+                >
+                  <FaTwitter />
+                </a>
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-pink-500"
+                >
+                  <FaInstagram />
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-700"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </div>
             </div>
           </div>
 
+          {/* FAQs */}
           <div className="mt-16">
             <h2 className="text-2xl font-bold text-center mb-8">
               Frequently Asked Questions
