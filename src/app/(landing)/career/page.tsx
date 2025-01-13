@@ -123,7 +123,7 @@ export default function Page() {
                 <Button
                   href="/"
                   text="Call Now"
-                  className="text-blue-600 font-semibold p-2 text-sm"
+                  className="text-blue-600 font-semibold p-2 text-[12px]"
                 />
               </div>
               <div className="py-4 flex justify-between">
@@ -138,7 +138,7 @@ export default function Page() {
                 <Button
                   href="/"
                   text="Call Now"
-                  className="text-blue-600 font-semibold p-2 text-sm"
+                  className="text-blue-600 font-semibold p-2 text-[12px]"
                 />
               </div>
               <div className="py-4 flex justify-between">
@@ -153,7 +153,7 @@ export default function Page() {
                 <Button
                   href="/"
                   text="Call Now"
-                  className="text-blue-600 font-semibold p-2 text-sm"
+                  className="text-blue-600 font-semibold p-2 text-[12px]"
                 />
               </div>
             </div>

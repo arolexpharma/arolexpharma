@@ -103,7 +103,7 @@ const Navbar = (handleClickMenuOpen: any) => {
               onClick={() => setActive(active === index ? 999 : index)}
             >
               <Link
-                href={item.link}
+                href={'#'}
                 className={`menu-item ${
                   active === item.link ? "active-link" : ""
                 }`}
