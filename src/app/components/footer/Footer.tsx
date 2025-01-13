@@ -111,12 +111,12 @@ export default function Footer() {
           <h4 className="font-semibold text-white mb-3">Legal</h4>
           <ul className="space-y-2 text-sm text-gray-300 leading-8">
             <li>
-              <Link href="/terms" className="hover:underline">
+              <Link href="/terms-and-conditions" className="hover:underline">
                 Terms
               </Link>
             </li>
             <li>
-              <Link href="/privacy" className="hover:underline">
+              <Link href="/privacy-policy" className="hover:underline">
                 Privacy
               </Link>
             </li>
