@@ -42,7 +42,7 @@ const dropDownListBoxes = [
 let MENU = [
   {
     title: "Products",
-    link: "/products",
+    link: "/product",
     icon: "fa-solid fa-caret-down",
     subMenu: [
       { title: "Office Space", link: "/" },

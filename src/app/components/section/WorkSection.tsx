@@ -11,7 +11,7 @@ export default function WorkSection() {
             Why Choose Us
           </p>
           <h2 className="text-4xl text-black font-bold mb-4">
-            Our Orthopedic Specialists
+          Excellence in Expertise and Results
           </h2>
         
         </div>

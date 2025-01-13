@@ -9,7 +9,7 @@ export default function AboutUsSection() {
           Who We Are
         </p>
         <h2 className="text-4xl text-white font-bold mb-4">
-          Our Orthopedic Specialists
+        Innovating Healthcare
         </h2>
       </div>
 

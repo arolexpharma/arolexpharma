@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -7,24 +7,24 @@ const OurTeam = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Dr. Elina Wellies",
-      title: "Senior Orthopedic Specialists",
+      name: "Monish",
+      title: "CEO",
       image:
-        "https://img.freepik.com/free-photo/young-entrepreneur_1098-18139.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted", // Replace with actual image URL
+        "https://img.freepik.com/free-photo/young-entrepreneur_1098-18139.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted",
     },
     {
       id: 2,
-      name: "Dr. Megan Wilson",
-      title: "Senior Orthopedic Specialists",
+      name: "Danish",
+      title: "CEO",
       image:
-        "https://img.freepik.com/free-photo/man-work_144627-24872.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted", // Replace with actual image URL
+        "https://img.freepik.com/free-photo/man-work_144627-24872.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted",
     },
     {
       id: 3,
-      name: "Dr. Marvin McKinney",
-      title: "Senior Orthopedic Specialists",
+      name: "Shakir",
+      title: "CEO",
       image:
-        "https://img.freepik.com/free-photo/designer-working-3d-model_23-2149371898.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted", // Replace with actual image URL
+        "https://img.freepik.com/free-photo/designer-working-3d-model_23-2149371898.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted",
     },
   ];
 
@@ -36,12 +36,15 @@ const OurTeam = () => {
             Our Team
           </p>
           <h2 className="text-4xl text-white font-bold mb-4">
-            Our Orthopedic Specialists
+          Trusted Contract-Based Manufacturing
           </h2>
-          <p className="text-white text-lg">
-            Our physicians are backed by a comprehensive team of specialists,
-            including specially trained nurses, orthopedic technicians, physical
-            and occupational therapists, and case managers.
+         
+          <p className="text-white text-lg mt-4">
+            We also specialize in contract-based manufacturing and supply of
+            high-quality pharmaceutical products. Our state-of-the-art
+            facilities ensure consistent quality and precision in every product
+            we deliver, meeting the unique needs of our clients across the
+            healthcare industry.
           </p>
         </div>
 
@@ -74,16 +77,6 @@ const OurTeam = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Navigation Arrows */}
-        {/* <div className="flex justify-center gap-4 mt-8">
-          <button className="w-10 h-10 bg-white/20 text-white rounded-full flex items-center justify-center hover:bg-white/40">
-            ←
-          </button>
-          <button className="w-10 h-10 bg-white/20 text-white rounded-full flex items-center justify-center hover:bg-white/40">
-            →
-          </button>
-        </div> */}
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ import { useRouter } from "next/navigation";
 const products = [
   {
     id: 1,
-    image: ["https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid","https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"],
+    image: ["https://img.freepik.com/free-photo/woman-working-as-doctor_23-2148827813.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"],
     name: "Rabipose-DSR3T",
     price: "$50",
     MRP: "$60",
@@ -36,7 +36,7 @@ const products = [
   },
   {
     id: 2,
-    image: ["https://img.freepik.com/free-vector/realistic-medical-care-template-with-syringe-broken-capsule-with-plant-medicine-icons-hexagons_1284-35345.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid","https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"],
+    image: ["https://img.freepik.com/free-photo/pleased-young-male-doctor-wearing-medical-robe-stethoscope-around-neck-looking-camera-holding-glass-water-showing-packs-pills-isolated-purple-background_141793-135516.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"],
     name: "Arocef - 200",
     price: "$35",
     MRP: "$40",
@@ -60,7 +60,7 @@ const products = [
   },
   {
     id: 3,
-    image: ["https://img.freepik.com/free-vector/pharmacy-medication-pills-medicine_24877-51553.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid","https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"],
+    image: ["https://img.freepik.com/free-photo/smiling-doctor-young-blonde-girl-wearing-stethoscope-medical-gown-dental-brace-holding-pills-with-both-hands-isolated-white-background_141793-38731.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"],
     name: "Budalecs",
     price: "$30",
     MRP: "$35",
@@ -84,7 +84,7 @@ const products = [
   },
   {
     id: 4,
-    image: ["https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid","https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"],
+    image: ["https://img.freepik.com/free-photo/happy-young-girl-doctor-white-coat-with-stethoscope-around-neck-holding-blister-with-pills-pointing-with-index-finger-it-smiling-confident-standing-purple_141793-128176.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"],
     name: "Rabipose-DSR3T",
     price: "$50",
     MRP: "$60",
@@ -108,7 +108,7 @@ const products = [
   },
   {
     id: 5,
-    image: ["https://img.freepik.com/free-vector/realistic-medical-care-template-with-syringe-broken-capsule-with-plant-medicine-icons-hexagons_1284-35345.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid","https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"],
+    image: ["https://img.freepik.com/free-photo/pharmacist-work_23-2150600138.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"],
     name: "Arocef - 200",
     price: "$35",
     MRP: "$40",
@@ -132,7 +132,7 @@ const products = [
   },
   {
     id: 6,
-    image: ["https://img.freepik.com/free-vector/pharmacy-medication-pills-medicine_24877-51553.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid","https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"],
+    image: ["https://img.freepik.com/free-photo/smiling-young-male-doctor-wearing-medical-robe-stethoscope-around-neck-looking-camera-showing-pack-capsules-ok-sign-isolated-purple-background_141793-135778.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"],
     name: "Budalecs",
     price: "$30",
     MRP: "$35",

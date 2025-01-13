@@ -1,6 +1,7 @@
 import Breadscrumb from "@/app/components/common/breadscrumb/Breadscrumb";
 import React from "react";
 import { Steps } from "antd";
+import { FaAward, FaMicroscope, FaGlobe, FaCheckCircle, FaHandshake, FaLeaf, FaStethoscope } from "react-icons/fa";
 import {
   FaSearch,
   FaCalendarAlt,
@@ -60,109 +61,144 @@ export default function AboutUs() {
       </section>
 
       <section className="py-12 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-            Our Process
-          </h2>
-          <Steps
-            direction="vertical"
-            size="default"
-            current={-1}
-            className="mx-auto max-w-3xl"
-            items={[
-              {
-                title: <span className="font-bold">Discovery</span>,
-                description:
-                  "During the discovery phase, we understand your requirements, market needs, and target goals to create a tailored approach.",
-                icon: <FaSearch className="text-blue-500" />,
-              },
-              {
-                title: <span className="font-bold">Planning</span>,
-                description:
-                  "We create a detailed plan covering timelines, deliverables, and milestones to streamline the project effectively.",
-                icon: <FaCalendarAlt className="text-blue-500" />,
-              },
-              {
-                title: <span className="font-bold">Design</span>,
-                description:
-                  "Our expert team designs solutions that are practical, user-friendly, and align with your vision and industry standards.",
-                icon: <FaPaintBrush className="text-blue-500" />,
-              },
-              {
-                title: <span className="font-bold">Development</span>,
-                description:
-                  "We utilize advanced technologies to develop top-notch pharmaceutical solutions, ensuring safety and compliance.",
-                icon: <FaLaptopCode className="text-blue-500" />,
-              },
-              {
-                title: <span className="font-bold">Testing</span>,
-                description:
-                  "We conduct thorough testing to ensure that our processes and products meet the highest quality standards.",
-                icon: <FaFlask className="text-blue-500" />,
-              },
-              {
-                title: <span className="font-bold">Launch</span>,
-                description:
-                  "After final approval, our products are launched, helping healthcare providers and patients improve lives globally.",
-                icon: <FaRocket className="text-blue-500" />,
-              },
-            ]}
-          />
-        </div>
-      </section>
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
+      Our Process
+    </h2>
 
-      <section className="py-12 bg-blue-50">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
-            Why choose us
-          </h2>
-          <p className="text-gray-600 mb-8">
-            As pharmaceutical manufacturers, we pride ourselves on excellence,
-            quality, and reliability.
-          </p>
+    <Steps
+      direction="vertical"
+      size="default"
+      current={-1}
+      className="mx-auto max-w-3xl"
+      items={[
+        {
+          title: <span className="font-bold">Discovery</span>,
+          description:
+            "In this initial phase, we collaborate closely with you to understand your unique requirements, market demands, and product goals. We aim to create a customized approach tailored to your needs.",
+          icon: <FaSearch className="text-blue-500" />,
+        },
+        {
+          title: <span className="font-bold">Planning</span>,
+          description:
+            "During the planning phase, we devise a comprehensive roadmap, complete with timelines, deliverables, and key milestones. This ensures smooth and efficient project execution.",
+          icon: <FaCalendarAlt className="text-blue-500" />,
+        },
+        {
+          title: <span className="font-bold">Design</span>,
+          description:
+            "Our team of experts leverages their medical knowledge to design innovative solutions that align with regulatory standards and address specific healthcare challenges.",
+          icon: <FaStethoscope className="text-blue-500" />,
+        },
+        {
+          title: <span className="font-bold">Development</span>,
+          description:
+            "Using state-of-the-art technologies and laboratory practices, we develop high-quality pharmaceutical products that prioritize patient safety and efficacy.",
+          icon: <FaMicroscope className="text-blue-500" />,
+        },
+        {
+          title: <span className="font-bold">Testing</span>,
+          description:
+            "Our rigorous testing processes ensure that the products meet the highest standards of quality, safety, and performance before launch. This phase guarantees compliance with regulatory guidelines.",
+          icon: <FaFlask className="text-blue-500" />,
+        },
+        {
+          title: <span className="font-bold">Launch</span>,
+          description:
+            "Once testing is complete, we proceed with product launch, distributing high-quality pharmaceutical solutions to healthcare providers and patients worldwide to enhance lives and outcomes.",
+          icon: <FaRocket className="text-blue-500" />,
+        },
+      ]}
+    />
+  </div>
+</section>
+   
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-6 bg-gray-100 rounded-lg shadow">
-              <span className="inline-block p-4 bg-blue-100 rounded-full mb-4">
-                🏆
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Industry Expertise
-              </h3>
-              <p className="text-gray-600">
-                Decades of experience in pharmaceutical manufacturing and
-                healthcare innovation.
-              </p>
-            </div>
+<section className="py-12 bg-blue-50">
+  <div className="container mx-auto px-6 text-center">
+    <h2 className="text-3xl font-bold text-gray-800 mb-4">
+      Why choose us
+    </h2>
+    <p className="text-gray-600 mb-8">
+      Arolex Pharmaceuticals is your trusted partner in pharmaceutical manufacturing, delivering exceptional quality, cutting-edge innovation, and unparalleled reliability.
+    </p>
 
-            <div className="p-6 bg-gray-100 rounded-lg shadow">
-              <span className="inline-block p-4 bg-blue-100 rounded-full mb-4">
-                🔬
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Cutting-Edge R&D
-              </h3>
-              <p className="text-gray-600">
-                Advanced research and development to meet evolving medical
-                challenges.
-              </p>
-            </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="p-6 bg-gray-100 rounded-lg shadow">
+        <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
+          <FaAward size={32} />
+        </span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Industry Expertise
+        </h3>
+        <p className="text-gray-600">
+          With decades of experience, we specialize in contract-based manufacturing and supply of pharmaceutical products, ensuring excellence at every step.
+        </p>
+      </div>
 
-            <div className="p-6 bg-gray-100 rounded-lg shadow">
-              <span className="inline-block p-4 bg-blue-100 rounded-full mb-4">
-                🌍
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Global Reach
-              </h3>
-              <p className="text-gray-600">
-                Supplying high-quality pharmaceutical solutions to clients
-                worldwide.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div className="p-6 bg-gray-100 rounded-lg shadow">
+        <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
+          <FaMicroscope size={32} />
+        </span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Cutting-Edge R&D
+        </h3>
+        <p className="text-gray-600">
+          Our dedicated R&D team pioneers innovative solutions to address evolving healthcare needs, making us leaders in pharmaceutical advancements.
+        </p>
+      </div>
+
+      <div className="p-6 bg-gray-100 rounded-lg shadow">
+        <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
+          <FaGlobe size={32} />
+        </span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Global Reach
+        </h3>
+        <p className="text-gray-600">
+          Supplying top-quality pharmaceutical products to healthcare providers and businesses across the globe, ensuring accessibility and reliability.
+        </p>
+      </div>
+
+      <div className="p-6 bg-gray-100 rounded-lg shadow">
+        <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
+          <FaCheckCircle size={32} />
+        </span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Quality Assurance
+        </h3>
+        <p className="text-gray-600">
+          We adhere to the highest industry standards, ensuring our products are safe, effective, and of the finest quality.
+        </p>
+      </div>
+
+      <div className="p-6 bg-gray-100 rounded-lg shadow">
+        <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
+          <FaHandshake size={32} />
+        </span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Customized Solutions
+        </h3>
+        <p className="text-gray-600">
+          Tailoring our manufacturing processes to meet the unique needs of our clients, ensuring a seamless partnership.
+        </p>
+      </div>
+
+      <div className="p-6 bg-gray-100 rounded-lg shadow">
+        <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
+          <FaLeaf size={32} />
+        </span>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          Sustainability
+        </h3>
+        <p className="text-gray-600">
+          Committed to environmentally friendly practices, we strive for sustainable manufacturing and operations.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
       <OurTeam />
       <FAQSection />
     </div>
