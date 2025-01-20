@@ -22,7 +22,6 @@ export default function Banner() {
 
   return (
     <div className="relative w-full">
- 
       <Swiper
         modules={[Navigation, Autoplay]}
         autoplay={{ delay: 5000 }}
@@ -44,7 +43,6 @@ export default function Banner() {
         )}
       </Swiper>
 
-  
       <div className="absolute top-0 left-0 w-full h-full z-20 flex items-center">
         <div className="container mx-auto text-white px-6 md:px-5">
           <div className="max-w-sm md:max-w-2xl ">
@@ -59,8 +57,10 @@ export default function Banner() {
             </h1>
             <p className="mt-4 text-sm md:text-lg leading-relaxed">
               Arolex Pharmaceuticals specializes in contract-based
-              manufacturing, marketing, and supplying high-quality
-              pharmaceutical products. Our commitment to innovation ensures that
+              manufacturing, marketing, <span className="text-green-300">export</span> and supplying high-quality
+              pharmaceutical products, including antibiotics, nutraceuticals,
+              painkillers, injections, syrups, tablets, drops, and
+              gastrointestinal drugs and many more. Our commitment to innovation ensures that
               we meet global standards while providing tailored solutions to our
               clients.
             </p>
@@ -73,7 +73,6 @@ export default function Banner() {
           </div>
         </div>
       </div>
-
 
       <motion.div
         initial="hidden"

@@ -48,6 +48,11 @@ export default function WorkSection() {
               label="Product Packing"
               color="blue"
             />
+            <WorkSkills
+              percentage={90}
+              label="Returns"
+              color="blue"
+            />
           </div>
         </div>
       </div>

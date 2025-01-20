@@ -199,7 +199,7 @@ export default function AboutUs() {
   </div>
 </section>
 
-      <OurTeam />
+      {/* <OurTeam /> */}
       <FAQSection />
     </div>
   );

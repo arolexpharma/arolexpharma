@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { FaWhatsapp, FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaWhatsapp, FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { TbSocial } from "react-icons/tb";
 
 export default function FloatingSocialButton() {
@@ -33,7 +33,7 @@ export default function FloatingSocialButton() {
         }`}
       >
         <Link
-          href="https://wa.me/7906527876"
+          href="https://wa.me/8958755725"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 rounded-full shadow-lg p-3 hover:scale-110 transition-transform duration-300 flex items-center justify-center"
@@ -51,7 +51,7 @@ export default function FloatingSocialButton() {
         </Link>
 
         <Link
-          href="https://instagram.com/yourprofile"
+          href="https://www.instagram.com/arolexpharma/profilecard/?igsh=MWhyaXFkODI0MmI0ag=="
           target="_blank"
           rel="noopener noreferrer"
           className="bg-gradient-to-br from-pink-500 to-yellow-500 rounded-full shadow-lg p-3 hover:scale-110 transition-transform duration-300 flex items-center justify-center"
@@ -66,6 +66,14 @@ export default function FloatingSocialButton() {
           className="bg-blue-400 rounded-full shadow-lg p-3 hover:scale-110 transition-transform duration-300 flex items-center justify-center"
         >
           <FaTwitter className="text-white" size={24} />
+        </Link>
+        <Link
+          href="https://www.youtube.com/@AROLEXPHARMACEUTICALPVTLTD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-red-600 rounded-full shadow-lg p-3 hover:scale-110 transition-transform duration-300 flex items-center justify-center"
+        >
+          <FaYoutube className="text-white" size={24} />
         </Link>
       </div>
     </>

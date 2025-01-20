@@ -9,8 +9,8 @@ const products = [
       "https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid",
     ],
     name: "Rabipose-DSR3T",
-    price: "$50",
-    MRP: "$60",
+    price: "₹50",
+    MRP: "₹80",
     description:
       "A medication used to treat certain stomach and esophagus problems such as acid reflux and ulcers.",
     Flavour: "Mint",
@@ -36,17 +36,17 @@ const products = [
       "https://img.freepik.com/free-vector/realistic-medical-care-template-with-syringe-broken-capsule-with-plant-medicine-icons-hexagons_1284-35345.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid",
       "https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid",
     ],
-    name: "Arocef - 200",
+    name: "Arocef - 200 DT",
     price: "$35",
-    MRP: "$40",
+    MRP: "₹109.53/strip",
     description:
       "An antibiotic used to treat infections caused by bacteria, including respiratory infections and skin infections.",
     Flavour: "Unflavored",
-    Composition: "Cefuroxime Axetil 200 mg",
-    Packaging: "Pack of 10 tablets",
+    Composition: "CEFIXIME 200 mg Despersible Tablet",
+    Packaging: "Pack of 10 X 10 tablets",
     Indication_Uses:
       "Used to treat bacterial infections such as respiratory and skin infections.",
-    Dosage: "One tablet every 12 hours.",
+    Dosage: "directed by the physician",
     faq: [
       {
         question: "What types of infections can Arocef treat?",
@@ -123,8 +123,8 @@ const products = [
       "https://img.freepik.com/free-vector/medical-care-background_23-2147490188.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid",
     ],
     name: "Arocef - 200",
-    price: "$35",
-    MRP: "$40",
+    price: "35",
+    MRP: "$109.53/strip",
     description:
       "An antibiotic used to treat infections caused by bacteria, including respiratory infections and skin infections.",
     Flavour: "Unflavored",

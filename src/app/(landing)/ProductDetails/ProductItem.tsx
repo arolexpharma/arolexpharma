@@ -151,17 +151,17 @@ const ProductItem = ({ productDetails }: any) => {
                 <button className="bg-green-600 text-white py-2 px-6 text-sm font-medium rounded-md hover:bg-green-700">
                   Enquiry Now
                 </button>
-                <button className="bg-gray-200 text-gray-700 py-2 px-6 text-sm font-medium rounded-md hover:bg-gray-300">
+                {/* <button className="bg-gray-200 text-gray-700 py-2 px-6 text-sm font-medium rounded-md hover:bg-gray-300">
                   Add to Wishlist
-                </button>
+                </button> */}
               </div>
 
               {/* Customer Support and Social Media Icons */}
               <div className="text-sm text-gray-600 leading-relaxed">
-                <div className="mb-3">
+                {/* <div className="mb-3">
                   <span className="font-medium">Returns:</span> You can return
                   items within 30 days.
-                </div>
+                </div> */}
                 <div>
                   <span className="font-medium">Customer Support:</span>{" "}
                   Available 24/7 for any product-related queries.

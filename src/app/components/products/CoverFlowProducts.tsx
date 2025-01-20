@@ -85,7 +85,7 @@ const products = [
   {
     id: 4,
     image: ["https://img.freepik.com/free-photo/happy-young-girl-doctor-white-coat-with-stethoscope-around-neck-holding-blister-with-pills-pointing-with-index-finger-it-smiling-confident-standing-purple_141793-128176.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"],
-    name: "Rabipose-DSR3T",
+    name: "Sexual",
     price: "$50",
     MRP: "$60",
     description:

@@ -33,20 +33,17 @@ const OurTeam = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-6">
-            Our Team
+           About Us
           </p>
           <h2 className="text-3xl text-white font-bold mb-4">
-          Trusted Contract-Based Manufacturing
+          Directors
           </h2>
          
           <p className="text-white text-sm sm:text-lg mt-4">
-            We also specialize in contract-based manufacturing and supply of
-            high-quality pharmaceutical products. Our state-of-the-art
-            facilities ensure consistent quality and precision in every product
-            we deliver, meeting the unique needs of our clients across the
-            healthcare industry.
+          As leading pharmaceutical manufacturers, we are dedicated to producing high-quality healthcare solutions for a better world with our dedicated Team.
           </p>
         </div>
+        {/* Danish Khan is the founder and managing director of arolexpharmaceuticals Private Limited */}
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {teamMembers.map((member, index) => (

@@ -14,7 +14,7 @@ import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 
 const dropDownListBoxes = [
   {
-    title: "By Deseas",
+    title: "A to Z",
     links: [
       { title: "Rabipose-DSR3T", href: "/ProductDetails/1" },
       { title: "Arocef - 200", href: "/ProductDetails/2" },
@@ -22,21 +22,35 @@ const dropDownListBoxes = [
     ],
   },
   {
-    title: "By Uses",
+    title: "Categories",
     links: [
-      { title: "Rabipose-DSR3T", href: "/ProductDetails/1" },
-      { title: "Arocef - 200", href: "/ProductDetails/2" },
-      { title: "Budalecs", href: "/ProductDetails/3" },
+      { title: "Gastro", href: "/ProductDetails/1" },
+      { title: "Respiratory", href: "/ProductDetails/2" },
+      { title: "Antibiotics", href: "/ProductDetails/3" },
+      { title: "Nutraceuticals", href: "/ProductDetails/3" },
+      { title: "Pediatric", href: "/ProductDetails/3" },
+      { title: "Neurology", href: "/ProductDetails/3" },
+      { title: "Urology", href: "/ProductDetails/3" },
+      { title: "Injectables", href: "/ProductDetails/3" },
+      { title: "Syrups & Dry Syrups", href: "/ProductDetails/3" },
+      { title: "Powder & Sachet", href: "/ProductDetails/3" },
+      { title: "Gynaecology", href: "/ProductDetails/3" },
+      { title: "ENT & Opthalmic", href: "/ProductDetails/3" },
+      { title: "Ortho", href: "/ProductDetails/3" },
+      { title: "Ayurvedic", href: "/ProductDetails/3" },
+      { title: "Derma", href: "/ProductDetails/3" },
+      { title: "Cardio-Diabetics", href: "/ProductDetails/3" },
+      { title: "Sexual", href: "/ProductDetails/3" },
     ],
   },
-  {
-    title: "By Composition",
-    links: [
-      { title: "Rabipose-DSR3T", href: "/ProductDetails/1" },
-      { title: "Arocef - 200", href: "/ProductDetails/2" },
-      { title: "Budalecs", href: "/ProductDetails/3" },
-    ],
-  },
+  // {
+  //   title: "By Composition",
+  //   links: [
+  //     { title: "Rabipose-DSR3T", href: "/ProductDetails/1" },
+  //     { title: "Arocef - 200", href: "/ProductDetails/2" },
+  //     { title: "Budalecs", href: "/ProductDetails/3" },
+  //   ],
+  // },
 ];
 
 let MENU = [
@@ -226,7 +240,7 @@ function Header() {
                 className="flex items-center gap-2 bg-primary text-white py-2 rounded-full px-5 "
               >
                 <BsFillTelephoneFill size={16} color="white" />
-                <p className="text-sm">790&nbsp;652&nbsp;7876</p>
+                <p className="text-sm">8958&nbsp;755&nbsp;725</p>
               </Link>
             </div>
           </div>

@@ -22,7 +22,7 @@ export default function page() {
       <CertificationsSection />
       <AboutUsSection />
       <WorkSection />
-      <OurTeam />
+      {/* <OurTeam /> */}
       {/* <ProductSection /> */}
       <PharmaManufacture />
       <OurClientSection />
