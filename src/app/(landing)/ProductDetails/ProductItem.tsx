@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useRef, useEffect } from "react";
 import { Collapse } from "antd";
 import { BiMinus, BiPlus } from "react-icons/bi";
@@ -8,7 +8,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Navigation } from "swiper/modules";
 import Breadscrumb from "@/app/components/common/breadscrumb/Breadscrumb";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import Image from "next/image";
 
 const { Panel } = Collapse;
 
@@ -74,11 +80,12 @@ const ProductItem = ({ productDetails }: any) => {
               >
                 {productDetails.image.map((src: string, index: number) => (
                   <SwiperSlide key={index}>
-                    <div className="w-full h-96">
-                      <img
+                    <div className="w-full h-96 relative">
+                      <Image
                         src={src}
                         alt={`Medical Product ${index + 1}`}
-                        className="w-full h-full object-cover"
+                        layout="fill"
+                        objectFit="cover"
                       />
                     </div>
                   </SwiperSlide>
@@ -96,11 +103,15 @@ const ProductItem = ({ productDetails }: any) => {
                         : "border-gray-300"
                     }`}
                   >
-                    <img
-                      src={src}
-                      alt={`Thumbnail ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
+                     <div className="w-full h-96 relative">
+                      <Image
+                        src={src}
+                        alt={`Medical Product ${index + 1}`}
+                        layout="fill"
+                        objectFit="cover"
+                      />
+                    </div>
+                    
                   </div>
                 ))}
               </div>

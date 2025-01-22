@@ -6,59 +6,38 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
-
+import probest from '../../assets/images/clients/logo.png'
+import farlex from '../../assets/images/clients/falex.png'
+import bharat from '../../assets/images/clients/bharat.png'
+import sira from '../../assets/images/clients/svH72kUb.webp'
+import sanify from '../../assets/images/clients/Sanify-UpdLogo.jpg'
 export default function OurClientSection() {
   const clients = [
     {
       id: 1,
-      name: "BBC",
-      logo: "https://img.freepik.com/free-vector/organic-green-bio-lab-logo-vector-icon_126523-728.jpg",
+      name: "Probest",
+      logo: probest,
     },
     {
       id: 2,
       name: "The New York Times",
-      logo: "https://img.freepik.com/free-vector/green-eco-star-abstract-logo-icon_126523-958.jpg",
+      logo: farlex,
     },
     {
       id: 3,
       name: "BBC",
-      logo: "https://img.freepik.com/free-vector/organic-green-bio-lab-logo-vector-icon_126523-728.jpg",
+      logo: bharat,
     },
     {
       id: 4,
       name: "The New York Times",
-      logo: "https://img.freepik.com/free-vector/green-eco-star-abstract-logo-icon_126523-958.jpg",
+      logo: sira,
     },
     {
       id: 5,
       name: "BBC",
-      logo: "https://img.freepik.com/free-vector/organic-green-bio-lab-logo-vector-icon_126523-728.jpg",
-    },
-    {
-      id: 6,
-      name: "The New York Times",
-      logo: "https://img.freepik.com/free-vector/green-eco-star-abstract-logo-icon_126523-958.jpg",
-    },
-    {
-      id: 7,
-      name: "BBC",
-      logo: "https://img.freepik.com/free-vector/organic-green-bio-lab-logo-vector-icon_126523-728.jpg",
-    },
-    {
-      id: 8,
-      name: "The New York Times",
-      logo: "https://img.freepik.com/free-vector/green-eco-star-abstract-logo-icon_126523-958.jpg",
-    },
-    {
-      id: 9,
-      name: "BBC",
-      logo: "https://img.freepik.com/free-vector/organic-green-bio-lab-logo-vector-icon_126523-728.jpg",
-    },
-    {
-      id: 10,
-      name: "The New York Times",
-      logo: "https://img.freepik.com/free-vector/green-eco-star-abstract-logo-icon_126523-958.jpg",
-    },
+      logo: sanify,
+    }
   ];
 
   return (
@@ -79,14 +58,14 @@ export default function OurClientSection() {
         {clients.map((client) => (
           <div
             key={client.id}
-            className="flex justify-center items-center rounded-lg"
+            className="flex justify-center items-center rounded-lg bg-white"
           >
             <Image
               src={client.logo}
               alt={client.name}
               className="object-cover rounded-xl"
-              height={200}
-              width={200}
+              height={400}
+              width={300}
             />
           </div>
         ))}
@@ -103,12 +82,15 @@ export default function OurClientSection() {
         >
           {clients.map((client) => (
             <SwiperSlide key={client.id}>
-              <div className="flex justify-center items-center border rounded-lg shadow hover:shadow-lg">
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="object-cover"
-                />
+              <div className="flex justify-center items-center  rounded-lg bg-white hover:shadow-lg">
+               
+                  <Image
+              src={client.logo}
+              alt={client.name}
+              className="object-cover rounded-xl"
+              height={400}
+              width={300}
+            />
               </div>
             </SwiperSlide>
           ))}
