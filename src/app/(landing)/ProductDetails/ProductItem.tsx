@@ -1,11 +1,12 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-import { Collapse } from "antd";
+
 import { BiMinus, BiPlus } from "react-icons/bi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Collapse, Modal, Form, Input } from "antd";
 import { Autoplay, Navigation } from "swiper/modules";
 import Breadscrumb from "@/app/components/common/breadscrumb/Breadscrumb";
 import {
@@ -21,7 +22,7 @@ const { Panel } = Collapse;
 const ProductItem = ({ productDetails }: any) => {
   const [currentImage, setCurrentImage] = useState(0);
   const swiperRef = useRef<any>(null);
-
+  const [isModalVisible, setIsModalVisible] = useState(false);
   const customExpandIcon = ({ isActive }: { isActive: boolean }) => (
     <div
       className={`w-6 h-6 flex items-center justify-center rounded-full ${
@@ -58,6 +59,46 @@ const ProductItem = ({ productDetails }: any) => {
       href: `/ProductDetails/${productDetails?.id}`,
     },
   ];
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  // Function to handle modal close
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
+
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    city: "",
+    contact: "",
+    message: "",
+  });
+
+  const toggleForm = () => setIsFormOpen(!isFormOpen);
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    const mailtoLink = `mailto:arolexpharma@gmail.com?subject=Enquiry%20Request&body=${encodeURIComponent(
+      `First Name: ${formData.firstName}
+Last Name: ${formData.lastName}
+Email: ${formData.email}
+City: ${formData.city}
+Contact: ${formData.contact}
+Message: ${formData.message}`
+    )}`;
+
+    window.location.href = mailtoLink;
+  };
 
   return (
     <>
@@ -103,7 +144,7 @@ const ProductItem = ({ productDetails }: any) => {
                         : "border-gray-300"
                     }`}
                   >
-                     <div className="w-full h-96 relative">
+                    <div className="w-full h-96 relative">
                       <Image
                         src={src}
                         alt={`Medical Product ${index + 1}`}
@@ -111,13 +152,11 @@ const ProductItem = ({ productDetails }: any) => {
                         objectFit="cover"
                       />
                     </div>
-                    
                   </div>
                 ))}
               </div>
             </div>
 
-            {/* Product Details */}
             <div>
               <h1 className="text-3xl font-bold text-gray-900 mb-4">
                 {productDetails.name}
@@ -159,7 +198,10 @@ const ProductItem = ({ productDetails }: any) => {
               </div>
 
               <div className="flex gap-4 mb-8">
-                <button className="bg-green-600 text-white py-2 px-6 text-sm font-medium rounded-md hover:bg-green-700">
+                <button
+                  onClick={showModal}
+                  className="bg-green-600 text-white py-2 px-6 text-sm font-medium rounded-md hover:bg-green-700"
+                >
                   Enquiry Now
                 </button>
                 {/* <button className="bg-gray-200 text-gray-700 py-2 px-6 text-sm font-medium rounded-md hover:bg-gray-300">
@@ -215,7 +257,6 @@ const ProductItem = ({ productDetails }: any) => {
             </div>
           </div>
 
-          {/* FAQs */}
           <div className="mt-16">
             <h2 className="text-2xl font-bold text-center mb-8">
               Frequently Asked Questions
@@ -244,6 +285,72 @@ const ProductItem = ({ productDetails }: any) => {
             </Collapse>
           </div>
         </div>
+
+        <Modal
+          title="Enquiry Now"
+          open={isModalVisible}
+          onCancel={handleCancel}
+          footer={null}
+          centered
+        >
+          <form className="space-y-2 md:space-y-4" onSubmit={handleSubmit}>
+            <div className="flex flex-col md:flex-row md:space-x-2">
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                value={formData.firstName}
+                onChange={handleChange}
+                className="w-full md:w-1/2 p-2 md:p-3 border rounded"
+              />
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                value={formData.lastName}
+                onChange={handleChange}
+                className="w-full md:w-1/2 p-2 md:p-3 border rounded mt-2 md:mt-0"
+              />
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
+              onChange={handleChange}
+              className="w-full p-2 md:p-3 border rounded"
+            />
+            <input
+              type="text"
+              name="city"
+              placeholder="City"
+              value={formData.city}
+              onChange={handleChange}
+              className="w-full p-2 md:p-3 border rounded"
+            />
+            <input
+              type="text"
+              name="contact"
+              placeholder="Contact"
+              value={formData.contact}
+              onChange={handleChange}
+              className="w-full p-2 md:p-3 border rounded"
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              value={formData.message}
+              onChange={handleChange}
+              className="w-full p-2 md:p-3 border rounded resize-none h-24"
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full bg-primary hover:bg-sky-400 text-white py-2 md:py-3 rounded-lg transition"
+            >
+              Submit
+            </button>
+          </form>
+        </Modal>
       </div>
     </>
   );

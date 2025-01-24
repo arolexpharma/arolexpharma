@@ -11,7 +11,6 @@ import { BsFillTelephoneFill, BsTicketPerforated } from "react-icons/bs";
 import Image from "next/image";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 
-
 const dropDownListBoxes = [
   {
     title: "A to Z",
@@ -19,14 +18,14 @@ const dropDownListBoxes = [
       { title: "Rabipose-DSR3T", href: "/ProductDetails/1" },
       { title: "Arocef - 200", href: "/ProductDetails/2" },
       { title: "Budalecs", href: "/ProductDetails/3" },
-    ],
+    ].sort((a, b) => a.title.localeCompare(b.title)),
   },
   {
     title: "Categories",
     links: [
-      { title: "Gastro", href: "/ProductDetails/1" },
+      { title: "Gastro", href: "/ProductDetails/3" },
       { title: "Respiratory", href: "/ProductDetails/2" },
-      { title: "Antibiotics", href: "/ProductDetails/3" },
+      { title: "Antibiotics", href: "/ProductDetails/2" },
       { title: "Nutraceuticals", href: "/ProductDetails/3" },
       { title: "Pediatric", href: "/ProductDetails/3" },
       { title: "Neurology", href: "/ProductDetails/3" },
@@ -40,8 +39,12 @@ const dropDownListBoxes = [
       { title: "Ayurvedic", href: "/ProductDetails/3" },
       { title: "Derma", href: "/ProductDetails/3" },
       { title: "Cardio-Diabetics", href: "/ProductDetails/3" },
-      { title: "Sexual", href: "/ProductDetails/3" },
-    ],
+      {
+        title: "Sexual",
+        href: "https://www.siraremedies.in/",
+        target: "_blank",
+      },
+    ].sort((a, b) => a.title.localeCompare(b.title)),
   },
   // {
   //   title: "By Composition",
@@ -89,7 +92,7 @@ let MENU = [
 ];
 
 const Navbar = (handleClickMenuOpen: any) => {
-  const [active, setActive] = useState<any>('/');
+  const [active, setActive] = useState<any>("/");
   const handleLinkClick = (link: string) => {
     setActive(link);
     document
@@ -100,7 +103,7 @@ const Navbar = (handleClickMenuOpen: any) => {
   return (
     <nav className="navbar-menu ">
       <ul className="navbar-menu-items">
-        <li className="navbar-menu-item" onClick={()=>handleLinkClick('/')}>
+        <li className="navbar-menu-item" onClick={() => handleLinkClick("/")}>
           <Link
             href={"/"}
             className={`nav-item ${active === "/" ? "active-link" : ""}`}
@@ -117,7 +120,7 @@ const Navbar = (handleClickMenuOpen: any) => {
               onClick={() => setActive(active === index ? 999 : index)}
             >
               <Link
-                href={'#'}
+                href={"#"}
                 className={`menu-item ${
                   active === item.link ? "active-link" : ""
                 }`}
@@ -140,7 +143,7 @@ const Navbar = (handleClickMenuOpen: any) => {
                                   <li
                                     className="navbar-submenu-dropdown-mega-li"
                                     key={subb.title}
-                                    onClick={()=>handleLinkClick(subb?.href)}
+                                    onClick={() => handleLinkClick(subb?.href)}
                                   >
                                     <Link href={subb.href}>{subb.title}</Link>
                                   </li>
@@ -157,26 +160,26 @@ const Navbar = (handleClickMenuOpen: any) => {
             </li>
           );
         })}
-        <li className="navbar-menu-item" >
+        <li className="navbar-menu-item">
           <Link
             href={"/career"}
             className={`nav-item ${active === "/career" ? "active-link" : ""}`}
-            onClick={()=>handleLinkClick('/career')}
+            onClick={() => handleLinkClick("/career")}
           >
             Careers
           </Link>
           <Link
             href={"/blogs"}
             className={`nav-item ${active === "/blogs" ? "active-link" : ""}`}
-            onClick={()=>handleLinkClick('/blogs')}
+            onClick={() => handleLinkClick("/blogs")}
           >
             Blogs
           </Link>
-        
+
           <Link
             href={"/aboutus"}
             className={`nav-item ${active === "/aboutus" ? "active-link" : ""}`}
-            onClick={()=>handleLinkClick('/aboutus')}
+            onClick={() => handleLinkClick("/aboutus")}
           >
             About Us
           </Link>
@@ -185,7 +188,7 @@ const Navbar = (handleClickMenuOpen: any) => {
             className={`nav-item ${
               active === "/contactus" ? "active-link" : ""
             }`}
-            onClick={()=>handleLinkClick('/contactus')}
+            onClick={() => handleLinkClick("/contactus")}
           >
             Contact Us
           </Link>

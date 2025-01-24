@@ -1,20 +1,26 @@
+"use client";
 import Button from "@/app/components/button/Button";
 import Breadscrumb from "@/app/components/common/breadscrumb/Breadscrumb";
-import Image from "next/image"; // Import Next.js Image component
-import React from "react";
+import Image from "next/image";
+import React, { useState } from "react";
 import { FaSitemap, FaChartLine, FaAward } from "react-icons/fa";
+import CareerForm from "./CareerForm";
 const breadcrumbItems: any = [
   { label: "Home", href: "/" },
   { label: "Career", href: `/career` },
 ];
 
 export default function Page() {
+ 
   return (
     <>
       <Breadscrumb items={breadcrumbItems} />
       <div className="bg-blue-50">
-        <div className="bg-white">
+      <div className="bg-white">
           <div className="container mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 py-10 border-b-2">
+              Build Your Career with Us
+            </h2>
             <div className="px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -26,13 +32,7 @@ export default function Page() {
                 </p>
               </div>
               <div>
-                <Image
-                  src="https://img.freepik.com/free-photo/attractive-female-doctor-standing-with-documents-hospital_1303-20688.jpg"
-                  alt="Team working"
-                  width={600}
-                  height={400}
-                  className="rounded-lg shadow-lg"
-                />
+                <CareerForm />
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="container mx-auto px-4 py-16">
+        {/* <div className="container mx-auto px-4 py-16">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
             Open Positions
           </h2>
@@ -158,11 +158,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-        </div>
-
+        </div> */}
       </div>
-
-      
     </>
   );
 }

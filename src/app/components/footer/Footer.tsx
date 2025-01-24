@@ -44,15 +44,15 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <Link href="/news" className="hover:underline">
-                News
+              <Link href="/blogs" className="hover:underline">
+                Blogs
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/media-kit" className="hover:underline">
                 Media kit
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/contactus" className="hover:underline">
                 Contact
@@ -74,7 +74,7 @@ export default function Footer() {
                 Twitter
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 href="https://linkedin.com"
                 target="_blank"
@@ -83,7 +83,7 @@ export default function Footer() {
               >
                 LinkedIn
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 href="https://facebook.com"
@@ -96,7 +96,7 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/arolexpharma/profilecard/?igsh=MWhyaXFkODI0MmI0ag=="
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -120,11 +120,11 @@ export default function Footer() {
                 Privacy
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/licenses" className="hover:underline">
                 Licenses
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link href="/contactus" className="hover:underline">
                 Contact Us

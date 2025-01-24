@@ -6,11 +6,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import Image from "next/image";
-import probest from '../../assets/images/clients/logo.png'
-import farlex from '../../assets/images/clients/falex.png'
-import bharat from '../../assets/images/clients/bharat.png'
-import sira from '../../assets/images/clients/svH72kUb.webp'
-import sanify from '../../assets/images/clients/Sanify-UpdLogo.jpg'
+import probest from "../../assets/images/clients/logo.png";
+import farlex from "../../assets/images/clients/falex.png";
+import bharat from "../../assets/images/clients/bharat.png";
+import sira from "../../assets/images/clients/svH72kUb.webp";
+import sanify from "../../assets/images/clients/Sanify-UpdLogo.jpg";
+import Button from "../button/Button";
 export default function OurClientSection() {
   const clients = [
     {
@@ -37,7 +38,7 @@ export default function OurClientSection() {
       id: 5,
       name: "BBC",
       logo: sanify,
-    }
+    },
   ];
 
   return (
@@ -83,14 +84,13 @@ export default function OurClientSection() {
           {clients.map((client) => (
             <SwiperSlide key={client.id}>
               <div className="flex justify-center items-center  rounded-lg bg-white hover:shadow-lg">
-               
-                  <Image
-              src={client.logo}
-              alt={client.name}
-              className="object-cover rounded-xl"
-              height={400}
-              width={300}
-            />
+                <Image
+                  src={client.logo}
+                  alt={client.name}
+                  className="object-cover rounded-xl"
+                  height={400}
+                  width={300}
+                />
               </div>
             </SwiperSlide>
           ))}
@@ -101,9 +101,11 @@ export default function OurClientSection() {
         <p className="text-gray-100 text-sm sm:text-base lg:text-lg mb-2 font-medium">
           Be smart. Let us do our job.
         </p>
-        <button className="bg-lime-500 text-white text-xs sm:text-sm lg:text-base font-medium px-3 py-2 rounded-lg hover:scale-105 transition">
-          Try us out
-        </button>
+        <Button
+          href="/aboutus"
+          text="Try Us Out"
+          className="bg-lime-500 text-white text-xs sm:text-sm lg:text-base font-medium px-3 py-2 rounded-lg hover:scale-105 transition"
+        ></Button>
       </div>
     </section>
   );

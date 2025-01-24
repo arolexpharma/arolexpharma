@@ -57,12 +57,13 @@ export default function Banner() {
             </h1>
             <p className="mt-4 text-sm md:text-lg leading-relaxed">
               Arolex Pharmaceuticals specializes in contract-based
-              manufacturing, marketing, <span className="text-green-300">export</span> and supplying high-quality
-              pharmaceutical products, including antibiotics, nutraceuticals,
-              painkillers, injections, syrups, tablets, drops, and
-              gastrointestinal drugs and many more. Our commitment to innovation ensures that
-              we meet global standards while providing tailored solutions to our
-              clients.
+              manufacturing, marketing,{" "}
+              <span className="text-green-300">export</span>, and supplying
+              high-quality pharmaceutical products, including antibiotics,
+              nutraceuticals, painkillers, injections, syrups, tablets, drops,
+              gastrointestinal drugs, and many more. Our commitment to
+              innovation ensures that we meet global standards while providing
+              tailored solutions to our clients.
             </p>
 
             <Link href={"/contactus"}>
@@ -80,46 +81,63 @@ export default function Banner() {
         variants={formVariants}
         className="hidden lg:block absolute bottom-[-40px] md:bottom-[-50px] right-5 bg-white shadow-lg rounded-lg p-4 md:p-6 w-full md:w-[400px] z-30"
       >
-        <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800">
-          Request an Appointment
+        <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800 text-center">
+          Enquiry Now
         </h3>
-        <form className="space-y-2 md:space-y-4">
+        <form
+          action="mailto:arolexpharma@gmail.com"
+          method="POST"
+          encType="text/plain"
+          className="space-y-2 md:space-y-4"
+        >
           <div className="flex flex-col md:flex-row md:space-x-2">
             <input
               type="text"
+              name="First Name"
               placeholder="First Name"
               className="w-full md:w-1/2 p-2 md:p-3 border rounded"
+              required
             />
             <input
               type="text"
+              name="Last Name"
               placeholder="Last Name"
               className="w-full md:w-1/2 p-2 md:p-3 border rounded mt-2 md:mt-0"
+              required
             />
           </div>
           <input
             type="email"
+            name="Email"
             placeholder="Email"
             className="w-full p-2 md:p-3 border rounded"
+            required
           />
           <input
             type="text"
+            name="City"
             placeholder="City"
             className="w-full p-2 md:p-3 border rounded"
+            required
           />
           <input
             type="text"
+            name="Contact"
             placeholder="Contact"
             className="w-full p-2 md:p-3 border rounded"
+            required
           />
           <textarea
+            name="Message"
             placeholder="Your Message"
             className="w-full p-2 md:p-3 border rounded resize-none h-24"
+            required
           ></textarea>
           <button
             type="submit"
             className="w-full bg-primary hover:bg-sky-400 text-white py-2 md:py-3 rounded-lg transition"
           >
-            Request & Submit
+            Submit
           </button>
         </form>
       </motion.div>
