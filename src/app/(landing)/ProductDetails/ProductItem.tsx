@@ -222,7 +222,7 @@ Message: ${formData.message}`
               </div>
               <div className="mt-6 flex gap-20 text-xl text-gray-600">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/profile.php?id=61572516152319&sk=about"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-blue-600"
@@ -238,7 +238,7 @@ Message: ${formData.message}`
                   <FaTwitter />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/arolexpharma/profilecard/?igsh=MWhyaXFkODI0MmI0ag=="
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-pink-500"

@@ -60,7 +60,7 @@ export default function Page() {
               </div>
             </div>
             <div className="flex gap-16 sm:gap-20 pt-6">
-              <a href="#" className="text-gray-800 hover:text-blue-500">
+              <a href="https://www.facebook.com/profile.php?id=61572516152319&sk=about" className="text-gray-800 hover:text-blue-500">
                 <FaFacebookF size={24} />
               </a>
               <a href="#" className="text-gray-800 hover:text-blue-400">
@@ -69,7 +69,7 @@ export default function Page() {
               <a href="#" className="text-gray-800 hover:text-blue-700">
                 <FaLinkedinIn size={24} />
               </a>
-              <a href="#" className="text-gray-800 hover:text-pink-500">
+              <a href="https://www.instagram.com/arolexpharma/profilecard/?igsh=MWhyaXFkODI0MmI0ag==" className="text-gray-800 hover:text-pink-500">
                 <FaInstagram size={24} />
               </a>
             </div>

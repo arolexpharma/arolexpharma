@@ -64,7 +64,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-white mb-3">Social</h4>
           <ul className="space-y-2 text-sm text-gray-300 leading-8">
-            <li>
+            {/* <li>
               <Link
                 href="https://twitter.com"
                 target="_blank"
@@ -73,7 +73,7 @@ export default function Footer() {
               >
                 Twitter
               </Link>
-            </li>
+            </li> */}
             {/* <li>
               <Link
                 href="https://linkedin.com"
@@ -84,9 +84,20 @@ export default function Footer() {
                 LinkedIn
               </Link>
             </li> */}
+          
             <li>
               <Link
-                href="https://facebook.com"
+                href="https://www.youtube.com/@AROLEXPHARMACEUTICALPVTLTD"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
+                Youtube
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.facebook.com/profile.php?id=61572516152319&sk=about"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:underline"
@@ -136,7 +147,7 @@ export default function Footer() {
 
       <div className="container mx-auto mt-10 border-t border-gray-500 pt-6 flex flex-col md:flex-row items-center justify-between text-center text-sm text-gray-500">
         <p className="mb-4 md:mb-0 text-gray-300">
-          © 2024 All rights reserved.
+          © 2025 All rights reserved.
         </p>
 
         <div className="flex justify-center space-x-6 bg-white/80 py-2 px-4 rounded-lg shadow">

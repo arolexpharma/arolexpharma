@@ -42,7 +42,7 @@ export default function FloatingSocialButton() {
         </Link>
 
         <Link
-          href="https://facebook.com/yourprofile"
+          href="https://www.facebook.com/profile.php?id=61572516152319&sk=about"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-600 rounded-full shadow-lg p-3 hover:scale-110 transition-transform duration-300 flex items-center justify-center"
@@ -59,14 +59,14 @@ export default function FloatingSocialButton() {
           <FaInstagram className="text-white" size={24} />
         </Link>
 
-        <Link
+        {/* <Link
           href="https://twitter.com/yourprofile"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-400 rounded-full shadow-lg p-3 hover:scale-110 transition-transform duration-300 flex items-center justify-center"
         >
           <FaTwitter className="text-white" size={24} />
-        </Link>
+        </Link> */}
         <Link
           href="https://www.youtube.com/@AROLEXPHARMACEUTICALPVTLTD"
           target="_blank"
