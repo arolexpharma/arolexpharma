@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -18,6 +18,37 @@ export default function Banner() {
   const formVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    city: "",
+    contact: "",
+    message: "",
+  });
+
+  const toggleForm = () => setIsFormOpen(!isFormOpen);
+
+  const handleChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+
+    const mailtoLink = `mailto:arolexpharma@gmail.com?subject=Enquiry%20Request&body=${encodeURIComponent(
+      `First Name: ${formData.firstName}
+Last Name: ${formData.lastName}
+Email: ${formData.email}
+City: ${formData.city}
+Contact: ${formData.contact}
+Message: ${formData.message}`
+    )}`;
+
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -85,7 +116,7 @@ export default function Banner() {
           Enquiry Now
         </h3>
         <form
-          action="mailto:arolexpharma@gmail.com"
+          onSubmit={handleSubmit}
           method="POST"
           encType="text/plain"
           className="space-y-2 md:space-y-4"
@@ -93,45 +124,51 @@ export default function Banner() {
           <div className="flex flex-col md:flex-row md:space-x-2">
             <input
               type="text"
-              name="First Name"
+              name="firstName"
               placeholder="First Name"
+              value={formData.firstName}
+              onChange={handleChange}
               className="w-full md:w-1/2 p-2 md:p-3 border rounded"
-              required
             />
             <input
               type="text"
-              name="Last Name"
+              name="lastName"
               placeholder="Last Name"
+              value={formData.lastName}
+              onChange={handleChange}
               className="w-full md:w-1/2 p-2 md:p-3 border rounded mt-2 md:mt-0"
-              required
             />
           </div>
           <input
             type="email"
-            name="Email"
+            name="email"
             placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
             className="w-full p-2 md:p-3 border rounded"
-            required
           />
           <input
             type="text"
-            name="City"
+            name="city"
             placeholder="City"
+            value={formData.city}
+            onChange={handleChange}
             className="w-full p-2 md:p-3 border rounded"
-            required
           />
           <input
             type="text"
-            name="Contact"
+            name="contact"
             placeholder="Contact"
+            value={formData.contact}
+            onChange={handleChange}
             className="w-full p-2 md:p-3 border rounded"
-            required
           />
           <textarea
-            name="Message"
+            name="message"
             placeholder="Your Message"
+            value={formData.message}
+            onChange={handleChange}
             className="w-full p-2 md:p-3 border rounded resize-none h-24"
-            required
           ></textarea>
           <button
             type="submit"
