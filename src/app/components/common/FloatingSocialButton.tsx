@@ -33,7 +33,7 @@ export default function FloatingSocialButton() {
         }`}
       >
         <Link
-          href="https://wa.me/8958755725"
+          href="https://wa.me/+918958755725"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 rounded-full shadow-lg p-3 hover:scale-110 transition-transform duration-300 flex items-center justify-center"
