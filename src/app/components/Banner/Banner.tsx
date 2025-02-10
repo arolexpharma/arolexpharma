@@ -81,20 +81,19 @@ Message: ${formData.message}`
               Leading Pharmaceutical Solutions
             </span>
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-2">
-             Arolex Pharma Care Through Innovation{" "}
+              Arolex Pharma Care Through Innovation{" "}
               <span className="text-green-500">
                 in Pharmaceutical Manufacturing.
               </span>
             </h1>
             <p className="mt-4 text-sm md:text-lg leading-relaxed">
-              Arolex Pharmaceuticals specializes in contract-based
-              manufacturing, marketing,{" "}
-              <span className="text-green-300">export</span>, and supplying
-              high-quality pharmaceutical products, including antibiotics,
-              nutraceuticals, painkillers, injections, syrups, tablets, drops,
-              gastrointestinal drugs, and many more. Our commitment to
-              innovation ensures that we meet global standards while providing
-              tailored solutions to our clients.
+              Arolex Pharma specializes in contract-based manufacturing,
+              marketing, <span className="text-green-300">export</span>, and
+              supplying high-quality pharmaceutical products, including
+              antibiotics, nutraceuticals, painkillers, injections, syrups,
+              tablets, drops, gastrointestinal drugs, and many more. Our
+              commitment to innovation ensures that we meet global standards
+              while providing tailored solutions to our clients.
             </p>
 
             <Link href={"/contactus"}>

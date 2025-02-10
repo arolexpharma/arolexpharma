@@ -13,25 +13,19 @@ import CoverFlowProducts from "../components/products/CoverFlowProducts";
 import AboutUsSection from "../components/section/AboutUsSection";
 import ContactSection from "../components/section/ContactSection ";
 import Head from "next/head";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Arolex Pharma - Leading Medicine Packaging and Manufacturing",
+  description:
+    "Arolex Pharma is a leading pharmaceutical company specializing in innovative medicine packaging and manufacturing solutions, serving both B2B and B2C clients with high-quality pharmaceutical products.",
+  keywords:
+    "Arolex Pharma, arolex pharmaceuticals, medicine packaging, medicine manufacturing, B2B pharmaceuticals, B2C pharmaceuticals, pharmaceutical solutions, drug packaging, pharmaceutical manufacturing, Paracetamol, Ibuprofen, Amoxicillin, Ciprofloxacin, Metformin, Omeprazole, Aspirin, Atorvastatin, Losartan, Cetirizine",
+};
 
 export default function page() {
   return (
     <>
-      <Head>
-        <title>
-          Arolex Pharmaceuticals - Medicine Packaging and Manufacturing
-        </title>
-        <meta
-          name="description"
-          content="Arolex Pharmaceuticals specializes in innovative medicine packaging and manufacturing solutions. We serve both B2B and B2C clients with high-quality pharmaceutical products."
-        />
-        <meta
-          name="keywords"
-          content="arolex pharma, arolex pharmaceuticals, medicine packaging, medicine manufacturing, B2B pharmaceuticals, B2C pharmaceuticals, pharmaceutical solutions, drug packaging, pharmaceutical manufacturing, Paracetamol, Ibuprofen, Amoxicillin, Ciprofloxacin, Metformin, Omeprazole, Aspirin, Atorvastatin, Losartan, Cetirizine"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/images/favicon.ico" />
-      </Head>
+     
       <div>
         <Banner />
         <ScrollingStrip />
