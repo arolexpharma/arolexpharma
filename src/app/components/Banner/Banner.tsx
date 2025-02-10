@@ -81,7 +81,7 @@ Message: ${formData.message}`
               Leading Pharmaceutical Solutions
             </span>
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-2">
-              Care Through Innovation{" "}
+             Arolex Pharma Care Through Innovation{" "}
               <span className="text-green-500">
                 in Pharmaceutical Manufacturing.
               </span>

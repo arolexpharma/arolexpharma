@@ -2,6 +2,7 @@ import React from "react";
 import Breadscrumb from "@/app/components/common/breadscrumb/Breadscrumb";
 import OurTeam from "@/app/components/section/OurTeam";
 import FAQSection from "@/app/components/section/FAQSection";
+
 import {
   FaFacebookF,
   FaTwitter,
@@ -9,6 +10,28 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import ContactForm from "./ContactForm";
+import Head from "next/head";
+export const metadata = {
+  title: "Contact Us | Arolex Pharmaceuticals",
+  description:
+    "Get in touch with Arolex Pharmaceuticals for customer support, feedback, and suggestions. Reach us via email, call, or contact form.",
+  keywords:
+    "Arolex Pharmaceuticals, Contact Us, Pharmaceutical Company, Support, Feedback",
+  openGraph: {
+    title: "Contact Us | Arolex Pharmaceuticals",
+    description:
+      "Get in touch with Arolex Pharmaceuticals for customer support, feedback, and suggestions.",
+    image: "../../assets/images/Logo.png",
+    url: "https://www.arolexpharma.com/contactus",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Arolex Pharmaceuticals",
+    description:
+      "Get in touch with Arolex Pharmaceuticals for customer support and suggestions.",
+  },
+  canonical: "https://www.arolexpharma.com/contactus",
+};
 export default function Page() {
   const breadcrumbItems: any = [
     { label: "Home", href: "/" },
@@ -17,6 +40,7 @@ export default function Page() {
 
   return (
     <div>
+     
       <Breadscrumb items={breadcrumbItems} />
 
       <div className="px-6 py-12 md:py-20 bg-blue-50">
@@ -60,7 +84,10 @@ export default function Page() {
               </div>
             </div>
             <div className="flex gap-16 sm:gap-20 pt-6">
-              <a href="https://www.facebook.com/profile.php?id=61572516152319&sk=about" className="text-gray-800 hover:text-blue-500">
+              <a
+                href="https://www.facebook.com/profile.php?id=61572516152319&sk=about"
+                className="text-gray-800 hover:text-blue-500"
+              >
                 <FaFacebookF size={24} />
               </a>
               <a href="#" className="text-gray-800 hover:text-blue-400">
@@ -69,7 +96,10 @@ export default function Page() {
               <a href="#" className="text-gray-800 hover:text-blue-700">
                 <FaLinkedinIn size={24} />
               </a>
-              <a href="https://www.instagram.com/arolexpharma/profilecard/?igsh=MWhyaXFkODI0MmI0ag==" className="text-gray-800 hover:text-pink-500">
+              <a
+                href="https://www.instagram.com/arolexpharma/profilecard/?igsh=MWhyaXFkODI0MmI0ag=="
+                className="text-gray-800 hover:text-pink-500"
+              >
                 <FaInstagram size={24} />
               </a>
             </div>
