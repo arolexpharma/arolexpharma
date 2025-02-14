@@ -14,6 +14,7 @@ import AboutUsSection from "../components/section/AboutUsSection";
 import ContactSection from "../components/section/ContactSection ";
 import Head from "next/head";
 import { Metadata } from "next";
+
 export const metadata: Metadata = {
   title: "Arolex Pharma - Leading Medicine Packaging and Manufacturing",
   description:

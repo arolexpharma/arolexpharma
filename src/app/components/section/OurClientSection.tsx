@@ -21,22 +21,22 @@ export default function OurClientSection() {
     },
     {
       id: 2,
-      name: "The New York Times",
+      name: "farlex",
       logo: farlex,
     },
     {
       id: 3,
-      name: "BBC",
+      name: "bharat",
       logo: bharat,
     },
     {
       id: 4,
-      name: "The New York Times",
+      name: "sira remedies",
       logo: sira,
     },
     {
       id: 5,
-      name: "BBC",
+      name: "sanify",
       logo: sanify,
     },
   ];
