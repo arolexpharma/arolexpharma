@@ -1,18 +1,9 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: "https://www.arolexpharma.com",
-  generateRobotsTxt: false,
+  generateRobotsTxt: true,
   changefreq: "weekly",
   generateIndexSitemap: true,
-  robotsTxtOptions: {
-
-    policies: [
-      {
-        userAgent: "*",
-        allow: "/",
-      },
-    ],
-  },
   transform: async (config, path) => {
     return {
       loc: path.replace("https://arolexpharma.com", "https://www.arolexpharma.com"),
