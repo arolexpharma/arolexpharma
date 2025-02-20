@@ -4,6 +4,17 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: "weekly",
   generateIndexSitemap: true,
+  robotsTxtOptions: {
+    additionalSitemaps: [
+      "https://www.arolexpharma.com/sitemap-0.xml"
+    ],
+    policies: [
+      {
+        userAgent: "*",
+        allow: "/",
+      },
+    ],
+  },
   transform: async (config, path) => {
     return {
       loc: path.replace("https://arolexpharma.com", "https://www.arolexpharma.com"),
