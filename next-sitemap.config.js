@@ -1,13 +1,11 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: "https://www.arolexpharma.com",
-  generateRobotsTxt: true,
+  generateRobotsTxt: false,
   changefreq: "weekly",
   generateIndexSitemap: true,
   robotsTxtOptions: {
-    additionalSitemaps: [
-      "https://www.arolexpharma.com/sitemap-0.xml"
-    ],
+
     policies: [
       {
         userAgent: "*",
