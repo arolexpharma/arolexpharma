@@ -41,11 +41,11 @@ export default function Banner() {
 
     const mailtoLink = `mailto:arolexpharma@gmail.com?subject=Enquiry%20Request&body=${encodeURIComponent(
       `First Name: ${formData.firstName}
-Last Name: ${formData.lastName}
-Email: ${formData.email}
-City: ${formData.city}
-Contact: ${formData.contact}
-Message: ${formData.message}`
+      Last Name: ${formData.lastName}
+      Email: ${formData.email}
+      City: ${formData.city}
+      Contact: ${formData.contact}
+      Message: ${formData.message}`
     )}`;
 
     window.location.href = mailtoLink;

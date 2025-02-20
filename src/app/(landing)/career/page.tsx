@@ -5,18 +5,18 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { FaSitemap, FaChartLine, FaAward } from "react-icons/fa";
 import CareerForm from "./CareerForm";
+import FemaleDoctor from "@/app/assets/images/career/femaleDoctor.png";
 const breadcrumbItems: any = [
   { label: "Home", href: "/" },
   { label: "Career", href: `/career` },
 ];
 
 export default function Page() {
- 
   return (
     <>
       <Breadscrumb items={breadcrumbItems} />
       <div className="bg-blue-50">
-      <div className="bg-white">
+        <div className="bg-white">
           <div className="container mx-auto">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-800 py-10 border-b-2">
               Build Your Career with Us
@@ -86,8 +86,8 @@ export default function Page() {
           <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <Image
-                src="https://img.freepik.com/free-photo/attractive-female-doctor-standing-with-documents-hospital_1303-20688.jpg"
-                alt="Happy working"
+                src={FemaleDoctor}
+                alt="doctor"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg"

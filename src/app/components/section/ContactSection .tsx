@@ -1,16 +1,19 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-
+import ContactImage from "@/app/assets/images/pharma/contact.png";
+import Image from "next/image";
 const ContactSection = () => {
   return (
     <div className="bg-blue-50">
       <div className="container mx-auto px-5 py-16 sm:py-20 ">
         <div className="flex flex-wrap   shadow-lg rounded-lg overflow-hidden">
           <div className="w-full md:w-1/2">
-            <img
-              src="https://img.freepik.com/free-photo/doctor-working-medical-research_23-2149345462.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"
+            <Image
+              src={ContactImage}
               alt="Contact Image"
+              width={500} 
+              height={400} 
               className="w-full h-64 md:h-full object-cover"
             />
           </div>
@@ -24,7 +27,7 @@ const ContactSection = () => {
             </p>
             <Link
               href={"/contactus"}
-              className="bg-gradient-to-r from-lime-500 to-lime-600 text-white text-center px-6 py-3 bg-green-500 text-white font-semibold rounded-full hover:bg-green-400 transition duration-300"
+              className="bg-gradient-to-r from-lime-500 to-lime-600 text-white text-center px-6 py-3 bg-green-500  font-semibold rounded-full hover:bg-green-400 transition duration-300"
             >
               View Contact Details
             </Link>

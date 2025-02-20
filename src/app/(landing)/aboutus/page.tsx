@@ -18,10 +18,12 @@ import {
   FaFlask,
   FaRocket,
 } from "react-icons/fa";
+import Team from "@/app/assets/images/aboutus/doctorTeam.png";
 import OurTeam from "@/app/components/section/OurTeam";
 import FAQSection from "@/app/components/section/FAQSection";
 import Head from "next/head";
 import { Metadata } from "next";
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "About Us - Arolex Pharmaceuticals",
   description:
@@ -33,11 +35,7 @@ export const metadata: Metadata = {
     title: "About Us - Arolex Pharmaceuticals",
     description:
       "Learn more about Arolex Pharmaceuticals, a leading manufacturer dedicated to delivering exceptional pharmaceutical solutions and healthcare products worldwide.",
-    images: [
-      {
-        url: "https://img.freepik.com/free-photo/nurse-doctor-team-ready-work-day_23-2149309942.jpg",
-      },
-    ],
+
     url: "https://www.arolexpharma.com/aboutus",
   },
   twitter: {
@@ -60,10 +58,12 @@ export default function AboutUs() {
       <section className="py-12 bg-blue-50">
         <div className="container mx-auto px-6 md:grid md:grid-cols-[50%_50%] items-center gap-8">
           <div>
-            <img
-              src="https://img.freepik.com/free-photo/nurse-doctor-team-ready-work-day_23-2149309942.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"
+            <Image
+              src={Team}
               alt="Team working together"
-              className="rounded-lg shadow-lg"
+              width={500} 
+              height={300} 
+              className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
 

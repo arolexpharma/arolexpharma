@@ -1,6 +1,7 @@
 import React from "react";
+import Image from "next/image";
 import Button from "../button/Button";
-
+import TeamImage from '../../assets/images/aboutus/doctorTeam.png'
 export default function AboutUsSection() {
   return (
     <section className="py-16 sm:py-20 bg-primary">
@@ -15,9 +16,11 @@ export default function AboutUsSection() {
 
       <div className="container mx-auto px-6 grid gap-8 md:grid-cols-2 items-center">
         <div className="flex justify-center">
-          <img
-            src="https://img.freepik.com/free-photo/nurse-doctor-team-ready-work-day_23-2149309942.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid"
+          <Image
+            src={TeamImage}
             alt="Team working together"
+            width={550}
+            height={400}
             className="rounded-lg shadow-lg w-full max-w-[550px] sm:max-w-[400px] md:max-w-[550px]"
           />
         </div>

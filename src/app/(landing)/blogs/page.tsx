@@ -2,38 +2,14 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Breadscrumb from "@/app/components/common/breadscrumb/Breadscrumb";
+import { blogPosts } from "@/app/utils/rawdata";
 
 const breadcrumbItems: any = [
   { label: "Home", href: "/" },
   { label: "Blogs", href: `/blogs` },
 ];
 
-const blogPosts = [
-  {
-    id: 1,
-    title: "Understanding Rabipose-DSR3T: Benefits and Usage",
-    date: "January 10, 2025",
-    author: "admin",
-    image:
-      "https://img.freepik.com/free-photo/medical-banner-with-doctor-wearing-goggles_23-2149611193.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid",
-  },
-  {
-    id: 2,
-    title: "Acrocef-200: Comprehensive Guide to Antibiotics",
-    date: "January 11, 2025",
-    author: "admin",
-    image:
-      "https://img.freepik.com/free-vector/arabic-doctor-with-medical-icon-hand-drawn-sketch-vector-background_460848-15109.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid",
-  },
-  {
-    id: 3,
-    title: "Budalecs: All You Need to Know About Its Applications",
-    date: "January 12, 2025",
-    author: "admin",
-    image:
-      "https://img.freepik.com/free-photo/medical-banner-with-doctor-holding-stethoscope_23-2149611203.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_hybrid",
-  },
-];
+
 
 export default function BlogPage() {
   return (

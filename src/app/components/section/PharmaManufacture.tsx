@@ -4,7 +4,10 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion"; 
 import manufacture from "@/app/assets/images/manufacture.jpg";
-
+import PharmaImage from '@/app/assets/images/pharma/pharma_manufacture.png'
+import PharmaCompanyImage from '@/app/assets/images/pharma/pharma_manufacture_company.png'
+import PharmaManufactureImage from '@/app/assets/images/pharma/pharma_manufacture_medicines.png'
+import PharmaMedicineImage from '@/app/assets/images/pharma/pharma_manufacture_medicine.png'
 
 const ResponsiveImageGrid = () => {
   
@@ -85,7 +88,7 @@ const ResponsiveImageGrid = () => {
      
         <div className="grid grid-rows-2 gap-4">
           <Card
-            image="https://img.freepik.com/free-photo/portrait-professional-technologist-protective-uniform-looking-aside_342744-1166.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"
+            image={PharmaImage}
             title="Advanced Tablets"
             subtitle="High-Quality Solutions"
             height="300px"
@@ -97,7 +100,7 @@ const ResponsiveImageGrid = () => {
 
           <div className="grid grid-cols-2 gap-4">
             <Card
-              image="https://img.freepik.com/free-photo/transparent-plastic-bottles-filled-with-yellow-substance_273609-13375.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"
+              image={PharmaCompanyImage}
               title="Softgel Capsules"
               subtitle="Precision Manufacturing"
               height="300px"
@@ -107,7 +110,7 @@ const ResponsiveImageGrid = () => {
               }}
             />
             <Card
-              image="https://img.freepik.com/free-photo/many-kind-medication-prepared-use-operation_1301-7797.jpg"
+              image={PharmaManufactureImage}
               title="Innovative Formulations"
               subtitle="Meeting Global Standards"
               height="300px"
@@ -121,7 +124,7 @@ const ResponsiveImageGrid = () => {
 
      
         <Card
-          image="https://img.freepik.com/free-photo/man-working-as-pharmacist_23-2151734589.jpg?uid=R48018562&ga=GA1.1.1547196487.1728058155&semt=ais_tags_boosted"
+          image={PharmaMedicineImage}
           title="Comprehensive Production"
           subtitle="Diverse Product Segments"
           height="615px"
