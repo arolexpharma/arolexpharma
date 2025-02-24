@@ -1,4 +1,4 @@
-"use client"; // Mark as a client component
+"use client"; 
 
 import Head from "next/head";
 import { usePathname } from "next/navigation";
