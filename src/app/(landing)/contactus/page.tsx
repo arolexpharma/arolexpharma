@@ -30,7 +30,6 @@ export const metadata = {
     description:
       "Get in touch with Arolex Pharmaceuticals for customer support and suggestions.",
   },
-  canonical: "https://www.arolexpharma.com/contactus",
 };
 export default function Page() {
   const breadcrumbItems: any = [
@@ -40,7 +39,6 @@ export default function Page() {
 
   return (
     <div>
-     
       <Breadscrumb items={breadcrumbItems} />
 
       <div className="px-6 py-12 md:py-20 bg-blue-50">

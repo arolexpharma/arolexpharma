@@ -5,6 +5,9 @@ import FloatingSocialButton from "../components/common/FloatingSocialButton";
 import EnquiryFormModal from "../components/modal/EnquiryFormModal";
 import { Metadata } from "next";
 import Head from "next/head";
+
+import CanonicalTag from "../components/common/CanonicalTag";
+
 export const metadata: Metadata = {
   title: "Arolex Pharmaceuticals - Medicine Packaging and Manufacturing",
   description:
@@ -18,15 +21,11 @@ export default function LandingLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <div id="content" className="site-content relative">
-      <Head>
-        <link
-          rel="canonical"
-          href="https://www.arolexpharma.com/"
-          key="canonical"
-        />
-      </Head>
+    <CanonicalTag /> 
       <Header />
       {children}
       <Footer />
