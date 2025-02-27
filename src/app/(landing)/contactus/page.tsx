@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import ContactForm from "./ContactForm";
 import Head from "next/head";
+
 export const metadata = {
   title: "Contact Us | Arolex Pharmaceuticals",
   description:
@@ -21,7 +22,8 @@ export const metadata = {
     title: "Contact Us | Arolex Pharmaceuticals",
     description:
       "Get in touch with Arolex Pharmaceuticals for customer support, feedback, and suggestions.",
-    image: "../../assets/images/Logo.png",
+    images: ["../../assets/images/Logo.png"],
+
     url: "https://www.arolexpharma.com/contactus",
   },
   twitter: {
@@ -31,6 +33,7 @@ export const metadata = {
       "Get in touch with Arolex Pharmaceuticals for customer support and suggestions.",
   },
 };
+
 export default function Page() {
   const breadcrumbItems: any = [
     { label: "Home", href: "/" },
@@ -114,7 +117,7 @@ export default function Page() {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3480.278283875691!2d77.72672157464677!3d29.27415727532048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c13d573e53c67%3A0xf170c4cc81423bbf!2sArolex%20Pharmaceuticals%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1735378583412!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
-                allowFullScreen
+                allowFullScreen={true}
                 loading="lazy"
                 title="Arolex Pharmaceuticals Location"
                 className="rounded-xl"
