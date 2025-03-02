@@ -36,11 +36,7 @@ export default function AboutUsSection() {
             medicines. With decades of experience in the pharmaceutical
             industry, we are trusted partners to healthcare providers worldwide.
           </p>
-          <p className="text-white mb-8 text-base sm:text-lg leading-relaxed">
-            Our mission is to enhance lives by delivering innovative medical
-            solutions that address the evolving healthcare needs of our clients
-            and communities.
-          </p>
+        
           <Button href="/aboutus" text="Know More" className="bg-lime-500 p-3 text-sm" />
         </div>
       </div>

@@ -14,14 +14,6 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-export const metadata: Metadata = {
-  title: "Arolex Pharmaceuticals - Medicine Packaging and Manufacturing",
-  description:
-    "Arolex Pharmaceuticals specializes in innovative medicine packaging and manufacturing solutions. We serve both B2B and B2C clients with high-quality pharmaceutical products.",
-  keywords:
-    "arolex pharma, arolex pharmaceuticals, Arolex Pharmaceuticals, medicine packaging, medicine manufacturing, B2B pharmaceuticals, B2C pharmaceuticals, pharmaceutical solutions, drug packaging, pharmaceutical manufacturing, Paracetamol, Ibuprofen, Amoxicillin, Ciprofloxacin, Metformin, Omeprazole, Aspirin, Atorvastatin, Losartan, Cetirizine",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -51,7 +43,7 @@ export default function RootLayout({
           href="/images/favicon-16x16.png"
         />
         <link rel="manifest" href="/site.webmanifest" />
-        {/* <meta name="google-site-verification" content="76aifVe4dfOadmw_eCmHGgzaWr2UJRTiQOageRM4Wq8" /> */}
+
         <link
           rel="icon"
           href="/icon?<generated>"

@@ -17,20 +17,9 @@ export const metadata = {
   description:
     "Get in touch with Arolex Pharmaceuticals for customer support, feedback, and suggestions. Reach us via email, call, or contact form.",
   keywords:
-    "Arolex Pharmaceuticals, Contact Us, Pharmaceutical Company, Support, Feedback",
-  openGraph: {
-    title: "Contact Us | Arolex Pharmaceuticals",
-    description:
-      "Get in touch with Arolex Pharmaceuticals for customer support, feedback, and suggestions.",
-    images: ["../../assets/images/Logo.png"],
-
-    url: "https://www.arolexpharma.com/contactus",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Contact Us | Arolex Pharmaceuticals",
-    description:
-      "Get in touch with Arolex Pharmaceuticals for customer support and suggestions.",
+    "arolex pharma, Arolex Pharmaceuticals, Contact Us, Pharmaceutical Company, Support, Feedback",
+  alternates: {
+    canonical: "https://www.arolexpharma.com/contactus",
   },
 };
 

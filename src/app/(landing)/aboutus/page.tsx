@@ -29,17 +29,9 @@ export const metadata: Metadata = {
   description:
     "Arolex Pharmaceuticals is your trusted partner in pharmaceutical manufacturing, delivering exceptional quality, cutting-edge innovation, and unparalleled reliability.",
   keywords:
-    "Pharmaceuticals, Pharmaceutical Manufacturing, Healthcare, Contract Manufacturing, Medical Solutions, High-Quality Medicines",
-  authors: [{ name: "Arolex Pharmaceuticals" }],
-  openGraph: {
-    title: "About Us - Arolex Pharmaceuticals",
-    description:
-      "Learn more about Arolex Pharmaceuticals, a leading manufacturer dedicated to delivering exceptional pharmaceutical solutions and healthcare products worldwide.",
-
-    url: "https://www.arolexpharma.com/aboutus",
-  },
-  twitter: {
-    card: "summary_large_image",
+    "arolex pharma, Pharmaceuticals, Pharmaceutical Manufacturing, Healthcare, Contract Manufacturing, Medical Solutions, High-Quality Medicines",
+  alternates: {
+    canonical: "https://www.arolexpharma.com/aboutus",
   },
 };
 
@@ -61,8 +53,8 @@ export default function AboutUs() {
             <Image
               src={Team}
               alt="Team working together"
-              width={500} 
-              height={300} 
+              width={500}
+              height={300}
               className="rounded-lg shadow-lg w-full h-auto"
             />
           </div>
