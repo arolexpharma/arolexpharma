@@ -62,14 +62,7 @@ export default function RootLayout({
           type="image/png"
           sizes="180x180"
         />
-        <script>
-          var ahrefs_analytics_script = document.createElement('script');
-          ahrefs_analytics_script.async = true; ahrefs_analytics_script.src =
-          'https://analytics.ahrefs.com/analytics.js';
-          ahrefs_analytics_script.setAttribute('data-key',
-          '2gJA8OjjtnE+RRSWVUc2MQ');
-          document.getElementsByTagName('head')[0].appendChild(ahrefs_analytics_script);
-        </script>
+     
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
