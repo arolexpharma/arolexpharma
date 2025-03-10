@@ -90,6 +90,8 @@ export default function OurClientSection() {
                   className="object-cover rounded-xl"
                   height={400}
                   width={300}
+                  priority={false}
+                  loading="lazy"
                 />
               </div>
             </SwiperSlide>

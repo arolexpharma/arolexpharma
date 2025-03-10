@@ -14,6 +14,8 @@ const ContactSection = () => {
               alt="Contact Image"
               width={500} 
               height={400} 
+                 priority={false}
+                loading="lazy"
               className="w-full h-64 md:h-full object-cover"
             />
           </div>

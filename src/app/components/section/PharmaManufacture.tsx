@@ -2,19 +2,17 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion"; 
-import manufacture from "@/app/assets/images/manufacture.jpg";
-import PharmaImage from '@/app/assets/images/pharma/pharma_manufacture.png'
-import PharmaCompanyImage from '@/app/assets/images/pharma/pharma_manufacture_company.png'
-import PharmaManufactureImage from '@/app/assets/images/pharma/pharma_manufacture_medicines.png'
-import PharmaMedicineImage from '@/app/assets/images/pharma/pharma_manufacture_medicine.png'
+import { motion } from "framer-motion";
+import manufacture from "@/app/assets/images/manufacture.jpeg";
+import PharmaImage from "@/app/assets/images/pharma/pharma_manufacture.png";
+import PharmaCompanyImage from "@/app/assets/images/pharma/pharma_manufacture_company.png";
+import PharmaManufactureImage from "@/app/assets/images/pharma/pharma_manufacture_medicines.png";
+import PharmaMedicineImage from "@/app/assets/images/pharma/pharma_manufacture_medicine.png";
 
 const ResponsiveImageGrid = () => {
-  
   const Card = ({ image, title, subtitle, height, animation }: any) => {
     const [cardHeight, setCardHeight] = useState(height || "300px");
 
-   
     useEffect(() => {
       const updateHeight = () => {
         if (window.innerWidth <= 768) {
@@ -32,8 +30,8 @@ const ResponsiveImageGrid = () => {
 
     return (
       <motion.div
-        initial={animation.initial} 
-        whileInView={animation.whileInView} 
+        initial={animation.initial}
+        whileInView={animation.whileInView}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         className={`relative group overflow-hidden rounded-lg `}
@@ -47,6 +45,8 @@ const ResponsiveImageGrid = () => {
           layout="fill"
           objectFit="cover"
           quality={100}
+          priority={false}
+          loading="lazy"
           className={`transition-transform duration-300 group-hover:scale-105`}
         />
         <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4 overflow-hidden">
@@ -58,10 +58,7 @@ const ResponsiveImageGrid = () => {
   };
 
   return (
-    <section
-      className=" px-4 py-16 sm:py-20 md:px-12 lg:px-24 bg-white relative bg-cover bg-center bg-no-repeat overflow-hidden"
-    >
-      
+    <section className=" px-4 py-16 sm:py-20 md:px-12 lg:px-24 bg-white relative bg-cover bg-center bg-no-repeat overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image
           src={manufacture}
@@ -69,23 +66,25 @@ const ResponsiveImageGrid = () => {
           layout="fill"
           objectFit="cover"
           quality={100}
+          priority={false}
+          loading="lazy"
         />
       </div>
 
-      
       <div className="container mx-auto relative z-10 text-center md:text-left mb-8">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           Arolex <span className="text-blue-600">Pharmaceutical</span>
         </h2>
         <p className="text-gray-600 mt-3 max-w-lg">
-          At Arolex Pharmaceutical, we specialize in producing high-quality medications across diverse market segments, including tablets, capsules, softgels, and more. 
-          Our commitment to innovation and precision ensures that every product supports better health and improved quality of life.
+          At Arolex Pharmaceutical, we specialize in producing high-quality
+          medications across diverse market segments, including tablets,
+          capsules, softgels, and more. Our commitment to innovation and
+          precision ensures that every product supports better health and
+          improved quality of life.
         </p>
       </div>
 
-  
       <div className="container mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-4">
-     
         <div className="grid grid-rows-2 gap-4">
           <Card
             image={PharmaImage}
@@ -93,8 +92,8 @@ const ResponsiveImageGrid = () => {
             subtitle="High-Quality Solutions"
             height="300px"
             animation={{
-              initial: { x: -100, opacity: 0 }, 
-              whileInView: { x: 0, opacity: 1 }, 
+              initial: { x: -100, opacity: 0 },
+              whileInView: { x: 0, opacity: 1 },
             }}
           />
 
@@ -115,21 +114,20 @@ const ResponsiveImageGrid = () => {
               subtitle="Meeting Global Standards"
               height="300px"
               animation={{
-                initial: { x: 100, opacity: 0 }, 
+                initial: { x: 100, opacity: 0 },
                 whileInView: { x: 0, opacity: 1 },
               }}
             />
           </div>
         </div>
 
-     
         <Card
           image={PharmaMedicineImage}
           title="Comprehensive Production"
           subtitle="Diverse Product Segments"
           height="615px"
           animation={{
-            initial: { x: 100, opacity: 0 }, 
+            initial: { x: 100, opacity: 0 },
             whileInView: { x: 0, opacity: 1 },
           }}
         />

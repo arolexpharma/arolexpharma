@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Autoplay } from "swiper/modules";
-import MedecinesManufactured from "@/app/assets/images/banner/medecinesManufactured.jpg";
+import MedecinesManufactured from "@/app/assets/images/banner/med.jpg";
 import arolex from "@/app/assets/images/banner/aerolex.jpg";
 import med from "@/app/assets/images/banner/med.jpg";
 import medcines from "@/app/assets/images/banner/medcines.jpg";
