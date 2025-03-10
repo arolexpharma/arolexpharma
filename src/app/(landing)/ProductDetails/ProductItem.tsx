@@ -150,6 +150,8 @@ const ProductItem = ({ productDetails }: any) => {
                         alt={`Medical Product ${index + 1}`}
                         layout="fill"
                         objectFit="cover"
+                        priority={false}
+                        loading="lazy"
                       />
                     </div>
                   </div>

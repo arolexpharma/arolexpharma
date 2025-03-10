@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -67,6 +68,8 @@ export default function Banner() {
                 src={image}
                 alt={`Slide ${index + 1}`}
                 className="w-full h-full object-cover"
+                priority={false}
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-black/50"></div>
             </SwiperSlide>
