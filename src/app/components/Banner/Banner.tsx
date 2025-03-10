@@ -91,9 +91,11 @@ export default function Banner() {
               marketing, <span className="text-green-300">export</span>, and
               supplying high-quality pharmaceutical products, including
               antibiotics, nutraceuticals, painkillers, injections, syrups,
-              tablets, drops, gastrointestinal drugs, and many more. Our
-              commitment to innovation ensures that we meet global standards
-              while providing tailored solutions to our clients.
+              tablets, drops, gastrointestinal drugs, and many more From
+              antibiotics and nutraceuticals to advanced medicine packaging
+              solutions, we meet global pharmaceutical standards. Our commitment
+              to innovation ensures that we meet global standards while
+              providing tailored solutions to our clients.
             </p>
 
             <Link href={"/contactus"}>

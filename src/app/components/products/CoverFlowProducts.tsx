@@ -41,7 +41,7 @@ export default function ProductSlider() {
           <SwiperSlide key={product.id} className="swiper-slide-cover">
             <div className="relative w-full h-[320px] sm:h-[500px] flex items-center">
               <Image
-                src={typeof product.image === "string" ? product.image : product.image}
+                src={product.image[0]}
                 alt={product.name}
                 layout="fill"
                 objectFit="cover"

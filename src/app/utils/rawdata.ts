@@ -1,16 +1,19 @@
-import RabiposeImage from "@/app/assets/images/productModel/rabipose.png";
-import ArocefImage from "@/app/assets/images/productModel/arocef.png";
-import BudalecsImage from "@/app/assets/images/productModel/budalecs.png";
+import RabiposeImage1 from "@/app/assets/images/productModel/rabipose.png";
+import ArocefImage2 from "@/app/assets/images/productModel/arocef.png";
+import BudalecsImage3 from "@/app/assets/images/productModel/budalecs.png";
+import RabiposeImage from "@/app/assets/images/products/rabipose.jpg";
+import ArocefImage from "@/app/assets/images/products/arocef.jpeg";
+import BudalecsImage from "@/app/assets/images/products/budalecs.jpeg";
 import researchImage from "@/app/assets/images/blogs/researchImage.png";
 import doctorImage from "@/app/assets/images/blogs/doctorImage.png";
 import doctor2Image from "@/app/assets/images/blogs/doctor2.png";
 export const products = [
   {
     id: 1,
-    image: RabiposeImage,
+    image: [RabiposeImage1, RabiposeImage],
     name: "Rabipose-DSR3T",
     price: "$50",
-    MRP: "MRP :- ₹85/STRIP",
+    MRP: "₹85/STRIP",
     description:
       "A RABIPOSE-DSR 3T (NANO TECHNOLOGY FLUX CAPSULE) used to treat certain stomach and esophagus problems such as acid reflux and ulcers.",
     Flavour: "Un Flavoured",
@@ -32,7 +35,7 @@ export const products = [
   },
   {
     id: 2,
-    image: ArocefImage,
+    image: [ArocefImage2, ArocefImage],
     name: "Arocef - 200 DT",
     price: "$35",
     MRP: "₹109.53/strip",
@@ -43,7 +46,7 @@ export const products = [
     Packaging: "Pack of 10 X 10 tablets",
     Indication_Uses:
       "Used to treat bacterial infections such as respiratory and skin infections.",
-    Dosage: "directed by the physician",
+    Dosage: "Directed by the physician",
     faq: [
       {
         question: "What types of infections can Arocef treat?",
@@ -58,15 +61,15 @@ export const products = [
   },
   {
     id: 3,
-    image: BudalecsImage,
+    image: [BudalecsImage3, BudalecsImage],
     name: "Budalecs",
     price: "$30",
-    MRP: "₹130/packet ",
+    MRP: "₹130/packet",
     description:
       "A medication used for treating conditions such as bacterial infections and other health issues.",
     Flavour: "Lemon",
     Composition: "Amoxicillin 500 mg, Clavulanic Acid 125 mg",
-    Packaging: "5 packet in box",
+    Packaging: "5 packets in a box",
     Indication_Uses:
       "Treats infections such as respiratory, urinary tract, and skin infections.",
     Dosage: "One tablet every 8 hours.",
@@ -84,10 +87,10 @@ export const products = [
   },
   {
     id: 4,
-    image: RabiposeImage,
+    image: [RabiposeImage1, RabiposeImage],
     name: "Rabipose-DSR3T",
     price: "$50",
-    MRP: "MRP :- ₹85/STRIP",
+    MRP: "₹85/STRIP",
     description:
       "A RABIPOSE-DSR 3T (NANO TECHNOLOGY FLUX CAPSULE) used to treat certain stomach and esophagus problems such as acid reflux and ulcers.",
     Flavour: "Un Flavoured",
@@ -109,7 +112,7 @@ export const products = [
   },
   {
     id: 5,
-    image: ArocefImage,
+    image: [ArocefImage2, ArocefImage],
     name: "Arocef - 200 DT",
     price: "$35",
     MRP: "₹109.53/strip",
@@ -120,7 +123,7 @@ export const products = [
     Packaging: "Pack of 10 X 10 tablets",
     Indication_Uses:
       "Used to treat bacterial infections such as respiratory and skin infections.",
-    Dosage: "directed by the physician",
+    Dosage: "Directed by the physician",
     faq: [
       {
         question: "What types of infections can Arocef treat?",
@@ -135,15 +138,15 @@ export const products = [
   },
   {
     id: 6,
-    image: BudalecsImage,
+    image: [BudalecsImage3, BudalecsImage],
     name: "Budalecs",
     price: "$30",
-    MRP: "₹130/packet ",
+    MRP: "₹130/packet",
     description:
       "A medication used for treating conditions such as bacterial infections and other health issues.",
     Flavour: "Lemon",
     Composition: "Amoxicillin 500 mg, Clavulanic Acid 125 mg",
-    Packaging: "5 packet in box",
+    Packaging: "5 packets in a box",
     Indication_Uses:
       "Treats infections such as respiratory, urinary tract, and skin infections.",
     Dosage: "One tablet every 8 hours.",
