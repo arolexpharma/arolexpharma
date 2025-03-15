@@ -13,7 +13,13 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
+export const metadata: Metadata = {
+  title: "Arolex Pharma- Medicine Packaging and Manufacturing",
+  description:
+    "Arolex Pharma specializes in innovative medicine packaging solutions. We serve both B2B and B2C clients with high-quality pharmaceutical products.",
+  keywords:
+    "arolex pharma, Arolex Pharma, arolex pharmaceuticals, Arolex Pharmaceuticals, medicine packaging, medicine manufacturing, B2B pharmaceuticals, B2C pharmaceuticals, pharmaceutical solutions, drug packaging, pharmaceutical manufacturing, Paracetamol, Ibuprofen, Amoxicillin, Ciprofloxacin, Metformin, Omeprazole, Aspirin, Atorvastatin, Losartan, Cetirizine",
+};
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -23,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#000" />
+        <meta name="google-site-verification" content="N4UMNIu0BpsRqwCGVo2Xq5pVf06Zvm6LVeNxIgcfZ8g" />
         <link rel="manifest" href="/manifest.json" />
 
         <link

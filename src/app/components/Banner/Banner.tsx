@@ -90,15 +90,11 @@ export default function Banner() {
               </span>
             </h1>
             <p className="mt-4 text-sm md:text-lg leading-relaxed">
-              Arolex Pharma specializes in contract-based manufacturing,
-              marketing, <span className="text-green-300">export</span>, and
-              supplying high-quality pharmaceutical products, including
-              antibiotics, nutraceuticals, painkillers, injections, syrups,
-              tablets, drops, gastrointestinal drugs, and many more From
-              antibiotics and nutraceuticals to advanced medicine packaging
-              solutions, we meet global pharmaceutical standards. Our commitment
-              to innovation ensures that we meet global standards while
-              providing tailored solutions to our clients.
+              Arolex Pharma specializes in contract manufacturing, marketing,{" "}
+              <span className="text-green-300">export</span>, and supply of
+              high-quality pharmaceuticals, including antibiotics,
+              nutraceuticals, painkillers, injections, and more. We meet global
+              standards with innovative, tailored solutions.
             </p>
 
             <Link href={"/contactus"}>
