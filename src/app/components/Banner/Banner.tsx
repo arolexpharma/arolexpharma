@@ -58,8 +58,7 @@ export default function Banner() {
         modules={[Navigation, Autoplay]}
         autoplay={{ delay: 5000 }}
         loop={true}
-        initialSlide={0} 
-     
+        initialSlide={0}
         className="w-full h-[500px] md:h-[600px] lg:h-[700px]"
         navigation={{ nextEl: null, prevEl: null }}
       >
@@ -70,8 +69,8 @@ export default function Banner() {
                 src={image}
                 alt={`Slide ${index + 1}`}
                 className="w-full h-full object-cover"
-                priority={false}
-                loading="lazy"
+                priority={index === 0}
+                loading={index === 0 ? "eager" : "lazy"}
               />
               <div className="absolute inset-0 bg-black/50"></div>
             </SwiperSlide>
@@ -92,7 +91,8 @@ export default function Banner() {
               </span>
             </h1>
             <p className="mt-4 text-sm md:text-lg leading-relaxed">
-            <strong>Arolex Pharma</strong>  specializes in contract manufacturing, marketing,{" "}
+              <strong>Arolex Pharma</strong> specializes in contract
+              manufacturing, marketing,{" "}
               <span className="text-green-300">export</span>, and supply of
               high-quality pharmaceuticals, including antibiotics,
               nutraceuticals, painkillers, injections, and more. We meet global
