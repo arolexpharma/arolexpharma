@@ -2,13 +2,12 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { Poppins } from 'next/font/google';
+import { Poppins } from "next/font/google";
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 });
-
 
 export const metadata: Metadata = {
   title: "Arolex Pharma- Medicine Packaging and Manufacturing",
@@ -26,7 +25,11 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="theme-color" content="#000" />
-        <meta name="google-site-verification" content="N4UMNIu0BpsRqwCGVo2Xq5pVf06Zvm6LVeNxIgcfZ8g" />
+        <meta name="robots" content="index, follow" />
+        <meta
+          name="google-site-verification"
+          content="N4UMNIu0BpsRqwCGVo2Xq5pVf06Zvm6LVeNxIgcfZ8g"
+        />
         <link rel="manifest" href="/manifest.json" />
 
         <link
@@ -66,11 +69,8 @@ export default function RootLayout({
           type="image/png"
           sizes="180x180"
         />
-     
       </head>
-      <body
-        className={poppins.className}
-      >
+      <body className={poppins.className}>
         <AppRouterCacheProvider options={{ key: "css" }}>
           {children}
         </AppRouterCacheProvider>
