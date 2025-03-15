@@ -12,13 +12,13 @@ const CertificationsSection: React.FC = () => {
           <div className="flex items-center gap-4">
             {/* Certification Logos */}
             <div className="w-16 h-16  rounded-full flex items-center justify-center">
-              <Image src={iso} alt="ISO Certified" className="w-16" />
+              <Image src={iso} alt="ISO Certified" className="w-16" height={200} width={200}/>
             </div>
             <div className="w-20 h-16  rounded-full flex items-center justify-center">
-              <Image src={fassai} alt="FDA Approved" className="w-20" />
+              <Image src={fassai} alt="FDA Approved" className="w-20" height={200} width={200}/>
             </div>
             <div className="w-24 h-24  rounded-full flex items-center justify-center">
-              <Image src={gmp} alt="GMP Certified" className="w-24" />
+              <Image src={gmp} alt="GMP Certified" className="w-24" height={200} width={200}/>
             </div>
           </div>
           <p className="text-gray-600 text-lg mt-4 md:mt-0">

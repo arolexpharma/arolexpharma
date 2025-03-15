@@ -58,6 +58,8 @@ export default function Banner() {
         modules={[Navigation, Autoplay]}
         autoplay={{ delay: 5000 }}
         loop={true}
+        initialSlide={0} 
+     
         className="w-full h-[500px] md:h-[600px] lg:h-[700px]"
         navigation={{ nextEl: null, prevEl: null }}
       >
@@ -84,13 +86,13 @@ export default function Banner() {
               Leading Pharmaceutical Solutions
             </span>
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-2">
-              Arolex Pharma Care Through Innovation{" "}
+              <strong>Arolex Pharma</strong> Care Through Innovation{" "}
               <span className="text-green-500">
                 in Pharmaceutical Manufacturing.
               </span>
             </h1>
             <p className="mt-4 text-sm md:text-lg leading-relaxed">
-              Arolex Pharma specializes in contract manufacturing, marketing,{" "}
+            <strong>Arolex Pharma</strong>  specializes in contract manufacturing, marketing,{" "}
               <span className="text-green-300">export</span>, and supply of
               high-quality pharmaceuticals, including antibiotics,
               nutraceuticals, painkillers, injections, and more. We meet global
