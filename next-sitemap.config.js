@@ -4,6 +4,9 @@ module.exports = {
   generateRobotsTxt: true,
   changefreq: "weekly",
   generateIndexSitemap: true,
+  robotsTxtOptions: {
+    additionalEntries: []
+  },
   transform: async (config, path) => {
     return {
       loc: path.replace("https://arolexpharma.com", "https://www.arolexpharma.com"),
