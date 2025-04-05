@@ -53,16 +53,16 @@ export default function ProductSlider() {
                 loading="lazy"
                 className="absolute inset-0 z-0"
               />
-              <div className="absolute bottom-0 z-10 p-4 sm:p-6 text-white bg-black bg-opacity-50 backdrop-blur-md">
+              <div className="absolute bottom-0 z-10 p-4 sm:p-6 text-white bg-black bg-opacity-50 backdrop-blur-md w-full">
                 <p className="text-green-400 font-semibold mb-2">
                   From MRP: {product.MRP}
                 </p>
-                <h2 className="text-xl sm:text-3xl font-bold mb-2">
+                <h2 className="sm:text-2xl text-sm max-w-xl mb-4">
                   {product.name}
                 </h2>
-                <p className="text-[12px] sm:text-sm max-w-xl mb-4">
+                {/* <p className="text-[12px] sm:text-sm max-w-xl mb-4">
                   {product.description}
-                </p>
+                </p> */}
                 <button
                   className="px-4 py-2 bg-green-500 text-white rounded shadow hover:bg-green-600 transition duration-200"
                   onClick={() => router.push(`/ProductDetails/${product.id}`)}

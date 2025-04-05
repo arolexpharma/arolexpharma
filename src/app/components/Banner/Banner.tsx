@@ -16,20 +16,20 @@ import medicines from "@/app/assets/images/banner/medcines.jpg";
 const bannerImages = [
   {
     src: MedicinesManufactured,
-    alt: "Arolex Pharma manufacturing facility producing high-quality medicines"
+    alt: "Arolex Pharma manufacturing facility producing high-quality medicines",
   },
   {
     src: arolex,
-    alt: "Arolex Pharma company logo and headquarters"
+    alt: "Arolex Pharma company logo and headquarters",
   },
   {
     src: med,
-    alt: "Pharmaceutical products manufactured by Arolex Pharma"
+    alt: "Pharmaceutical products manufactured by Arolex Pharma",
   },
   {
     src: medicines,
-    alt: "Wide range of medicines produced by Arolex Pharma"
-  }
+    alt: "Wide range of medicines produced by Arolex Pharma",
+  },
 ];
 
 export default function Banner() {
@@ -37,7 +37,7 @@ export default function Banner() {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
-  
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -47,9 +47,11 @@ export default function Banner() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -63,16 +65,18 @@ export default function Banner() {
       Contact: ${formData.contact}
       Message: ${formData.message}
     `;
-    window.location.href = `mailto:arolexpharma@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:arolexpharma@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
   };
 
   return (
     <section className="relative w-full" aria-label="Arolex Pharma Banner">
       <Swiper
         modules={[Navigation, Autoplay]}
-        autoplay={{ 
+        autoplay={{
           delay: 5000,
-          disableOnInteraction: false 
+          disableOnInteraction: false,
         }}
         loop={true}
         className="w-full h-[500px] md:h-[600px] lg:h-[700px]"
@@ -115,11 +119,17 @@ export default function Banner() {
               standards with innovative, tailored solutions.
             </p>
 
-            <div className="mt-6 flex gap-4">
-              <Link href="/contactus" className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition duration-300">
-                Get Started
+            <div className="mt-6 flex flex-wrap sm:flex-nowrap gap-4">
+              <Link
+                href="/contactus"
+                className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition duration-300 text-center"
+              >
+                Contact Us
               </Link>
-              <Link href="/products" className="bg-transparent hover:bg-white/10 text-white border border-white px-6 py-3 rounded-lg transition duration-300">
+              <Link
+                href="/products"
+                className="w-full sm:w-auto bg-transparent hover:bg-white/10 text-white border border-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition duration-300 text-center"
+              >
                 View Products
               </Link>
             </div>
@@ -140,7 +150,9 @@ export default function Banner() {
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label htmlFor="firstName" className="sr-only">First Name</label>
+              <label htmlFor="firstName" className="sr-only">
+                First Name
+              </label>
               <input
                 id="firstName"
                 type="text"
@@ -153,7 +165,9 @@ export default function Banner() {
               />
             </div>
             <div>
-              <label htmlFor="lastName" className="sr-only">Last Name</label>
+              <label htmlFor="lastName" className="sr-only">
+                Last Name
+              </label>
               <input
                 id="lastName"
                 type="text"
@@ -166,9 +180,11 @@ export default function Banner() {
               />
             </div>
           </div>
-          
+
           <div>
-            <label htmlFor="email" className="sr-only">Email</label>
+            <label htmlFor="email" className="sr-only">
+              Email
+            </label>
             <input
               id="email"
               type="email"
@@ -180,9 +196,11 @@ export default function Banner() {
               className="w-full p-3 border rounded"
             />
           </div>
-          
+
           <div>
-            <label htmlFor="city" className="sr-only">City</label>
+            <label htmlFor="city" className="sr-only">
+              City
+            </label>
             <input
               id="city"
               type="text"
@@ -194,9 +212,11 @@ export default function Banner() {
               className="w-full p-3 border rounded"
             />
           </div>
-          
+
           <div>
-            <label htmlFor="contact" className="sr-only">Contact</label>
+            <label htmlFor="contact" className="sr-only">
+              Contact
+            </label>
             <input
               id="contact"
               type="tel"
@@ -208,9 +228,11 @@ export default function Banner() {
               className="w-full p-3 border rounded"
             />
           </div>
-          
+
           <div>
-            <label htmlFor="message" className="sr-only">Your Message</label>
+            <label htmlFor="message" className="sr-only">
+              Your Message
+            </label>
             <textarea
               id="message"
               name="message"
@@ -221,7 +243,7 @@ export default function Banner() {
               className="w-full p-3 border rounded resize-none h-24"
             />
           </div>
-          
+
           <button
             type="submit"
             className="w-full bg-sky-500 hover:bg-sky-700 text-white py-3 rounded-lg transition duration-300"

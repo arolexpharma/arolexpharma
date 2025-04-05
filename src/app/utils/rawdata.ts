@@ -1,4 +1,4 @@
-import RabiposeImage1 from "@/app/assets/images/productModel/rabipose.png";
+import RabiposeImage1 from "@/app/assets/images/products/RABIPOSE.png";
 import ArocefImage2 from "@/app/assets/images/productModel/arocef.png";
 import BudalecsImage3 from "@/app/assets/images/productModel/budalecs.png";
 import RabiposeImage from "@/app/assets/images/products/rabipose.jpg";
@@ -7,6 +7,15 @@ import BudalecsImage from "@/app/assets/images/products/budalecs.jpeg";
 import researchImage from "@/app/assets/images/blogs/researchImage.png";
 import doctorImage from "@/app/assets/images/blogs/doctorImage.png";
 import doctor2Image from "@/app/assets/images/blogs/doctor2.png";
+import farhene25Image from "@/app/assets/images/products/farhene25.png";
+import farhene50Image from "@/app/assets/images/products/farhene-50.png";
+import acronacImage from "@/app/assets/images/products/acronac.png";
+import albanjImage from "@/app/assets/images/products/albanj.png";
+import cyproidImage from "@/app/assets/images/products/cyporid.png";
+import dicol60kImage from "@/app/assets/images/products/dicol60k.png";
+import fluliteMImage from "@/app/assets/images/products/fluliteM.png";
+import fluvote10Image from "@/app/assets/images/products/Fluvote10.png";
+import GastolexOImage from "@/app/assets/images/products/gastolexO.png";
 export const products = [
   {
     id: 1,
@@ -87,81 +96,177 @@ export const products = [
   },
   {
     id: 4,
-    image: [RabiposeImage1, RabiposeImage],
-    name: "Rabipose-DSR3T",
+    image: [farhene25Image, farhene25Image],
+    name: "Farhene-25",
     price: "$50",
-    MRP: "₹85/STRIP",
-    description:
-      "A RABIPOSE-DSR 3T (NANO TECHNOLOGY FLUX CAPSULE) used to treat certain stomach and esophagus problems such as acid reflux and ulcers.",
-    Flavour: "Un Flavoured",
-    Composition: "Rabeprazole Sodium 20 mg, Domperidone 10 mg",
-    Packaging: "10 Strip",
-    Indication_Uses:
-      "For treatment of Gerd & Dyspepsia, Hyperacidity & HeartBurn, Nausea & Vomiting, acid reflux, ulcers, and gastroesophageal reflux disease (GERD).",
-    Dosage: "One tablet daily before a meal.",
+    MRP: "₹700/-",
+    description: "Anti-diabetic medication for type 2 diabetes management.",
+    Flavour: "Unflavoured",
+    Composition: "Clomifene 25mg",
+    Packaging: "10*10 Alu-Alu",
+    Indication_Uses: "Controls blood sugar levels in adults with type 2 diabetes, often combined with diet/exercise.",
+    Dosage: "Usually once daily in the morning.",
     faq: [
       {
-        question: "What is Rabipose-DSR3T used for?",
-        answer: "It is used to treat acid reflux and ulcers.",
+        question: "Does Farhene-25 cause weight loss?",
+        answer: "May cause modest weight reduction as it excretes excess glucose via urine."
       },
       {
-        question: "Is this medication safe?",
-        answer: "Yes, when used as prescribed by a doctor.",
-      },
-    ],
+        question: "Can it cause low blood sugar?",
+        answer: "Risk is low when used alone but increases with other diabetes medications."
+      }
+    ]
   },
   {
     id: 5,
-    image: [ArocefImage2, ArocefImage],
-    name: "Arocef - 200 DT",
+    image: [farhene50Image, farhene50Image],
+    name: "Farhene-50",
     price: "$35",
-    MRP: "₹109.53/strip",
-    description:
-      "An antibiotic used to treat infections caused by bacteria, including respiratory infections and skin infections.",
+    MRP: "₹850/-",
+    description: "Higher strength anti-diabetic medication.",
     Flavour: "Unflavored",
-    Composition: "CEFIXIME 200 mg Despersible Tablet",
-    Packaging: "Pack of 10 X 10 tablets",
-    Indication_Uses:
-      "Used to treat bacterial infections such as respiratory and skin infections.",
-    Dosage: "Directed by the physician",
+    Composition: "Clomifene 50mg",
+    Packaging: "10*10 Alu-Alu",
+    Indication_Uses: "For type 2 diabetes management when tighter glycemic control is needed.",
+    Dosage: "Once daily as prescribed by your doctor.",
     faq: [
       {
-        question: "What types of infections can Arocef treat?",
-        answer: "Arocef is used to treat respiratory and skin infections.",
-      },
-      {
-        question: "How long should I take this medication?",
-        answer:
-          "The course of treatment typically lasts for 7-10 days, as prescribed by your doctor.",
-      },
-    ],
+        question: "Difference between Farhene-25 and Farhene-50?",
+        answer: "Only the strength differs; 50 mg provides stronger glucose-lowering effects."
+      }
+    ]
   },
   {
     id: 6,
-    image: [BudalecsImage3, BudalecsImage],
-    name: "Budalecs",
+    image: [acronacImage, acronacImage],
+    name: "Aronac",
     price: "$30",
-    MRP: "₹130/packet",
-    description:
-      "A medication used for treating conditions such as bacterial infections and other health issues.",
+    MRP: "₹1100/-",
+    description: "Pain relief and anti-inflammatory medication.",
     Flavour: "Lemon",
-    Composition: "Amoxicillin 500 mg, Clavulanic Acid 125 mg",
-    Packaging: "5 packets in a box",
-    Indication_Uses:
-      "Treats infections such as respiratory, urinary tract, and skin infections.",
-    Dosage: "One tablet every 8 hours.",
+    Composition: "Rabeprazole Sodium 20mg + Aceclofenac 200mg. SR (Enteric Coated Pellets) Capsules",
+    Packaging: "10*10 Alu-Alu",
+    Indication_Uses: "Treats pain and inflammation in conditions like arthritis, dental pain, and post-operative pain.",
+    Dosage: "One tablet twice daily after meals.",
     faq: [
       {
-        question: "What infections can Budalecs treat?",
-        answer:
-          "Budalecs can treat respiratory, urinary tract, and skin infections.",
-      },
-      {
-        question: "Can I take this medication with food?",
-        answer: "Yes, it can be taken with food to reduce stomach irritation.",
-      },
-    ],
+        question: "Is Aronac safe for long-term use?",
+        answer: "Not recommended beyond 10 days without medical supervision due to gastric risks."
+      }
+    ]
   },
+  {
+    id: 7,
+    image: [albanjImage, albanjImage],
+    name: "Albanj",
+    price: "$30",
+    MRP: "₹170.80/-",
+    description: "Antidepressant medication.",
+    Flavour: "Unflavoured",
+    Composition: "Albendazole 400mg",
+    Packaging: "20*1 Blister",
+    Indication_Uses: "Treats depression and generalized anxiety disorder.",
+    Dosage: "Usually 10 mg once daily, adjustable by physician.",
+    faq: [
+      {
+        question: "How long until Albanj works?",
+        answer: "May take 2-4 weeks for full therapeutic effects."
+      }
+    ]
+  },
+  {
+    id: 8,
+    image: [cyproidImage, cyproidImage],
+    name: "Cyproid",
+    price: "$30",
+    MRP: "₹135/-",
+    description: "Anti-vertigo and anti-emetic medication.",
+    Flavour: "Unflavoured",
+    Composition: "Cyproheptadine Hydrochloride 2mg + Trichloline Citrate 275mg + Sorbitol",
+    Packaging: "200ml Pet Bottle",
+    Indication_Uses: "Treats vertigo, nausea, vomiting, and anxiety disorders.",
+    Dosage: "As prescribed (typically 1 tablet 2-3 times daily).",
+    faq: [
+      {
+        question: "Can Cyproid cause drowsiness?",
+        answer: "Yes, avoid driving or operating machinery initially."
+      }
+    ]
+  },
+  {
+    id: 9,
+    image: [dicol60kImage, dicol60kImage],
+    name: "Dicole-60k",
+    price: "$30",
+    MRP: "1008/-",
+    description: "Vitamin D3 supplement.",
+    Flavour: "Unflavoured",
+    Composition: "Cholecalciferol (D3) 60000 I.U. Chewable",
+    Packaging: "10*1*4 Blister",
+    Indication_Uses: "Treats vitamin D deficiency and osteoporosis.",
+    Dosage: "Once weekly or as prescribed.",
+    faq: [
+      {
+        question: "Best time to take Dicole-60k?",
+        answer: "Preferably with a fatty meal for better absorption."
+      }
+    ]
+  },
+  {
+    id: 10,
+    image: [fluliteMImage, fluliteMImage],
+    name: "Flulite-M",
+    price: "$30",
+    MRP: "₹1300/-",
+    description: "Multivitamin and mineral supplement.",
+    Flavour: "Fruit",
+    Composition: "Flupentixol 0.5 mg + Melitracen 10mg",
+    Packaging: "10*10 Alu-Alu",
+    Indication_Uses: "Boosts immunity and compensates nutritional deficiencies.",
+    Dosage: "Dissolve 1 tablet in water daily.",
+    faq: [
+      {
+        question: "Can Flulite-M prevent flu?",
+        answer: "Supports immune function but doesn’t guarantee prevention."
+      }
+    ]
+  },
+  {
+    id: 11,
+    image: [fluvote10Image, fluvote10Image],
+    name: "Fluvote-10",
+    MRP: "₹530/-",
+    description: "Antifungal medication.",
+    Flavour: "Unflavoured",
+    Composition: "Flunarizine 10mg",
+    Packaging: "10*10 Alu-Alu",
+    Indication_Uses: "Treats fungal infections like vaginal candidiasis and oral thrush.",
+    Dosage: "Single dose or as prescribed.",
+    faq: [
+      {
+        question: "How quickly does Fluvote-10 work?",
+        answer: "Symptoms often improve within 24 hours."
+      }
+    ]
+  },
+  {
+    id: 12,
+    image: [GastolexOImage, GastolexOImage],
+    name: "Gastolex-O",
+    MRP: "₹135/-",
+    description: "Proton pump inhibitor for acid reduction.",
+    Flavour: "Unflavoured",
+    Composition: "Sucralfate1gm + Oxetacaine 20mg",
+    Packaging: "100ml Pet Bottle",
+    Indication_Uses: "Treats acid reflux, peptic ulcers, and GERD.",
+    Dosage: "Once daily before breakfast.",
+    faq: [
+      {
+        question: "Can Gastolex-O cause calcium deficiency?",
+        answer: "Long-term use may affect calcium absorption; consult your doctor."
+      }
+    ]
+  }
 ];
 
 export const blogPosts = [

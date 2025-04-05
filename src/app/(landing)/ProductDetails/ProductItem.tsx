@@ -125,8 +125,8 @@ const ProductItem = ({ productDetails }: any) => {
                       <Image
                         src={src}
                         alt={`Medical Product ${index + 1}`}
-                        layout="fill"
-                        objectFit="cover"
+                        height={300}
+                        width={450}
                       />
                     </div>
                   </SwiperSlide>
