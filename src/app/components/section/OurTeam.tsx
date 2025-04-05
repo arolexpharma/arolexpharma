@@ -29,7 +29,7 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="bg-primary py-16 sm:py-20 px-0 sm:px-20">
+    <section className="bg-primary py-16 sm:py-20 px-0 sm:px-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <p className="text-white text-sm bg-lime-500 rounded-full inline-block px-3 py-1 mb-6">
@@ -75,7 +75,7 @@ const OurTeam = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

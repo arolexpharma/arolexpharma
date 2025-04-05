@@ -48,9 +48,9 @@ export default function BlogDetail({ params }: any) {
         </div>
 
   
-        <div className="mt-6">
+        <article className="mt-6">
           <p className="text-lg text-gray-700">{post.description}</p>
-        </div>
+        </article>
 
        
         <div className="mt-10">

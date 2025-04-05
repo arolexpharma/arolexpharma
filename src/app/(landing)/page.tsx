@@ -12,14 +12,10 @@ import OurClientSection from "../components/section/OurClientSection";
 import CoverFlowProducts from "../components/products/CoverFlowProducts";
 import AboutUsSection from "../components/section/AboutUsSection";
 import ContactSection from "../components/section/ContactSection ";
-import Head from "next/head";
-import { Metadata } from "next";
-
 
 export default function page() {
   return (
     <>
-   
       <div>
         <Banner />
         <ScrollingStrip />

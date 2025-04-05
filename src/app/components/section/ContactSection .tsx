@@ -5,7 +5,7 @@ import ContactImage from "@/app/assets/images/pharma/contact.png";
 import Image from "next/image";
 const ContactSection = () => {
   return (
-    <div className="bg-blue-50">
+    <section className="bg-blue-50">
       <div className="container mx-auto px-5 py-16 sm:py-20 ">
         <div className="flex flex-wrap   shadow-lg rounded-lg overflow-hidden">
           <div className="w-full md:w-1/2">
@@ -36,7 +36,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

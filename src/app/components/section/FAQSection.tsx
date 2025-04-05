@@ -77,7 +77,7 @@ const FAQSection = () => {
   );
 
   return (
-    <div className="bg-white">
+    <section className="bg-white">
       <div className="container mx-auto p-6 py-16 sm:py-20">
         <h2 className="text-2xl font-bold mb-6 text-center">
           Frequently Asked Questions
@@ -97,7 +97,7 @@ const FAQSection = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

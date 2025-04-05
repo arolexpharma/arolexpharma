@@ -1,26 +1,43 @@
 "use client";
 import React, { useState } from "react";
-import dynamic from "next/dynamic";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import { Navigation, Autoplay } from "swiper/modules";
-import MedecinesManufactured from "@/app/assets/images/banner/med.jpg";
-import arolex from "@/app/assets/images/banner/aerolex.jpg";
-import med from "@/app/assets/images/banner/med.jpg";
-import medcines from "@/app/assets/images/banner/medcines.jpg";
-import medecines from "@/app/assets/images/banner/medecines.jpg";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
+
+// Import images
+import MedicinesManufactured from "@/app/assets/images/banner/med.jpg";
+import arolex from "@/app/assets/images/banner/aerolex.jpg";
+import med from "@/app/assets/images/banner/med.jpg";
+import medicines from "@/app/assets/images/banner/medcines.jpg";
+
+// Configure image data
+const bannerImages = [
+  {
+    src: MedicinesManufactured,
+    alt: "Arolex Pharma manufacturing facility producing high-quality medicines"
+  },
+  {
+    src: arolex,
+    alt: "Arolex Pharma company logo and headquarters"
+  },
+  {
+    src: med,
+    alt: "Pharmaceutical products manufactured by Arolex Pharma"
+  },
+  {
+    src: medicines,
+    alt: "Wide range of medicines produced by Arolex Pharma"
+  }
+];
 
 export default function Banner() {
   const formVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
-  const [isFormOpen, setIsFormOpen] = useState(false);
+  
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -30,64 +47,63 @@ export default function Banner() {
     message: "",
   });
 
-  const toggleForm = () => setIsFormOpen(!isFormOpen);
-
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    const mailtoLink = `mailto:arolexpharma@gmail.com?subject=Enquiry%20Request&body=${encodeURIComponent(
-      `First Name: ${formData.firstName}
+    const subject = "Enquiry Request - Arolex Pharma";
+    const body = `
+      First Name: ${formData.firstName}
       Last Name: ${formData.lastName}
       Email: ${formData.email}
       City: ${formData.city}
       Contact: ${formData.contact}
-      Message: ${formData.message}`
-    )}`;
-
-    window.location.href = mailtoLink;
+      Message: ${formData.message}
+    `;
+    window.location.href = `mailto:arolexpharma@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
-    <div className="relative w-full">
+    <section className="relative w-full" aria-label="Arolex Pharma Banner">
       <Swiper
         modules={[Navigation, Autoplay]}
-        autoplay={{ delay: 5000 }}
+        autoplay={{ 
+          delay: 5000,
+          disableOnInteraction: false 
+        }}
         loop={true}
-        initialSlide={0}
         className="w-full h-[500px] md:h-[600px] lg:h-[700px]"
-        navigation={{ nextEl: null, prevEl: null }}
+        navigation={false}
       >
-        {[MedecinesManufactured, arolex, med, medcines, medecines].map(
-          (image, index) => (
-            <SwiperSlide key={index} className="relative">
-              <Image
-                src={image}
-                alt={`Slide ${index + 1}`}
-                className="w-full h-full object-cover"
-                priority={index === 0}
-                loading={index === 0 ? "eager" : "lazy"}
-              />
-              <div className="absolute inset-0 bg-black/50"></div>
-            </SwiperSlide>
-          )
-        )}
+        {bannerImages.map((image, index) => (
+          <SwiperSlide key={index} className="relative">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+              priority={index === 0}
+              loading={index === 0 ? "eager" : "lazy"}
+              fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            />
+            <div className="absolute inset-0 bg-black/50"></div>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       <div className="absolute top-0 left-0 w-full h-full z-20 flex items-center">
         <div className="container mx-auto text-white px-6 md:px-5">
-          <div className="max-w-sm md:max-w-2xl ">
+          <div className="max-w-sm md:max-w-2xl">
             <span className="bg-green-600 text-xs md:text-sm px-2 md:px-3 py-1 rounded-full mb-4 inline-block">
               Leading Pharmaceutical Solutions
             </span>
-            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold leading-2">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold">
               <strong>Arolex Pharma</strong> Care Through Innovation{" "}
               <span className="text-green-500">
-                in Pharmaceutical Manufacturing.
+                in Pharmaceutical Manufacturing
               </span>
             </h1>
             <p className="mt-4 text-sm md:text-lg leading-relaxed">
@@ -99,87 +115,121 @@ export default function Banner() {
               standards with innovative, tailored solutions.
             </p>
 
-            <Link href={"/contactus"}>
-              <button className="mt-4 md:mt-6 bg-green-600 hover:bg-green-700 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg transition">
+            <div className="mt-6 flex gap-4">
+              <Link href="/contactus" className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg transition duration-300">
                 Get Started
-              </button>
-            </Link>
+              </Link>
+              <Link href="/products" className="bg-transparent hover:bg-white/10 text-white border border-white px-6 py-3 rounded-lg transition duration-300">
+                View Products
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
-      <motion.div
+      <motion.aside
         initial="hidden"
         animate="visible"
         variants={formVariants}
-        className="hidden lg:block absolute bottom-[-40px] md:bottom-[-50px] right-5 bg-white shadow-lg rounded-lg p-4 md:p-6 w-full md:w-[400px] z-30"
+        className="hidden lg:block absolute bottom-[-40px] md:bottom-[-50px] right-5 bg-white shadow-lg rounded-lg p-6 w-full max-w-[400px] z-30"
+        aria-label="Enquiry Form"
       >
-        <h3 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800 text-center">
+        <h2 className="text-xl md:text-2xl font-semibold mb-4 text-gray-800 text-center">
           Enquiry Now
-        </h3>
-        <form
-          onSubmit={handleSubmit}
-          method="POST"
-          encType="text/plain"
-          className="space-y-2 md:space-y-4"
-        >
-          <div className="flex flex-col md:flex-row md:space-x-2">
+        </h2>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label htmlFor="firstName" className="sr-only">First Name</label>
+              <input
+                id="firstName"
+                type="text"
+                name="firstName"
+                placeholder="First Name"
+                value={formData.firstName}
+                onChange={handleChange}
+                required
+                className="w-full p-3 border rounded"
+              />
+            </div>
+            <div>
+              <label htmlFor="lastName" className="sr-only">Last Name</label>
+              <input
+                id="lastName"
+                type="text"
+                name="lastName"
+                placeholder="Last Name"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+                className="w-full p-3 border rounded"
+              />
+            </div>
+          </div>
+          
+          <div>
+            <label htmlFor="email" className="sr-only">Email</label>
             <input
-              type="text"
-              name="firstName"
-              placeholder="First Name"
-              value={formData.firstName}
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              value={formData.email}
               onChange={handleChange}
-              className="w-full md:w-1/2 p-2 md:p-3 border rounded"
-            />
-            <input
-              type="text"
-              name="lastName"
-              placeholder="Last Name"
-              value={formData.lastName}
-              onChange={handleChange}
-              className="w-full md:w-1/2 p-2 md:p-3 border rounded mt-2 md:mt-0"
+              required
+              className="w-full p-3 border rounded"
             />
           </div>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={formData.email}
-            onChange={handleChange}
-            className="w-full p-2 md:p-3 border rounded"
-          />
-          <input
-            type="text"
-            name="city"
-            placeholder="City"
-            value={formData.city}
-            onChange={handleChange}
-            className="w-full p-2 md:p-3 border rounded"
-          />
-          <input
-            type="text"
-            name="contact"
-            placeholder="Contact"
-            value={formData.contact}
-            onChange={handleChange}
-            className="w-full p-2 md:p-3 border rounded"
-          />
-          <textarea
-            name="message"
-            placeholder="Your Message"
-            value={formData.message}
-            onChange={handleChange}
-            className="w-full p-2 md:p-3 border rounded resize-none h-24"
-          ></textarea>
+          
+          <div>
+            <label htmlFor="city" className="sr-only">City</label>
+            <input
+              id="city"
+              type="text"
+              name="city"
+              placeholder="City"
+              value={formData.city}
+              onChange={handleChange}
+              required
+              className="w-full p-3 border rounded"
+            />
+          </div>
+          
+          <div>
+            <label htmlFor="contact" className="sr-only">Contact</label>
+            <input
+              id="contact"
+              type="tel"
+              name="contact"
+              placeholder="Contact"
+              value={formData.contact}
+              onChange={handleChange}
+              required
+              className="w-full p-3 border rounded"
+            />
+          </div>
+          
+          <div>
+            <label htmlFor="message" className="sr-only">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              value={formData.message}
+              onChange={handleChange}
+              required
+              className="w-full p-3 border rounded resize-none h-24"
+            />
+          </div>
+          
           <button
             type="submit"
-            className="w-full bg-primary hover:bg-sky-400 text-white py-2 md:py-3 rounded-lg transition"
+            className="w-full bg-sky-500 hover:bg-sky-700 text-white py-3 rounded-lg transition duration-300"
           >
-            Submit
+            Submit Enquiry
           </button>
         </form>
-      </motion.div>
-    </div>
+      </motion.aside>
+    </section>
   );
 }

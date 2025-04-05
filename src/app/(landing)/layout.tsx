@@ -20,9 +20,8 @@ export default function LandingLayout({
 }>) {
   return (
     <div id="content" className="site-content relative">
-
       <Header />
-      {children}
+      <main>{children}</main>
       <Footer />
       <FloatingSocialButton />
 
