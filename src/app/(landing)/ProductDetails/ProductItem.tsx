@@ -152,6 +152,7 @@ const ProductItem = ({ productDetails }: any) => {
                         objectFit="cover"
                         priority={false}
                         loading="lazy"
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                       />
                     </div>
                   </div>

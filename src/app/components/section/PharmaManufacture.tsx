@@ -47,6 +47,7 @@ const ResponsiveImageGrid = () => {
           quality={100}
           priority={false}
           loading="lazy"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className={`transition-transform duration-300 group-hover:scale-105`}
         />
         <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4 overflow-hidden">
@@ -65,6 +66,7 @@ const ResponsiveImageGrid = () => {
           alt="Manufacturing"
           layout="fill"
           objectFit="cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           quality={100}
           priority={false}
           loading="lazy"

@@ -27,6 +27,7 @@ export default function BlogPage() {
                   layout="fill"
                   objectFit="cover"
                   className="rounded-t-lg"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                 />
               </div>
 

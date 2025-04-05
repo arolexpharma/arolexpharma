@@ -33,6 +33,7 @@ export default function BlogDetail({ params }: any) {
             layout="fill"
             objectFit="cover"
             className="rounded-lg"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           />
         </div>
 
