@@ -11,7 +11,7 @@ import MedicinesManufactured from "@/app/assets/images/banner/med.jpg";
 import arolex from "@/app/assets/images/banner/aerolex.jpg";
 import med from "@/app/assets/images/banner/med.jpg";
 import medicines from "@/app/assets/images/banner/medcines.jpg";
-
+// import raniposebanner from '@/app/assets/images/products/raniposebanner.png'
 // Configure image data
 const bannerImages = [
   {
