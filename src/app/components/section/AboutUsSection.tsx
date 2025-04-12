@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "../button/Button";
-import TeamImage from '../../assets/images/aboutus/doctorTeam.png'
+import TeamImage from "../../assets/images/aboutus/doctorTeam.png";
 export default function AboutUsSection() {
   return (
     <section className="py-16 sm:py-20 bg-primary">
@@ -27,17 +27,29 @@ export default function AboutUsSection() {
 
         <div>
           <p className="text-white mb-6 text-base sm:text-lg leading-relaxed">
-            As leading pharmaceutical manufacturers, we are dedicated to
-            producing high-quality healthcare solutions for a better world.
+            Arolex Pharmaceuticals Pvt. Ltd. was founded with a strong vision
+            and deeper purpose. What began as a small pharmaceutical franchise
+            in 2018 by Danish Khan has now grown into a trusted name in the
+            industry — driven by dedication, vision, and teamwork.
           </p>
           <p className="text-white mb-6 text-base sm:text-lg leading-relaxed">
-            Our state-of-the-art facilities and stringent quality control
-            processes ensure the production of safe, effective, and affordable
-            medicines. With decades of experience in the pharmaceutical
-            industry, we are trusted partners to healthcare providers worldwide.
+            In 2025, Danish Khan transformed the firm into a Private Limited
+            Company named Arolex pharmaceuticals pvt ltd along with his
+            childhood friend and co-founder, Shakir Ahmad. Shakir is not just a
+            business partner — he’s like a brother, a true visionary with a
+            strong will to make a big impact. From their early school days to
+            completing their BBA together, both Danish and Shakir shared a dream
+            to build a company that creates jobs, empowers youth, and
+            contributes to India’s economic strength. Shakir’s courage, clear
+            thinking, and leadership have been instrumental in shaping Arolex’s
+            growth.
           </p>
-        
-          <Button href="/aboutus" text="Know More" className="bg-lime-500 p-3 text-sm" />
+
+          <Button
+            href="/aboutus"
+            text="Know More"
+            className="bg-lime-500 p-3 text-sm"
+          />
         </div>
       </div>
     </section>

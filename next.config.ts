@@ -27,30 +27,8 @@ const nextConfig: NextConfig = {
     return config;
   },
 
-  // Reduce unused JavaScript
-  async headers() {
-    return [
-      {
-        source: '/(.*).js',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=31536000, immutable',
-          },
-        ],
-      },
-    ];
-  },
 
-  // Improve font loading performance
-  async rewrites() {
-    return [
-      {
-        source: '/css2',
-        destination: 'https://fonts.googleapis.com/css2',
-      },
-    ];
-  },
+
 };
 
 export default nextConfig;

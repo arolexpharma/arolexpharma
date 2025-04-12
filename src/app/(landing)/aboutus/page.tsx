@@ -2,11 +2,9 @@ import Breadscrumb from "@/app/components/common/breadscrumb/Breadscrumb";
 import React from "react";
 import { Steps } from "antd";
 import {
-  FaAward,
   FaMicroscope,
   FaGlobe,
   FaCheckCircle,
-  FaHandshake,
   FaLeaf,
   FaStethoscope,
 } from "react-icons/fa";
@@ -15,7 +13,13 @@ import {
   FaCalendarAlt,
   FaPaintBrush,
   FaLaptopCode,
+} from "react-icons/fa";
+import {
+  FaLightbulb,
+  FaAward,
   FaFlask,
+  FaHandsHelping,
+  FaHandshake,
   FaRocket,
 } from "react-icons/fa";
 import Team from "@/app/assets/images/aboutus/doctorTeam.png";
@@ -24,6 +28,7 @@ import FAQSection from "@/app/components/section/FAQSection";
 import Head from "next/head";
 import { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 export const metadata: Metadata = {
   title: "About Us - Arolex Pharmaceuticals",
   description:
@@ -35,7 +40,44 @@ export const metadata: Metadata = {
   },
 };
 
-const { Step } = Steps;
+const features = [
+  {
+    icon: <FaLightbulb className="text-4xl mb-4 text-blue-600" />,
+    title: "Vision-Driven Leadership",
+    description:
+      "Founded by Danish Khan and co-led with Shakir Ahmad and Dr. Monish Khan, our leadership brings a rare blend of business acumen, deep-rooted passion, and scientific expertise.",
+  },
+  {
+    icon: <FaAward className="text-4xl mb-4 text-blue-600" />,
+    title: "Commitment to Quality",
+    description:
+      "Every product we offer is crafted with precision and care. We adhere to strict quality standards and regulatory guidelines.",
+  },
+  {
+    icon: <FaFlask className="text-4xl mb-4 text-blue-600" />,
+    title: "Scientific Expertise",
+    description:
+      "With Dr. Monish Khan's medical and pharmaceutical knowledge at the core, our R&D and product development are backed by science.",
+  },
+  {
+    icon: <FaHandsHelping className="text-4xl mb-4 text-blue-600" />,
+    title: "Empowering Through Employment",
+    description:
+      "Our goal isn't just to grow a business — it's to build a movement that creates jobs and uplifts communities.",
+  },
+  {
+    icon: <FaHandshake className="text-4xl mb-4 text-blue-600" />,
+    title: "Trusted Partnerships",
+    description:
+      "Our transparent practices, ethical operations, and responsive support make Arolex a reliable name in pharmaceuticals.",
+  },
+  {
+    icon: <FaRocket className="text-4xl mb-4 text-blue-600" />,
+    title: "Innovation with Purpose",
+    description:
+      "We continuously invest in research and modern techniques to bring meaningful change to people's lives.",
+  },
+];
 
 export default function AboutUs() {
   const breadcrumbItems: any = [
@@ -48,7 +90,86 @@ export default function AboutUs() {
       <Breadscrumb items={breadcrumbItems} />
 
       <section className="py-12 bg-blue-50">
+        <div className="container mx-auto px-6 items-center gap-8 ">
+          <div>
+            <h1 className="text-4xl font-bold text-gray-800 mb-4 text-center">
+              About us
+            </h1>
+            <p className="text-gray-600 mb-6">
+              Arolex Pharmaceuticals Pvt. Ltd. was founded with a strong vision
+              and deeper purpose. What began as a small pharmaceutical franchise
+              in 2018 by Danish Khan has now grown into a trusted name in the
+              industry — driven by dedication, vision, and teamwork.
+            </p>
+            <p className="text-gray-600 mb-6">
+              In 2025, Danish Khan transformed the firm into a Private Limited
+              Company named Arolex pharmaceuticals pvt ltd along with his
+              childhood friend and co-founder, Shakir Ahmad. Shakir is not just
+              a business partner — he’s like a brother, a true visionary with a
+              strong will to make a big impact. From their early school days to
+              completing their BBA together, both Danish and Shakir shared a
+              dream to build a company that creates jobs, empowers youth, and
+              contributes to India’s economic strength. Shakir’s courage, clear
+              thinking, and leadership have been instrumental in shaping
+              Arolex’s growth.
+            </p>
+            <p className="text-gray-600 mb-8">
+              The leadership team also includes Dr. Monish Khan, Danish’s real
+              brother, a medical professional with in-depth knowledge of
+              pharmaceutical molecules, bringing strong scientific expertise to
+              the business.
+            </p>
+            <p className="text-gray-600 mb-8">
+              Together, Danish, Shakir, and Monish lead Arolex Pharmaceuticals
+              Pvt. Ltd. with a shared commitment to innovation, quality, and
+              social impact
+            </p>
+            <div className="flex justify-center items-center">
+              <Link
+                href={"/contactus"}
+                className="px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-sky-600 transition"
+              >
+                Get in touch
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="py-12 bg-blue-50">
         <div className="container mx-auto px-6 md:grid md:grid-cols-[50%_50%] items-center gap-8">
+          <div>
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">
+              About Directors
+            </h1>
+            <p className="text-gray-600 mb-6">
+              Danish Khan, the founder and visionary behind our company, began
+              his journey with a dream and an unshakable determination. While
+              pursuing his BBA in Meerut, his family faced financial
+              difficulties that changed the course of his life. With courage and
+              a sense of responsibility, Danish decided to support his father’s
+              struggling medical business by starting a pharmaceutical franchise
+              — all while continuing his studies.
+            </p>
+            <p className="text-gray-600 mb-6">
+              Starting from scratch without any vehicle, office, or team, he
+              took on every role himself — medical representative, accountant,
+              and even packaging staff. With relentless hard work and a passion
+              to build something meaningful, he turned challenges into
+              milestones.
+            </p>
+            <p className="text-gray-600 mb-8">
+              In 2018, he registered his own firm. Over the past 7 years, that
+              single-person effort has grown into a thriving Private Limited
+              company, with a strong team of 40 dedicated professionals, a fully
+              functional office in his hometown, and a corporate presence in
+              Delhi.
+            </p>
+            <p className="text-gray-600 mb-8">
+              Today, in 2025 we’re proud to be a trusted name in the
+              pharmaceutical sector — a company born out of resilience, built on
+              trust, and growing with purpose.
+            </p>
+          </div>
           <div>
             <Image
               src={Team}
@@ -57,29 +178,6 @@ export default function AboutUs() {
               height={300}
               className="rounded-lg shadow-lg w-full h-auto"
             />
-          </div>
-
-          <div>
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">About us</h1>
-            <p className="text-gray-600 mb-6">
-              As leading pharmaceutical manufacturers, we are dedicated to
-              producing high-quality healthcare solutions for a better world.
-            </p>
-            <p className="text-gray-600 mb-6">
-              Our state-of-the-art facilities and stringent quality control
-              processes ensure the production of safe, effective, and affordable
-              medicines. With decades of experience in the pharmaceutical
-              industry, we are trusted partners to healthcare providers
-              worldwide.
-            </p>
-            <p className="text-gray-600 mb-8">
-              Our mission is to enhance lives by delivering innovative medical
-              solutions that address the evolving healthcare needs of our
-              clients and communities.
-            </p>
-            <button className="px-6 py-3 bg-primary text-white font-medium rounded-md hover:bg-sky-600 transition">
-              Get in touch
-            </button>
           </div>
         </div>
       </section>
@@ -148,87 +246,21 @@ export default function AboutUs() {
             innovation, and unparalleled reliability.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="p-6 bg-gray-100 rounded-lg shadow">
-              <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
-                <FaAward size={32} />
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Industry Expertise
-              </h3>
-              <p className="text-gray-600">
-                With decades of experience, we specialize in contract-based
-                manufacturing and supply of pharmaceutical products, ensuring
-                excellence at every step.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-100 rounded-lg shadow">
-              <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
-                <FaMicroscope size={32} />
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Cutting-Edge R&D
-              </h3>
-              <p className="text-gray-600">
-                Our dedicated R&D team pioneers innovative solutions to address
-                evolving healthcare needs, making us leaders in pharmaceutical
-                advancements.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-100 rounded-lg shadow">
-              <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
-                <FaGlobe size={32} />
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Global Reach
-              </h3>
-              <p className="text-gray-600">
-                Supplying top-quality pharmaceutical products to healthcare
-                providers and businesses across the globe, ensuring
-                accessibility and reliability.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-100 rounded-lg shadow">
-              <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
-                <FaCheckCircle size={32} />
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Quality Assurance
-              </h3>
-              <p className="text-gray-600">
-                We adhere to the highest industry standards, ensuring our
-                products are safe, effective, and of the finest quality.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-100 rounded-lg shadow">
-              <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
-                <FaHandshake size={32} />
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Customized Solutions
-              </h3>
-              <p className="text-gray-600">
-                Tailoring our manufacturing processes to meet the unique needs
-                of our clients, ensuring a seamless partnership.
-              </p>
-            </div>
-
-            <div className="p-6 bg-gray-100 rounded-lg shadow">
-              <span className="inline-block p-4 bg-blue-100 rounded-full mb-4 text-blue-600">
-                <FaLeaf size={32} />
-              </span>
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">
-                Sustainability
-              </h3>
-              <p className="text-gray-600">
-                Committed to environmentally friendly practices, we strive for
-                sustainable manufacturing and operations.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 border border-gray-100"
+              >
+                <div className="text-center">
+                  <div className="flex text-center items-center justify-center">
+                    {feature.icon}
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

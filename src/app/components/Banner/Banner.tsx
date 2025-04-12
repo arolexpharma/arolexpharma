@@ -101,22 +101,18 @@ export default function Banner() {
       <div className="absolute top-0 left-0 w-full h-full z-20 flex items-center">
         <div className="container mx-auto text-white px-6 md:px-5">
           <div className="max-w-sm md:max-w-2xl">
-            <span className="bg-green-600 text-xs md:text-sm px-2 md:px-3 py-1 rounded-full mb-4 inline-block">
+            {/* <span className="bg-green-600 text-xs md:text-sm px-2 md:px-3 py-1 rounded-full mb-4 inline-block">
               Leading Pharmaceutical Solutions
-            </span>
+            </span> */}
             <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold">
-              <strong>Arolex Pharma</strong> Care Through Innovation{" "}
-              <span className="text-green-500">
-                in Pharmaceutical Manufacturing
-              </span>
+              <strong>Arolex Pharma</strong> Innovation That Cares.
             </h1>
             <p className="mt-4 text-sm md:text-lg leading-relaxed">
               <strong>Arolex Pharma</strong> specializes in contract
-              manufacturing, marketing,{" "}
-              <span className="text-green-300">export</span>, and supply of
-              high-quality pharmaceuticals, including antibiotics,
-              nutraceuticals, painkillers, injections, and more. We meet global
-              standards with innovative, tailored solutions.
+              manufacturing, marketing, export, and supply of high-quality
+              pharmaceuticals, including antibiotics, nutraceuticals,
+              painkillers, injections, and more. We meet global standards with
+              innovative, tailored solutions.
             </p>
 
             <div className="mt-6 flex flex-wrap sm:flex-nowrap gap-4">

@@ -47,7 +47,7 @@ const ResponsiveImageGrid = () => {
           quality={100}
           priority={false}
           loading="lazy"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           className={`transition-transform duration-300 group-hover:scale-105`}
         />
         <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4 overflow-hidden">
@@ -66,7 +66,7 @@ const ResponsiveImageGrid = () => {
           alt="Manufacturing"
           layout="fill"
           objectFit="cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
           quality={100}
           priority={false}
           loading="lazy"
@@ -77,12 +77,19 @@ const ResponsiveImageGrid = () => {
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           Arolex <span className="text-blue-600">Pharmaceutical</span>
         </h2>
-        <p className="text-gray-600 mt-3 max-w-lg">
-          At Arolex Pharmaceutical, we specialize in producing high-quality
-          medications across diverse market segments, including tablets,
-          capsules, softgels, and more. Our commitment to innovation and
-          precision ensures that every product supports better health and
-          improved quality of life.
+        <p className="text-gray-600 mt-3 max-w-5xl">
+          At Arolex Pharmaceuticals Pvt. Ltd., we are dedicated to creating
+          high-quality medicines that improve human health and well-being.
+          Through trusted LL partnerships, we ensure top-notch manufacturing
+          standards while expanding our reach across India and beyond. With a
+          growing global presence, Arolex is actively engaging with
+          international clients and aiming to deliver innovative healthcare
+          solutions worldwide
+        </p>
+        <p className="text-gray-600 mt-3 max-w-5xl">
+          With a growing global presence, Arolex is actively engaging with
+          international clients and aiming to deliver innovative healthcare
+          solutions worldwide
         </p>
       </div>
 
