@@ -9,7 +9,7 @@ const FAQSection = () => {
       key: "1",
       label: (
         <span className="font-semibold text-gray-800">
-          What products does Arolex Pharmaceutical Manufacturing produce?
+         What products are manufactured by Arolex Pharmaceutical Manufacturing?"
         </span>
       ),
       content: (
@@ -22,13 +22,12 @@ const FAQSection = () => {
       key: "2",
       label: (
         <span className="font-semibold text-gray-800">
-          Where are Arolex Pharmaceutical's manufacturing facilities located?
+         Where are the manufacturing facilities of Arolex Pharmaceutical Manufacturing located?
         </span>
       ),
       content: (
         <div className="text-gray-700 ">
-          Our FDA-approved facilities meet international standards and GMP
-          compliance.
+        Our manufacturing facilities are located in [Khatauli (Muzzaffarnager), India]. All facilities are approved and meet international GMP standards.
         </div>
       ),
     },
@@ -36,7 +35,7 @@ const FAQSection = () => {
       key: "3",
       label: (
         <span className="font-semibold text-gray-800">
-          Does Arolex Pharmaceutical offer contract manufacturing?
+        Does Arolex Pharmaceutical Manufacturing offer contract manufacturing services?
         </span>
       ),
       content: (
@@ -50,12 +49,12 @@ const FAQSection = () => {
       key: "4",
       label: (
         <span className="font-semibold text-gray-800">
-          What certifications does Arolex Pharmaceutical hold?
+         What certifications does Arolex Pharmaceutical currently hold?
         </span>
       ),
       content: (
         <div className="text-gray-700">
-          We hold WHO-GMP, ISO 9001:2015, and FDA certifications ensuring
+          We hold WHO-GMP, ISO 9001:2015, and Fssai certifications ensuring
           quality standards.
         </div>
       ),
