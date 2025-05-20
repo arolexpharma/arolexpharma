@@ -111,7 +111,7 @@ const Navbar = (handleClickMenuOpen: any) => {
             Home
           </Link>
         </li>
-        {MENU.map((item, index) => {
+        {/* {MENU.map((item, index) => {
           return (
             <li
               key={index.toString()}
@@ -159,7 +159,16 @@ const Navbar = (handleClickMenuOpen: any) => {
               )}
             </li>
           );
-        })}
+        })} */}
+        <li className="navbar-menu-item">
+          <Link
+            href={"/products"}
+            className={`nav-item ${active === "/products" ? "active-link" : ""}`}
+            onClick={() => handleLinkClick("/products")}
+          >
+            Products
+          </Link>
+        </li>
         <li className="navbar-menu-item">
           <Link
             href={"/career"}
