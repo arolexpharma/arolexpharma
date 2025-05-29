@@ -15,6 +15,17 @@ export const metadata: Metadata = {
     "Arolex Pharma specializes in innovative medicine packaging solutions. We serve both B2B and B2C clients with high-quality pharmaceutical products.",
   keywords:
     "arolex pharma, Arolex Pharma, arolex pharmaceuticals, Arolex Pharmaceuticals, medicine packaging, medicine manufacturing, B2B pharmaceuticals, B2C pharmaceuticals, pharmaceutical solutions, drug packaging, pharmaceutical manufacturing, Paracetamol, Ibuprofen, Amoxicillin, Ciprofloxacin, Metformin, Omeprazole, Aspirin, Atorvastatin, Losartan, Cetirizine",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 export default function RootLayout({
   children,
